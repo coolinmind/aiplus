@@ -1,0 +1,76 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "9bf2bdb5d66170d883727a3babadc528",
+    "content-hash": "b80e26ccf6cf45179a3bde2e3a8ea421",
+    "packages": [
+        {
+            "name": "upyun/sdk",
+            "version": "2.2.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/upyun/php-sdk.git",
+                "reference": "b657fe725e58b002ad8f7751d5f7c6f6b7dff3c9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://packagist.phpcomposer.com/files/upyun/php-sdk/b657fe725e58b002ad8f7751d5f7c6f6b7dff3c9.zip",
+                "reference": "b657fe725e58b002ad8f7751d5f7c6f6b7dff3c9",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "upyun.class.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "totoleo",
+                    "email": "totoleo@163.com"
+                },
+                {
+                    "name": "lfeng",
+                    "email": "bonevv@gmail.com"
+                },
+                {
+                    "name": "lvtongda",
+                    "email": "riyao.lyu@gmail.com"
+                },
+                {
+                    "name": "sabakugaara",
+                    "email": "senellise@gmail.com"
+                }
+            ],
+            "description": "UPYUN sdk for php",
+            "homepage": "https://github.com/upyun/php-sdk/",
+            "keywords": [
+                "sdk",
+                "upyun"
+            ],
+            "time": "2016-12-14 02:54:21"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}

@@ -1,0 +1,54 @@
+{include file="header" /}
+
+<div id="mws-container" class="clearfix">
+	<div class="container">
+	<div class="mws-panel grid_4">
+		<div class="mws-panel-header">
+	    	<span><i class="icon-comments"></i>密码修改</span>
+	    </div>
+	    <div class="mws-panel-body no-padding">
+	    	<form class="mws-form" action="/admin/password" method="post">
+	    		{if condition="$Think.session.error"}
+	        	<div class="mws-form-message error">
+	            	警告
+	                <ul>
+	                	<li>{$Think.session.error}</li>
+	                </ul>
+	            </div>
+	            {/if}
+	    		<div class="mws-form-block">
+	    			<div class="mws-form-row">
+	    				<label class="mws-form-label">原始密码</label>
+	    				<div class="mws-form-item">
+	    					<input type="text" class="error large" name="oldpass">
+	                        <div class="mws-error">
+	                        	必填
+	                        </div>
+	    				</div>
+	    				<label class="mws-form-label">新密码</label>
+	    				<div class="mws-form-item">
+	    					<input type="text" class="error large" name="newpass">
+	                        <div class="mws-error">
+	                        	必填
+	                        </div>
+	    				</div>
+	    				<label class="mws-form-label">确认密码</label>
+	    				<div class="mws-form-item">
+	    					<input type="text" class="error large" name="surepass">
+	                        <div class="mws-error">
+	                        	必填
+	                        </div>
+	    				</div>
+	    			</div>
+	    		</div>
+	    		<div class="mws-button-row">
+	    			<input type="submit" value="提交" class="btn btn-danger">
+	    			<input type="reset" value="重置" class="btn ">
+	    		</div>
+	    	</form>
+	    </div>
+	</div>
+</div>
+</div>
+
+{include file="footer" /}

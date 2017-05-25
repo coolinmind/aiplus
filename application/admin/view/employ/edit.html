@@ -1,0 +1,120 @@
+{include file='header'}
+<div id="mws-container" class="clearfix">
+	<div class="container">
+	    <div class="mws-panel grid_4">
+		    <div class="mws-panel-header">
+		        <span><i class="icon-comments"></i>需求修改</span>
+		    </div>
+		    <div class="mws-panel-body no-padding" >
+                <form class="mws-form" action="form_layouts.html">
+                    {if condition="$Think.session.tis11 eq 2"}
+                        <div class="mws-form-message error">
+                            操作失败 点击消失
+                        </div>
+                    {/if}
+                </form>
+            </div>
+		    <div class="mws-panel-body no-padding">
+		        <form class="mws-form" action="/admin/employ/update" method="post">
+		            <div class="mws-form-inline">
+		                <div class="mws-form-row bordered">
+		                    <label class="mws-form-label">ID：</label>
+		                    <div class="mws-form-item">
+		                        <span>{$res.id}</span>
+		                    </div>
+		                </div>
+		                <div class="mws-form-row bordered">
+		                    <label class="mws-form-label">雇主ID：</label>
+		                    <div class="mws-form-item">
+		                        <span>{$res.employ_id}</span>
+		                    </div>
+		                </div>
+		                <div class="mws-form-row bordered">
+		                    <label class="mws-form-label">能人ID：</label>
+		                    <div class="mws-form-item">
+		                        <span>{$res.worker_id}</span>
+		                    </div>
+		                </div>
+		                <div class="mws-form-row bordered">
+		                    <label class="mws-form-label">任务名称：</label>
+		                    <div class="mws-form-item">
+		                        <input type="text" class="large" name="title" value="{$res.title}">
+		                    </div>
+		                </div>
+		                <div class="mws-form-row bordered">
+		                    <label class="mws-form-label">时间预算：</label>
+		                    <div class="mws-form-item">
+		                        <input type="text" class="large" name="task_time" value="{$res.task_time}">
+		                    </div>
+		                </div>
+		                <div class="mws-form-row bordered">
+		                    <label class="mws-form-label">工作地点：</label>
+		                    <div class="mws-form-item">
+		                        <input type="text" class="large" name="address" value="{$res.address}">
+		                    </div>
+		                </div>
+		                <div class="mws-form-row bordered">
+		                    <label class="mws-form-label">任务简介：</label>
+		                    <div class="mws-form-item">
+		                        <!-- <input type="text" class="large" name="description" value="{$res.description}"> -->
+		                        <textarea name="description"  rows="3" cols="45">{$res.description}</textarea>
+		                    </div>
+		                </div>
+		                <div class="mws-form-row bordered">
+		                    <label class="mws-form-label">雇主要求：</label>
+		                    <div class="mws-form-item">
+		                        <!-- <input type="text" class="large" name="requirement" value="{$res.requirement}"> -->
+		                        <textarea name="requirement"  rows="3" cols="45">{$res.requirement}</textarea>
+
+		                    </div>
+		                </div>
+		                <div class="mws-form-row bordered">
+		                    <label class="mws-form-label">用人类别：</label>
+		                    <div class="mws-form-item">
+		                        <select class="large" name="type">
+		                        	{if condition="$res.type eq 0"}
+			                            <option value="0" selected="selected">单独用人</option>
+			                            <option value="1">项目用人</option>
+		                            {elseif condition="$res.type eq 1"}
+			                            <option value="1" selected="selected">项目用人</option>
+			                            <option value="0">单独用人</option>
+		                            {/if}
+		                        </select>
+		                    </div>
+		                </div>
+		                <div class="mws-form-row bordered">
+		                    <label class="mws-form-label">任务标签：</label>
+		                    <div class="mws-form-item">
+		                        <input type="text" class="large" name="task_tags" value="{$res.task_tags}">
+		                    </div>
+		                </div>
+		                <div class="mws-form-row bordered">
+		                    <label class="mws-form-label">任务量预算：</label>
+		                    <div class="mws-form-item">
+		                        <input type="text" class="large" name="task_price" value="{$res.task_price}">
+		                    </div>
+		                </div>
+		                <div class="mws-form-row bordered">
+		                    <label class="mws-form-label">执行方式：</label>
+		                    <div class="mws-form-item">
+		                        <input type="text" class="large" name="method" value="{$res.method}">
+		                    </div>
+		                </div>
+		                <div class="mws-form-row bordered">
+		                    <label class="mws-form-label">任务类型：</label>
+		                    <div class="mws-form-item">
+		                        <input type="text" class="large" name="task_type" value="{$res.task_type}">
+		                    </div>
+		                </div>
+			            <div class="mws-button-row">
+			                <input type="hidden" name="id" value="{$res.id}">
+			                <input type="submit" value="提交" class="btn btn-danger">
+			            </div>
+			    	</div>
+			    </form>
+			</div>
+		</div>
+	</div>
+</div>
+        
+{include file='footer'}

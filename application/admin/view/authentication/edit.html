@@ -1,0 +1,79 @@
+{include file="header"}
+<div id="mws-container" class="clearfix">
+    <div class="container">
+        <div class="mws-panel grid_4">
+            <div class="mws-panel-header">
+                <span>个人身份认证修改</span>
+            </div>
+            <div class="mws-panel-body no-padding">
+                <form class="mws-form" action="/admin/authentication/update" method="post">
+                    <div class="mws-form-inline">
+                       <div class="mws-form-row bordered">
+                            <label class="mws-form-label">I D 号：</label>
+                            <div class="mws-form-item">
+                                <span>{$res.id}</span>
+                            </div>
+                        </div>
+                        <div class="mws-form-row bordered">
+                            <label class="mws-form-label">用户ID：</label>
+                            <div class="mws-form-item">
+                                <span>{$res.uid}</span>
+                            </div>
+                        </div>
+                        <div class="mws-form-row bordered">
+                            <label class="mws-form-label">认证姓名：</label>
+                            <div class="mws-form-item">
+                                <span>{$res.name}</span>
+                            </div>
+                        </div>
+                        <div class="mws-form-row bordered">
+                            <label class="mws-form-label">身份证号码：</label>
+                            <div class="mws-form-item">
+                                <span>{$res.id_number}</span>
+                            </div>
+                        </div>
+                        <div class="mws-form-row bordered">
+                            <label class="mws-form-label">认证照片正面：</label>
+                            <div class="mws-form-item">
+                                <!-- <span>{$res.up_photo}</span> -->
+                                <img src="{$res.up_photo}" width="150px">
+                            </div>
+                        </div>
+                        <div class="mws-form-row bordered">
+                            <label class="mws-form-label">认证照片反面：</label>
+                            <div class="mws-form-item">
+                                <!-- <span>{$res.back_photo}</span> -->
+                                <img src="{$res.back_photo}" width="150px">
+                            </div>
+                        </div>
+                        <div class="mws-form-row bordered">
+                            <label class="mws-form-label">审核状态：</label>
+                            <div class="mws-form-item">
+                                <select name="status" id="" class="large">
+                                    {if condition="$res.status eq 0"}
+                                        <option value="0">审核中</option>
+                                        <option value="1">审核完成</option>
+                                    {elseif condition="$res.status eq 1"}
+                                        <option value="1">审核完成</option>
+                                        <option value="0">审核中</option>
+                                    {/if}
+                                </select>
+                            </div>
+                        </div>
+                        <div class="mws-form-row bordered">
+                            <label class="mws-form-label">备注信息：</label>
+                            <div class="mws-form-item">
+                                <textarea name="remarks" cols="45" rows="10">{$res.remarks}</textarea>
+                            </div>
+                        </div>
+                        <div class="mws-button-row">
+                            <input type="hidden" value="{$res.id}" name="id">
+                            <input type="submit" value="提交" class="btn btn-danger">
+                        </div>
+                    </div>
+                </form>
+            </div>      
+        </div>
+    </div>
+</div>
+{include file="footer"}

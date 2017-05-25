@@ -1,0 +1,32 @@
+[ 2017-05-17T16:38:14+08:00 ] 121.42.174.228 114.252.53.118 POST //visitor/isscan
+[ log ] dev.happyoneplus.com//visitor/isscan [运行时间：0.075494s][吞吐率：13.25req/s] [内存消耗：2,713.98kb] [文件加载：48]
+[ info ] [ LANG ] /data/wwwroot/dev.happyoneplus.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'visitor',
+    2 => 'isscan',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'charset' => 'UTF-8',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 5.0.2; vivo X5Pro V Build/LRX22G) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/37.0.0.0 Mobile Safari/537.36',
+  'connection' => 'Keep-Alive',
+  'accept-encoding' => 'gzip',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'host' => 'dev.happyoneplus.com',
+  'content-length' => '19',
+)
+[ info ] [ PARAM ] array (
+  'id' => '{}',
+  'DataJson' => '',
+)
+[ info ] [ RUN ] app\index\controller\Visitor->isScan[ /data/wwwroot/dev.happyoneplus.com/application/index/controller/Visitor.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: id[/data/wwwroot/dev.happyoneplus.com/application/index/controller/Visitor.php:142]
+
+---------------------------------------------------------------

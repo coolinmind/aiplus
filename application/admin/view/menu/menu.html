@@ -1,0 +1,278 @@
+{include file="header" /}
+        <div id="mws-container" class="clearfix">
+            <div class="container">
+
+                <div class="mws-panel grid_8 mws-collapsible" style="position:relative">
+                	<div class="mws-panel-header">
+                    	<span><i class="icon-table"></i>菜单管理</span>
+                    </div>
+                    <div class="mws-panel-body no-padding">
+                        <form class="mws-form" action="form_layouts.html">
+                            {if condition="$Think.session.tishi eq 1"}
+                                <div class="mws-form-message success">
+                                    操作成功 点击消失
+                                </div>
+
+                            {elseif condition="$Think.session.tishi eq 2"/}
+                                <div class="mws-form-message error">
+                                    操作失败 点击消失
+                                </div>
+                            {elseif condition="$Think.session.tishi eq 3"/}
+                                <div class="mws-form-message error">
+                                    该菜单下还有其他子菜单！
+                                </div>
+                            {/if}
+                        </form>
+                    </div>
+                    <div class="mws-panel-body no-padding">
+
+                        <table class="mws-table mws-datatable" >
+                            <thead>
+                                <tr>
+                                    <td><input type="button" id="mws-jui-dialog-mdl-btn" class="btn btn-primary bkform" id='bkform' value="  添加一级菜单  "></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <th>分  类：</th>
+                                    <th>操  作：</th>                               
+                                </tr>
+                            </thead>
+                            <tbody align='center'>
+                               {volist name="res" id="v"}
+                                    {if condition="$v.parent_id eq 0 and $v.is_show eq 1"}
+                                    <tr>
+                                        <td style="background: #eee;">{$v.menu_name}</td> 
+                                        <td style="background: #eee;">
+                                            <span class="btn-group">
+                                                <a class="btn btn-small samll" is="{$v.id}"><i class='icon-plus-sign'></i></a>
+                                                <a class="btn btn-small btns" i="{$v.id}"><i class="icon-pencil"></i></a>
+                                                <a class="btn btn-small" href='/admin/menu/set?id={$v.id}'><i class='icon-cog'></i></a>
+                                                <a href="/admin/menu/delete?menu_id={$v.id}" onclick="return confirm('确定要删除么?');" class="btn btn-small"><i class="icon-trash"></i></a>
+                                            </span>
+                                        </td>
+                                    </tr>
+                                     {volist name="res" id="v1"}
+                                        {if condition=" $v1.is_show eq 1"}
+                                            {eq name="$v1.parent_id" value="$v.id"}
+                                                <tr>
+                                                    <td style="background: #FFF;">|——{$v1.menu_name}</td>
+                                                    <td style="background: #FFF;">
+                                                    <span class="btn-group">
+                                                        <a class="btn btn-small btns1" is='{$v1.id}' path='{$v1.menu_path}' names='{$v1.menu_name}' ><i class="icon-pencil"></i></a>
+                                                        <a href="/admin/menu/delete?menu_id={$v1.id}" onclick="return confirm('确定要删除么?');" class="btn btn-small"><i class="icon-trash"></i></a>
+                                                </span>
+                                            </td>
+                                                </tr>
+                                            {/eq}
+                                        {/if}
+                                     {/volist}
+                                    {/if}
+                                {/volist}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>  
+                <div id="zhezhao"></div>
+                <div class="mws-panel grid_4" id='dis' style="display: none;position:absolute;left:260px;top:130px">
+                    <div class="mws-panel-header">
+                        <span>菜单添加</span>
+                    </div>
+                    <div class="mws-panel-body no-padding">
+                        <form class="mws-form" action="/admin/menu/insert" method="post">
+                            <div class="mws-form-inline">
+                                <div class="mws-form-row bordered">
+                                    <label class="mws-form-label">一级菜单：</label>
+                                    <div class="mws-form-item">
+                                        <select class="large" name='id'>
+                                                    <option >一级菜单</option>
+                                            {volist name="res" id="v"}
+                                                {if condition="$v.parent_id eq 0"}
+                                                    <option value="$v.id">{$v.menu_name}</option>
+                                                {/if}
+                                            {/volist}
+                                        </select>
+                                    </div>
+                                </div>
+                               <div class="mws-form-row bordered">
+                                    <label class="mws-form-label">添加菜单：</label>
+                                    <div class="mws-form-item">
+                                        <input type="text" class="large" name='menu_name'>
+                                    </div>
+                                </div>
+                                <div class="mws-button-row">
+                                <input type="submit" value="提交" class="btn btn-danger">
+                                <a href=""><input type="button" value="取消" class="btn " id='ol'></a>
+                                </div>
+                            </div>
+                        </form>
+                    </div>      
+                </div>  
+                <div class="mws-panel grid_4" id='divs1' style="display: none;position:absolute;left:260px;">
+                    <div class="mws-panel-header">
+                        <span>二级菜单添加</span>
+                    </div>
+                    <div class="mws-panel-body no-padding">
+                        <form class="mws-form" action="/admin/menu/insert" method="post">
+                            <div class="mws-form-inline">
+                               <div class="mws-form-row bordered">
+                                    <label class="mws-form-label">添加二菜单：</label>
+                                    <div class="mws-form-item">
+                                        <input type="text" class="large" name='menu_name'>
+                                    </div>
+                                </div>
+                            <div class="mws-button-row">
+                                <input type="hidden" value='' name='id' id='mids'>
+                                <input type="submit" value="提交" class="btn btn-danger">
+                                <a href=""><input type="button" value="取消" class="btn " id='ol'></a>
+                            </div>
+                            </div>
+                        </form>
+                    </div>      
+                </div>    
+                <div class="mws-panel grid_4" id='divs' class="test" style="display: none;position:absolute;left:260px;">
+                    <div class="mws-panel-header">
+                        <span>菜单名称修改</span>
+                    </div>
+                    <div class="mws-panel-body no-padding">
+                        <form class="mws-form" action="/admin/menu/edit" method="post">
+                            <div class="mws-form-inline">
+                               <div class="mws-form-row bordered">
+                                    <label class="mws-form-label">修改名称：</label>
+                                    <div class="mws-form-item">
+                                        <input type="text" class="large" name='menu_name'>
+                                    </div>
+                                </div>
+                            <div class="mws-button-row">
+                                <input type="hidden" value='' name='id' id='mid'>
+                                <input type="submit" value="提交" class="btn btn-danger">
+                                <a href=""><input type="button" value="取消" class="btn " id='oli'></a>
+                            </div>
+                            </div>
+                        </form>
+                    </div>      
+                </div> 
+                <div class="mws-panel grid_4" id='div1' class="test" style="display: none;position:absolute;left:260px;top:240px">
+                    <div class="mws-panel-header">
+                        <span>添加及修改</span>
+                    </div>
+                    <div class="mws-panel-body no-padding">
+                        <form class="mws-form" action="/admin/menu/pathedit" method="post">
+                            <div class="mws-form-inline">
+                               <div class="mws-form-row bordered">
+                                    <label class="mws-form-label">修改名称：</label>
+                                    <div class="mws-form-item">
+                                        <input type="text" class="large" name='menu_name' id='names'>
+                                    </div>
+                                </div>
+                                <div class="mws-form-row bordered">
+                                    <label class="mws-form-label">添加路径：</label>
+                                    <div class="mws-form-item">
+                                        <input type="text" class="large" name='menu_path' id='path'>
+                                    </div>
+                                </div>
+                                <div class="mws-button-row">
+                                    <input type="hidden" value='' name='id' id='mid1'>
+                                    <input type="submit" value="提交" class="btn btn-danger">
+                                    <a href=""><input type="button" value="取消" class="btn " id='oli1'></a>
+                                </div>
+                            </div>
+                        </form>
+                    </div>      
+                </div> 
+            </div>  
+        </div>   
+
+<script src="/Backstage/js/libs/jquery-1.8.3.min.js"></script>    
+<script>
+$('.bkform').click(function(){
+    // $('#mws-container').css({'left': '0px','top': '0px','background':'#000','z-index': '9999','opacity': '0.7'});
+
+    $("#dis").css({'display':'block','z-index': '9999'}); 
+    $('#zhezhao').css({'width':'1200px','height':'1290px','background': 'rgb(0, 0, 0)','opacity': '0.7','z-index': '1','position':'absolute','left':'-48px','top':'-8px'});
+})
+
+$('#ol').click(function(){
+    $("#dis").css({'display':'none'}); 
+    $('#zhezhao').css({'display':'none'});
+
+})
+
+
+$('.samll').click(function(){
+   
+    var id =  $(this).attr('is');
+
+    $('#mids').val(id);
+
+    $("#divs1").css({'display':'block','z-index':'9999'}); 
+
+    $("#divs1").css("top", $(document).scrollTop()+150 );
+    
+    $('#zhezhao').css({'width':'1200px','height':'1290px','background': 'rgb(0, 0, 0)','opacity': '0.7','z-index': '1','position':'absolute','left':'-48px','top':'-8px'});
+
+  
+})
+
+$('#ol').click(function(){
+    $("#divs1").css({'display':'none'}); 
+
+})
+
+
+$('.btns').click(function(){
+
+    var id =  $(this).attr('i');
+
+    $('#mid').val(id);
+
+    $("#divs").css({'display':'block','z-index':'9999'}); 
+
+
+    $("#divs").css("top", $(document).scrollTop()+150 );
+
+    $('#zhezhao').css({'width':'1200px','height':'1290px','background': 'rgb(0, 0, 0)','opacity': '0.7','z-index': '1','position':'absolute','left':'-48px','top':'-8px'});
+
+})
+
+
+$('#oli').click(function(){
+
+    $("#divs").css({'display':'none'}); 
+
+})
+
+$('.btns1').click(function(){
+
+    var id =  $(this).attr('is');
+
+    var name = $(this).attr('names');
+
+    var path = $(this).attr('path');
+
+    $('#mid1').val(id);
+
+    $('#names').val(name);
+
+    $('#path').val(path);
+
+    $("#div1").css("top", $(document).scrollTop()+150 );
+
+    $("#div1").css({'display':'block','z-index':'9999'}); 
+
+    $('#zhezhao').css({'width':'1200px','height':'1290px','background': 'rgb(0, 0, 0)','opacity': '0.7','z-index': '1','position':'absolute','left':'-48px','top':'-8px'});
+
+
+})
+
+$('#oli1').click(function(){
+
+    $("#div1").css({'display':'none'}); 
+
+
+})
+
+
+</script> 
+      
+{include file="footer" /}

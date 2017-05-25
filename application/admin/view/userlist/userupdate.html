@@ -1,0 +1,83 @@
+{include file="header" /}
+
+ <div id="mws-container" class="clearfix">
+	<div class="container">
+		<div class="mws-panel grid_8">
+          
+        	<div class="mws-panel-header">
+
+            	<span><i class="icon-ok"></i>　<a href="/admin/userlist">用户列表</a><i class="icon-chevron-right"></i>用户修改</span>
+            </div>
+            <div class="mws-panel-body no-padding">
+                        <form class="mws-form" action="form_layouts.html">
+                            {if condition="$Think.session.tishis eq 1"}
+                                <div class="mws-form-message error">
+                                    操作失败 请确认后再次提交！
+                                </div>
+                            {/if}
+                        </form>
+                    </div>
+            <div class="mws-panel-body no-padding">
+
+            	<form id="mws-validate" class="mws-form" action="/admin/userupdate" method='post'>
+                	<div id="mws-validate-error" class="mws-form-message error" style="display:none;"></div>
+                	<div class="mws-form-inline">
+                    	<div class="mws-form-row">
+                        	<label class="mws-form-label">I D ：</label>
+                        	<div class="mws-form-item">
+                            	<input type="text" name="id" class="required large" disabled='disabled' value="{$info.0.id}">
+                            </div>
+                        </div>
+                    	<div class="mws-form-row">
+                        	<label class="mws-form-label">用户名：</label>
+                        	<div class="mws-form-item">
+                            	<input type="text" name="username" class="required email large" disabled='disabled' value="{$info.0.username}">
+                            </div>
+                        </div>
+                    	<div class="mws-form-row">
+                        	<label class="mws-form-label">邮箱号：</label>
+                        	<div class="mws-form-item">
+                            	<input type="text" name="email" class="required url large" disabled='disabled' value="{$info.0.email}">
+                            </div>
+                        </div>
+                        {if condition="$info.0.delstatus eq 1"}
+                        	<div class="mws-form-row">
+                            	<label class="mws-form-label">封禁状态：</label>
+                            	<div class="mws-form-item">
+                            		<select class="required large" name="delname" >	    
+                							<option value='1' selected = "selected" >正常</option>		          						
+                					</select>
+                                </div>
+                            </div>
+                        {else/}
+                            <div class="mws-form-row">
+                                <label class="mws-form-label">封禁状态：</label>
+                                <div class="mws-form-item">
+                                    <select class="required large" name="delname">                                
+                                            <option value='0'  selected = "selected" >被封</option>
+                                            <option value='1'>正常</option>                                     
+                                    </select>
+                                </div>
+                            </div>
+ 
+                            <div class="mws-form-row">
+                            	<label class="mws-form-label">封禁时间：</label>
+                            	<div class="mws-form-item">
+                                	<input type="text" class="required digits large" disabled='disabled' value="{$info.0.deltime}">
+                                </div>
+                            </div>
+
+                        {/if} 			
+                    </div>
+                    <div class="mws-button-row">
+                        <input type="hidden" name='username' value="{$info.0.username}">
+                        <input type="hidden" name='id' value="{$info.0.id}">
+                    	<input type="submit" class="btn btn-danger">
+                    </div>
+                </form>
+            </div>    	
+        </div>
+	</div>
+</div>
+
+{include file="footer" /}

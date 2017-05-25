@@ -1,0 +1,117 @@
+{include file="header" /}
+        <!-- Main Container Start -->
+        <div id="mws-container" class="clearfix">
+        
+        	<!-- Inner Container Start -->
+            <div class="container">
+
+                <div class="mws-panel grid_8 mws-collapsible">
+                	<div class="mws-panel-header">
+                    	<span><i class="icon-table"></i>管理员管理</span>
+                    </div>
+                    <div class="mws-panel-body no-padding">
+                        <form class="mws-form" action="form_layouts.html">
+                            {if condition="$Think.session.tishi eq 1"}
+                                <div class="mws-form-message success">
+                                    操作成功 点击消失
+                                </div>
+
+                            {elseif condition="$Think.session.tishi eq 2"/}
+                                <div class="mws-form-message error">
+                                    操作失败 点击消失
+                                </div>
+                            {elseif condition="$Think.session.tishi eq 3"/}
+                                <div class="mws-form-message error">
+                                    admin用户不能删除！
+                                </div>
+                            {/if}
+                        </form>
+                    </div>
+                    <div class="mws-panel-body no-padding">
+                        <table class="mws-table mws-datatable" >
+                            <thead>
+                                 <tr>
+                                    <td><input type="button" id="mws-jui-dialog-mdl-btn" class="btn btn-primary bkform" value="  添加管理员  "></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <th>I D号：</th>
+                                    <th>用户名：</th>
+                                    <th>角  色：</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody align='center'>
+                               {volist name="res" id="v"}
+                                    <tr>
+                                        <td>{$v.id}</td>
+                                        <td>{$v.name}</td>
+                                        <td>{$v.names}</td>
+                                        <td>
+                                            <span class="btn-group">
+                                                <a href="/admin/adminuppage?id={$v.id}" class="btn btn-small" ><i class="icon-pencil"></i></a>
+                                                <a href="/admin/admindel?id={$v.id}" onclick="return confirm('确定要删除{$v.name}管理员么?');" class="btn btn-small"><i class="icon-trash"></i></a>
+                                            </span>
+                                        </td>
+                                    </tr>
+                                {/volist}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                   <div class="mws-panel grid_4" id='dis' style="display: none;z-index: 99999;position:absolute;left:260px;top:150px">
+                    <div class="mws-panel-header">
+                        <span>管理员添加</span>
+                    </div>
+                    <div class="mws-panel-body no-padding">
+                        <form class="mws-form" action="/admin/adminadd" method="post">
+                            <div class="mws-form-inline">
+                                <div class="mws-form-row bordered">
+                                    <label class="mws-form-label">用户名：</label>
+                                    <div class="mws-form-item">
+                                        <input type="text" class="large" name='name' >
+                                    </div>
+                                </div>
+                                <div class="mws-form-row bordered">
+                                    <label class="mws-form-label">密码：</label>
+                                    <div class="mws-form-item">
+                                        <input type="password" class="large" name='password'>
+                                    </div>
+                                </div>
+                               <div class="mws-form-row bordered">
+                                    <label class="mws-form-label">角色：</label>
+                                    <div class="mws-form-item">
+                                        <select class="large" name='rid'>
+                                            {volist name="row" id="v"}
+                                                <option value="{$v.id}">{$v.names}</option>
+                                            {/volist}
+                                        </select> 
+                                    </div>
+                                </div>
+                            <div class="mws-button-row">
+                                <input type="submit" value="提交" class="btn btn-danger">
+                                <a href=""><input type="button" value="取消" class="btn " id='ol'></a>
+                            </div>
+                        </form>
+                    </div>      
+                </div>    
+            </div>
+        </div>  
+</block>   
+{include file="footer" /}
+<script>
+$('.bkform').click(function(){
+    // $('#mws-wrapper').css({'background':'#666','z-index':'222','filter':'alpha(Opacity=80)','-moz-opacity':'0.5','opacity': '0.5'});
+
+    $("#dis").css({'display':'block','z-index':'9999'}); 
+    
+});
+
+$('#ol').click(function(){
+    $("#dis").css({'display':'none'}); 
+
+});
+
+</script>                

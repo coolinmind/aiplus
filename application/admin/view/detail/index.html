@@ -1,0 +1,51 @@
+{include file="header" /}
+
+<div id="mws-container" class="clearfix">
+        
+	<!-- Inner Container Start -->
+    <div class="container">
+    	<div class="mws-panel grid_6">
+                	<div class="mws-panel-header">
+                    	<span><i class="icon-ok"></i> 个人资料</span>
+                    </div>
+                    <div class="mws-panel-body no-padding">
+                    	<form id="mws-validate" class="mws-form" action="/admin/upload" method="post" enctype="multipart/form-data">
+                        	<div id="mws-validate-error" class="mws-form-message error" style="display:none;"></div>
+                        	<div class="mws-form-inline">
+                            	<div class="mws-form-row">
+                                	<label class="mws-form-label">用户名</label>
+                                	<div class="mws-form-item">
+                                    	<input style="width:300px;" disabled type="text" name="reqField" class="required large" value="{$info.name}">
+                                    </div>
+                                </div>
+                            	<div class="mws-form-row">
+                                	<label class="mws-form-label">用户头像</label>
+                                	<div class="mws-form-item">
+                                    	<img width="100" src="{if condition="$info.photo"}{$info.photo}{else /}/Backstage/example/profile.jpg{/if}" alt="User Photo">
+                                    </div>
+                                </div>
+                                {if condition="$Think.session.error"}
+                                <div style="border:0px;" class="mws-panel-body no-padding">
+                                    <div class="mws-form-message error">
+                                        {$Think.session.error}
+                                    </div>
+                                </div>
+                                {/if}
+                            	<div class="mws-form-row">
+                                	<label class="mws-form-label">选择头像</label>
+                                	<div style="width:300px;" class="mws-form-item">
+                                    	<input type="file" name="photo" class="required">
+                                        <label for="picture" class="error" generated="true" style="display:none"></label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mws-button-row">
+                            	<input type="submit" class="btn btn-danger">
+                            </div>
+                        </form>
+                    </div>    	
+                </div>
+    </div>
+</div>
+
+{include file="footer" /}

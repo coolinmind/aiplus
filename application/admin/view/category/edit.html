@@ -1,0 +1,45 @@
+{include file="header"}
+<div id="mws-container" class="clearfix">
+    <div class="container">
+        <div class="mws-panel grid_4">
+            <div class="mws-panel-header">
+                <span>修改技能类型</span>
+            </div>
+            <div class="mws-panel-body no-padding">
+                <form class="mws-form" action="/admin/category/update" method="post">
+                    <div class="mws-form-inline">
+                       <div class="mws-form-row bordered">
+                            <label class="mws-form-label">I D 号：</label>
+                            <div class="mws-form-item">
+                                <span>{$data.id}</span>
+                            </div>
+                        </div>
+                        <div class="mws-form-row bordered">
+                            <label class="mws-form-label">通用技能：</label>
+                            <div class="mws-form-item">
+                                <input type="text" name='general' class='large' value="{$data.general}">
+                            </div>
+                        </div>
+                        <div class="mws-form-row bordered">
+                            <label class="mws-form-label">经验技能：</label>
+                            <div class="mws-form-item">
+                                <input type="text" name='experience' class='large' value="{$data.experience}">
+                            </div>
+                        </div>
+                        <div class="mws-form-row bordered">
+                            <label class="mws-form-label">证书技能：</label>
+                            <div class="mws-form-item">
+                                <input type="text" name='certificate' class='large' value="{$data.certificate}">
+                            </div>
+                        </div>
+                        <div class="mws-button-row">
+                            <input type="hidden" value="{$data.id}" name="id">
+                            <input type="submit" value="提交" class="btn btn-danger">
+                        </div>
+                    </div>
+                </form>
+            </div>      
+        </div>
+    </div>
+</div>
+{include file="footer"}

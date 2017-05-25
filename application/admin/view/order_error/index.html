@@ -1,0 +1,39 @@
+{include file="header" /}
+<div id="mws-container" class="clearfix">
+    <div class="container">
+		<div class="mws-panel grid_8">
+			<div class="mws-panel-header">
+		    	<span><i class="icon-table"></i>错误日志列表</span>
+		    </div>
+		    <div class="mws-panel-body no-padding">
+		        <table class="mws-datatable mws-table">
+		            <thead>
+		                <tr>
+		                    <th>错误ID：</th>
+		                    <th>异常ID：</th>
+		                    <th>异常时间：</th>
+		                    <th>来源：</th>
+		                    <th>处理人ID：</th>
+		                    <th>异常描述：</th>
+		                    <th>异常类型：</th>
+		                </tr>
+		            </thead>
+		            <tbody align='center'>
+		            	{volist name="list" id="v"}
+			                <tr>
+			                    <td>{$v.id}</td>
+			                    <td>{$v.error_id}</td>
+			                    <td>{$v.add_time}</td>
+			                    <td>{$v.source}</td>
+			                    <td>{$v.admin_id}</td>
+			                    <td>{$v.description}</td>
+			                    <td>{$v.error_type}</td>
+			                </tr>
+		                {/volist}
+		            </tbody>
+		        </table>
+		    </div>
+		</div>
+	</div>
+</div>
+{include file="footer" /}

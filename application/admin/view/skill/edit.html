@@ -1,0 +1,144 @@
+{include file='header'}
+<div id="mws-container" class="clearfix">
+<div class="container">
+<div class="mws-panel grid_8">
+	<div class="mws-panel-header">
+    	<span>技能编辑</span>
+    </div>
+    <div class="mws-panel-body no-padding">
+    	<form class="mws-form" action="/admin/skill/edit" method="post">
+    		{if condition="$Think.session.error"}
+				<div class="mws-form-message error">
+	            	抱歉
+	                <ul>
+	                	<li>{$Think.session.error}</li>
+	                </ul>
+	            </div>
+			{/if}
+    		<input type="hidden" name="id" value="{$res.id}">
+            <div class="mws-form-row">
+            	<div class="mws-form-cols">
+                    <div class="mws-form-col-2-5">
+                        <label class="mws-form-label">ID：</label>
+                        <div class="mws-form-item">
+	                        <span>{$res.id}</span>
+	                    </div>
+                    </div>
+                    <div class="mws-form-col-2-5">
+                        <label class="mws-form-label">用户ID：</label>
+                        <div class="mws-form-item">
+	                        <span>{$res.uid}</span>
+	                    </div>
+                    </div>
+                    <div class="mws-form-col-1-5">
+                        <label class="mws-form-label">技能名称：</label>
+                        <div class="mws-form-item">
+	                        <input name="skill_name" type="text" class="large" value="{$res.skill_name}">
+	                    </div>
+                    </div>
+                    <div class="mws-form-col-1-5">
+                        <label class="mws-form-label">可接单时间</label>
+                        <div class="mws-form-item">
+	                        <input name="time" type="text" class="large" value="{$res.time}">
+	                    </div>
+                    </div>
+                    <div class="mws-form-col-1-5">
+                        <label class="mws-form-label">可接单地点：</label>
+                        <div class="mws-form-item">
+	                        <input name="address" type="text" class="large" value="{$res.address}">
+	                    </div>
+                    </div>
+                </div>
+                <div class="mws-form-cols">
+					<div class="mws-form-col-1-7">
+                        <label class="mws-form-label">数量</label>
+                        <div class="mws-form-item">
+	                        <input name="num" type="text" class="large" value="{$res.num}">
+	                    </div>
+                    </div>
+                    <div class="mws-form-col-1-7">
+                        <label class="mws-form-label">单位</label>
+                        <div class="mws-form-item">
+	                        <input type="text" class="large" name="unit" value="{$res.unit}">
+	                    </div>
+                    </div>
+                    <div class="mws-form-col-1-7">
+                        
+	                    <div class="mws-form-row bordered">
+                            <label class="mws-form-label"></label>
+                            <div class="mws-form-item">
+                                <select class="large" name="skillType">
+                                    {switch name="$res.skillType" }
+									    {case value="通用技能"}
+									    <option selected value="通用技能">通用技能</option>
+									    <option value="经验技能">经验技能</option>
+									    <option value="证书技能">证书技能</option>
+									    {/case}
+									    {case value="经验技能"}
+									    <option value="通用技能">通用技能</option>
+									    <option value="经验技能" selected>经验技能</option>
+									    <option value="证书技能">证书技能</option>
+									    {/case}
+									    {case value="证书技能"}
+									    <option value="通用技能">通用技能</option>
+									    <option value="经验技能">经验技能</option>
+									    <option value="证书技能" selected>证书技能</option>
+									    {/case}
+									    {default /}
+									    <option value="通用技能">通用技能</option>
+									    <option value="经验技能">经验技能</option>
+									    <option value="证书技能">证书技能</option>
+									{/switch}
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mws-form-col-1-7">
+                        <label class="mws-form-label">&nbsp;</label>
+                        <div class="mws-form-item">
+                            <select class="large" name="skill_status">
+                                {switch name="$res.skill_status" }
+								    {case value="0"}
+								    <option selected value="0">接单中</option>
+								    <option value="1">工作中</option>
+								    <option value="2">已下架</option>
+								    {/case}
+								    {case value="1"}
+								    <option value="0">接单中</option>
+								    <option value="1" selected>工作中</option>
+								    <option value="2">已下架</option>
+								    {/case}
+								    {case value="2"}
+								    <option value="0">接单中</option>
+								    <option value="1">工作中</option>
+								    <option value="2" selected>已下架</option>
+								    {/case}
+								    {default /}
+								    <option value="0">接单中</option>
+								    <option value="1">工作中</option>
+								    <option value="2">已下架</option>
+								{/switch}
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mws-form-cols">
+                    <div class="mws-form-col-1-1">
+                        <label class="mws-form-label">技能简介</label>
+                        <div class="mws-form-item">
+	                        <textarea name="skill_description" rows cols="100" class="large">{$res.skill_description}</textarea>
+	                    </div>
+                    </div>
+                </div>
+            </div>
+    		<div class="mws-button-row">
+    			<input type="submit" value="提交" class="btn btn-danger">
+    			<input type="reset" value="重置" class="btn ">
+    		</div>
+        </form>
+    </div>
+</div>
+</div>
+</div>
+{include file='footer'}

@@ -1,0 +1,99 @@
+{include file="header"}
+<div id="mws-container" class="clearfix">
+    <div class="container">
+        <div class="mws-panel grid_8">
+            <div class="mws-panel-header">
+                <span><i class="icon-table"></i>订单列表</span>
+            </div>
+            <div class="mws-panel-body no-padding">
+                <form class="mws-form" action="form_layouts.html">
+                    {if condition="$Think.session.tis eq 1"}
+                        <div class="mws-form-message success">
+                            操作成功 点击消失
+                        </div>
+
+                    {elseif condition="$Think.session.tis eq 2"/}
+                        <div class="mws-form-message error">
+                            操作失败 点击消失
+                        </div>
+                    {/if}
+                </form>
+            </div>
+            <div class="mws-panel-body no-padding">
+                <table class="mws-datatable mws-table">
+                    <thead>
+                     <tr role="row">
+                            <td colspan="12">
+                                <a href="/admin/orders/create"><input type="button" id="mws-jui-dialog-mdl-btn" class="btn btn-primary bkform" value="　　  创建订单　　   "></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>ID号：</th>
+                            <th>雇主ID：</th>
+                            <th>能人ID：</th>
+                            <th>订单号：</th>
+                            <th>订单标题：</th>
+                            <th>订单生成时间：</th>
+                            <th>订单价格：</th>
+                            <th>任务ID：</th>
+                            <th>技能ID：</th>
+                            <th>角色状态：</th>
+                            <th>审核状态：</th>
+                            <th>操作：</th>
+                        </tr>
+                    </thead>
+                    <tbody align="center">
+                        {volist name="res" id="v"}
+                            <tr>
+                                <td style="word-break:break-all">{$v.id}</td>
+                                <td style="word-break:break-all">{$v.employ_id}</td>
+                                <td style="word-break:break-all">{$v.worker_id}</td>
+                                <td style="word-break:break-all">{$v.order_num}</td>
+                                <td style="word-break:break-all">{$v.title}</td>
+                                <td style="word-break:break-all">{$v.add_time}</td>
+                                <td style="word-break:break-all">{$v.order_price}</td>
+                                <td style="word-break:break-all">{$v.task_id}</td>
+                                <td style="word-break:break-all">{$v.skill_id}</td>
+                                {if condition="$v.role_status eq 0"}
+                                    <td>匹配中</td>
+                                {elseif condition="$v.role_status eq 1"}
+                                    <td>发起合同</td>
+                                {elseif condition="$v.role_status eq 2"}
+                                    <td>筛选中</td>
+                                {elseif condition="$v.role_status eq 3"}
+                                    <td>待支付</td>
+                                {elseif condition="$v.role_status eq 4"}
+                                    <td>待服务</td>
+                                {elseif condition="$v.role_status eq 5"}
+                                    <td>进行中</td>
+                                {elseif condition="$v.role_status eq 6"}
+                                    <td>待验收</td>
+                                {elseif condition="$v.role_status eq 7"}
+                                    <td>待结算</td>
+                                {elseif condition="$v.role_status eq 8"}
+                                    <td>已完成</td>
+                                {elseif condition="$v.role_status eq 9"}
+                                    <td>已关闭</td>
+                                {/if}
+                             
+                                {if condition="$v.status eq 0"}
+                                    <td>审核中</td>
+                                {elseif condition="$v.status eq 1"}
+                                    <td>审核通过</td>
+                                {/if}
+                                <td>
+                                    <span class="btn-group">
+                                            <a class="btn btn-small btns1" href="/admin/orders/edit?id={$v.id}">
+                                                <i class="icon-pencil"></i>
+                                            </a>
+                                    </span>
+                                </td>
+                            </tr>
+                        {/volist}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+{include file="footer"}

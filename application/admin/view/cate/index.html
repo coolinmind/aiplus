@@ -1,0 +1,230 @@
+{include file="header"}
+<div class="clearfix" id="mws-container">
+	<div class="container">
+		<div id="block" class="mws-panel grid_8">
+			<div class="mws-panel-header">
+		    	<span><i class="icon-table"></i> Simple Table</span>
+		    </div>
+		    <div class="mws-panel-body no-padding">
+		        <table class="mws-table">
+		            <thead>
+		            	<tr align="center">
+			            	<td colspan="3">
+			            		<div class="mws-button-row">
+                                    <input style="font-size:16px;" id="father" type="button" value="添加父分类" class="btn btn-danger">
+                                </div>
+			            	</td>
+		            	</tr>
+		                <tr>
+		                    <th>ID</th>
+		                    <th>分类名称</th>
+		                    <th>操作</th>
+		                </tr>
+		            </thead>
+		            <tbody>
+		            	{foreach $list as $k => $v}
+		                <tr>
+		                    <td>{$v.id}</td>
+							{if condition="$v.pid == 0"}
+		                    <td style="color:#BF4545;font-size:18px;font-weight:bold">{$v.name}</td>
+		                    {elseif condition="substr_count($v['path'],',') == 1" /}
+							<td style="color:green;font-size:16px;font-weight:800">{$v.name}</td>
+							{else /}
+							<td style="font-weight:bold">{$v.name}</td>
+							{/if}
+		                    <input class="pid" type="hidden" value="{$v.id}">
+		                    <input class="path" type="hidden" value="{$v.path}">
+		                    <td style="font-size:16px;text-align: center">
+		                    	<a class="add" href="javascript:return false;">添加</a>
+								<a class="edit" href="javascript:return false;">编辑</a>
+								<a class="delete" href="javascript:return false;">删除</a>
+		                    </td>
+		                </tr>
+		                {/foreach}
+		            </tbody>
+		        </table>
+		    </div>
+		    
+		</div>
+		<div id="none" style="display:none" class="mws-panel grid_4">
+            <div class="mws-panel-header">
+                <span>添加分类</span>
+            </div>
+            <div class="mws-panel-body no-padding">
+                <form class="mws-form" action="/admin/cate/insert" method="post">
+                    <div class="mws-form-inline">
+                        <div class="mws-form-row bordered">
+                            <label class="mws-form-label">pid</label>
+                            <div class="mws-form-item">
+                                <input name="pid" id="pid" readonly type="text" class="large">
+                            </div>
+                        </div>
+                        <div class="mws-form-row bordered">
+                            <label class="mws-form-label">path</label>
+                            <div class="mws-form-item">
+                                <input name="path" id="path" readonly type="text" class="large">
+                            </div>
+                        </div>
+                        <div class="mws-form-row bordered">
+                            <label class="mws-form-label">父分类名</label>
+                            <div class="mws-form-item">
+                                <input id="pname" readonly type="text" class="large">
+                            </div>
+                        </div>
+                        <div class="mws-form-row bordered">
+                            <label class="mws-form-label">分类名称</label>
+                            <div class="mws-form-item">
+                                <input name="name" type="text" class="large">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mws-button-row">
+                        <input type="submit" value="提交" class="btn btn-danger">
+                        <input id="bak" type="button" value="返回" class="btn ">
+                    </div>
+                </form>
+            </div>      
+        </div>
+        <div id="enone" style="display:none" class="mws-panel grid_4">
+            <div class="mws-panel-header">
+                <span>编辑分类</span>
+            </div>
+            <div class="mws-panel-body no-padding">
+                <form class="mws-form" action="/admin/cate/doedit" method="post">
+                    <div class="mws-form-inline">
+                        <div class="mws-form-row bordered">
+                            <label class="mws-form-label">id</label>
+                            <div class="mws-form-item">
+                                <input name="id" id="epid" readonly type="text" class="large">
+                            </div>
+                        </div>
+                        <div class="mws-form-row bordered">
+                            <label class="mws-form-label">选择父分类</label>
+                            <div class="mws-form-item">
+                                <select id="select" class="large" name="pid">
+                                	<option value="0">根分类</option>
+                                	{foreach $list as $k => $v}
+                                    <option value="{$v.id}">{$v.name}</option>
+                                	{/foreach}
+                                </select>
+                            </div>
+                        </div>
+                        <div class="mws-form-row bordered">
+                            <label class="mws-form-label">分类名称</label>
+                            <div class="mws-form-item">
+                                <input id="ename" name="name" type="text" class="large">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mws-button-row">
+                        <input type="submit" value="提交" class="btn btn-danger">
+                        <input id="ebak" type="button" value="返回" class="btn ">
+                    </div>
+                </form>
+            </div>      
+        </div>
+	</div>
+</div>
+<script type="text/javascript">
+	$(function(){
+		//添加
+		$('.add').on('click',function(){
+			var pid = $(this).parent().prev().prev().val();
+			var path = $(this).parent().prev().val();
+			var pname = $(this).parent().prev().prev().prev().html();
+			var num = pname.indexOf('|');
+			pname = pname.slice(num);
+			$('#block').attr('style','display:none');
+			$('#none').attr('style','display:block');
+			$('#pid').val(pid);
+			$('#path').val(path);
+			$('#pname').val(pname);
+			$('#pname').parent().parent().attr('style','display:block');
+		})
+		//返回
+		$('#bak').on('click',function(){
+			$('#block').attr('style','display:block');
+			$('#none').attr('style','display:none');
+		})
+
+		//编辑
+		$('.edit').on('click',function(){
+			var epid = $(this).parent().prev().prev().val();
+			var epath = $(this).parent().prev().val();
+
+			$.ajax({
+			    type: 'POST',
+			    url: '/admin/cate/edit' ,
+			    data: {"id":epid} ,
+			    dataType: 'json',
+			    success:function(data) {    
+			        $('#ename').val(data.name);
+			        
+			        $('#select option').each(function(){
+			        	if($(this).val() == data.pid)
+			        	{
+			        		$(this).attr('selected','selected');
+			        	}
+			        	if($(this).val() == epid)
+			        	{
+			        		$(this).attr('disabled','disabled');
+			        	}
+			        })
+			    },    
+			    error : function() {       
+			        alert("异常！");    
+			    }   
+			});
+
+			$('#block').attr('style','display:none');
+			$('#enone').attr('style','display:block');
+			$('#epid').val(epid);
+			$('#epath').val(epath);
+		})
+		$('#ebak').on('click',function(){
+			$('#block').attr('style','display:block');
+			$('#enone').attr('style','display:none');
+			$('#select option').each(function(){
+	        	$(this).removeAttr('disabled');
+	        })
+		})
+		$('#father').on('click',function(){
+			$('#block').attr('style','display:none');
+			$('#none').attr('style','display:block');
+			$('#pid').val(0);
+			$('#path').val(0);
+			$('#pname').parent().parent().attr('style','display:none');
+		})
+
+		//删除
+		$('.delete').on('click',function(){
+			var id = $(this).parent().prev().prev().prev().prev().html();
+			var obj = $(this).parent().parent();
+			var msg = "您真的确定要删除吗？\n\n请确认！"; 
+			if (confirm(msg)==true)
+			{ 
+				$.ajax({
+				    type: 'POST',
+				    url: '/admin/cate/delete' ,
+				    data: {"id":id} ,
+				    dataType: 'json',
+				    success:function(data) {
+				    	
+				    	if(data.info != '有子分类,无法删除')
+				    	{
+				    		if(data.info == '删除成功')
+					    	{
+					    		obj.remove();
+					    	} 	
+				    	}
+				    	alert(data.info);
+				    },    
+				    error : function() {       
+				        alert("异常！");    
+				    }   
+				});
+			}
+		})
+	})
+</script>
+{include file="footer"}

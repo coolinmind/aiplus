@@ -1,0 +1,52 @@
+{include file="header"}
+<div id="mws-container" class="clearfix">
+	<div class="container">
+		<div class="mws-panel grid_8">
+			<div class="mws-panel-header">
+		    	<span><i class="icon-table"></i> 个人身份认证列表</span>
+		    </div>
+		    <div class="mws-panel-body no-padding">
+                <form class="mws-form" action="form_layouts.html">
+                    {if condition="$Think.session.tis1 eq 1"}
+                        <div class="mws-form-message success">
+                            操作成功 点击消失
+                        </div>
+                    {elseif condition="$Think.session.tis1 eq 2"/}
+                        <div class="mws-form-message error">
+                            操作失败 点击消失
+                        </div>
+                    {/if}
+                </form>
+            </div>
+		    <div class="mws-panel-body no-padding">
+		        <table class="mws-datatable mws-table">
+		            <thead>
+		                <tr>
+		                    <th>Rendering engine</th>
+		                    <th>Browser</th>
+		                    <th>Platform(s)</th>
+		                    <th>Engine version</th>
+		                    <th>CSS grade</th>
+		                </tr>
+		            </thead>
+		            <tbody align='center'>
+		                <tr>
+		                    <td>Trident</td>
+		                    <td>Internet
+		                         Explorer 4.0</td>
+		                    <td>Win 95+</td>
+		                    <td>4</td>
+		                    <td>
+		                    	<span class="btn-group">
+                                    <a href="#" class="btn btn-small"><i class="icon-search"></i></a>
+                                    <a href="#" class="btn btn-small"><i class="icon-pencil"></i></a>
+                                    <a href="#" class="btn btn-small"><i class="icon-trash"></i></a>
+                                </span></td>
+		               		</tr>
+		            </tbody>
+		        </table>
+		    </div>
+		</div>
+	</div>
+</div>
+{include file="footer"}

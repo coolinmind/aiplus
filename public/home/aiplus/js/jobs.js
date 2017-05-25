@@ -1,0 +1,1 @@
+$(document).on("click",".more-toggle",function(){var t=$(this).parent(".top-filter");$title=t.find(".show-title"),$content=t.find(".city-region-wrap"),$(this).hasClass("open")?($(this).removeClass("open"),$title.removeClass("open"),$content.removeClass("open")):($(this).addClass("open"),$title.addClass("open"),$content.addClass("open"))});

@@ -1,0 +1,53 @@
+{include file="header"}
+<div id="mws-container" class="clearfix">
+    <div class="container">
+        <div class="mws-panel grid_8">
+            <div class="mws-panel-header">
+                <span><i class="icon-table"></i>任务类型待审表</span>
+            </div>
+            <div class="mws-panel-body no-padding">
+                <form class="mws-form" action="form_layouts.html">
+                    {if condition="$Think.session.tis eq 1"}
+                        <div class="mws-form-message success">
+                            操作成功 点击消失
+                        </div>
+
+                    {elseif condition="$Think.session.tis eq 2"/}
+                        <div class="mws-form-message error">
+                            操作失败 点击消失
+                        </div>
+                    {/if}
+                </form>
+            </div>
+            <div class="mws-panel-body no-padding">
+                <table class="mws-datatable mws-table">
+                    <thead>
+                        <tr>
+                            <th>ID号：</th>
+                            <th>用户ID：</th>
+                            <th>任务类型名称：</th>
+                            <th>操作：</th> 
+                        </tr>
+                    </thead>
+                    <tbody align="center">
+                        {volist name="res" id="v"}
+                            <tr>
+                                <td>{$v.id}</td>
+                                <td>{$v.uid}</td>
+                                <td>{$v.select}</td>
+                                <td>
+                                    <span class="btn-group">
+                                            <a class="btn btn-small btns1" onclick="return confirm('点击确定会删除掉当前选项并将({$v.select})添加到任务类型表么？');" href="/admin/task_typereview/submit?id={$v.id}">
+                                                <i class="icon-edit"></i>
+                                            </a>
+                                    </span>
+                                </td>
+                            </tr>
+                       {/volist}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+{include file="footer"}

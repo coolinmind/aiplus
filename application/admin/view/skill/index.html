@@ -1,0 +1,52 @@
+{include file="header" /}
+<div id="mws-container" class="clearfix">
+	<div class="container" >
+		<div class="mws-panel ">
+			<div class="mws-panel-header">
+		    	<span><i class="icon-table"></i>技能列表</span>
+		    </div>
+		    <div class="dataTables_wrapper" id="DataTables_Table_0_wrapper" role="grid"> 
+		        <table class="mws-datatable mws-table" >
+		        {if condition="$Think.session.success"}
+		            <div class="mws-form-message success">
+                    	恭喜
+                        <ol>
+                        	<li>{$Think.session.success}</li>
+                        </ol>
+                    </div>
+				{/if}
+		            <thead>
+		                <tr>
+		                	<th>ID：</th>
+		                    <th>用户ID：</th>
+		                    <th>工作地点</th>
+		                    <th>技能类型</th>
+		                    <th>技能名称</th>
+		                    <th>技能分类</th>
+		                    <th>操作：</th>
+		                </tr>
+		            </thead>
+		            <tbody align='center'>
+		            	{volist name="list" id="v"}
+			                <tr>
+			                    <td style=' word-wrap:break-word; word-break:break-all; overflow: hidden;'>{$v.id}</td>
+			                    <td style=' word-wrap:break-word; word-break:break-all; overflow: hidden;'>{$v.uid}</td>
+			                    <td style=' word-wrap:break-word; word-break:break-all; overflow: hidden;'>{$v.address}</td>
+			                    <td style=' word-wrap:break-word; word-break:break-all; overflow: hidden;'>{$v.skill_type}</td>
+			                    <td style=' word-wrap:break-word; word-break:break-all; overflow: hidden;'>{$v.skill_name}</td>
+			                    <td style=' word-wrap:break-word; word-break:break-all; overflow: hidden;'>{$v.skillType}</td>
+			                    <td>
+			                    	<span class="btn-group">
+	                                    <a href="/admin/skill/edit?id={$v.id}" class="btn btn-small"><i class="icon-pencil"></i></a>
+	                                    <a href="/admin/skill/delete?id={$v.id}" onclick="return confirm('确定要删除这个技能么?');" class="btn btn-small"><i class="icon-trash"></i></a>
+	                                </span>
+	                            </td>
+		               		</tr>
+			            {/volist}
+		            </tbody>
+		        </table>
+		    </div>
+		</div>
+	</div>
+</div>
+{include file="footer" /}

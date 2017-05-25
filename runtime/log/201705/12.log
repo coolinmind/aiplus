@@ -1,0 +1,544 @@
+[ 2017-05-12T23:01:14+08:00 ] 121.42.174.228 1.203.80.86 POST //orders/ismessage
+[ log ] dev.happyoneplus.com//orders/ismessage [运行时间：0.082705s][吞吐率：12.09req/s] [内存消耗：2,874.59kb] [文件加载：48]
+[ info ] [ LANG ] /data/wwwroot/dev.happyoneplus.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'orders',
+    2 => 'ismessage',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'charset' => 'UTF-8',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 5.1.1; OPPO A53m Build/LMY47V; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/42.0.2311.138 Mobile Safari/537.36',
+  'connection' => 'Keep-Alive',
+  'accept-encoding' => 'gzip',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'host' => 'dev.happyoneplus.com',
+  'content-length' => '19',
+)
+[ info ] [ PARAM ] array (
+  'id' => '{}',
+  'DataJson' => '',
+)
+[ info ] [ RUN ] app\index\controller\Orders->isMessage[ /data/wwwroot/dev.happyoneplus.com/application/index/controller/Orders.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: id[/data/wwwroot/dev.happyoneplus.com/application/index/controller/Orders.php:1124]
+
+---------------------------------------------------------------
+[ 2017-05-12T23:03:45+08:00 ] 121.42.174.228 1.203.80.86 POST //orders/ismessage
+[ log ] dev.happyoneplus.com//orders/ismessage [运行时间：0.036466s][吞吐率：27.42req/s] [内存消耗：2,874.67kb] [文件加载：48]
+[ info ] [ LANG ] /data/wwwroot/dev.happyoneplus.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'orders',
+    2 => 'ismessage',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'charset' => 'UTF-8',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 5.1.1; OPPO A53m Build/LMY47V; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/42.0.2311.138 Mobile Safari/537.36',
+  'connection' => 'Keep-Alive',
+  'accept-encoding' => 'gzip',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'host' => 'dev.happyoneplus.com',
+  'content-length' => '19',
+)
+[ info ] [ PARAM ] array (
+  'id' => '{}',
+  'DataJson' => '',
+)
+[ info ] [ RUN ] app\index\controller\Orders->isMessage[ /data/wwwroot/dev.happyoneplus.com/application/index/controller/Orders.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: id[/data/wwwroot/dev.happyoneplus.com/application/index/controller/Orders.php:1124]
+
+---------------------------------------------------------------
+[ 2017-05-12T23:03:46+08:00 ] 121.42.174.228 1.203.80.86 POST //visitor/isscan
+[ log ] dev.happyoneplus.com//visitor/isscan [运行时间：0.035106s][吞吐率：28.49req/s] [内存消耗：2,711.98kb] [文件加载：48]
+[ info ] [ LANG ] /data/wwwroot/dev.happyoneplus.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'visitor',
+    2 => 'isscan',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'charset' => 'UTF-8',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 5.1.1; OPPO A53m Build/LMY47V; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/42.0.2311.138 Mobile Safari/537.36',
+  'connection' => 'Keep-Alive',
+  'accept-encoding' => 'gzip',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'host' => 'dev.happyoneplus.com',
+  'content-length' => '19',
+)
+[ info ] [ PARAM ] array (
+  'id' => '{}',
+  'DataJson' => '',
+)
+[ info ] [ RUN ] app\index\controller\Visitor->isScan[ /data/wwwroot/dev.happyoneplus.com/application/index/controller/Visitor.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: id[/data/wwwroot/dev.happyoneplus.com/application/index/controller/Visitor.php:142]
+
+---------------------------------------------------------------
+[ 2017-05-12T23:05:11+08:00 ] 121.42.174.228 1.203.80.86 POST //visitor/isscan
+[ log ] dev.happyoneplus.com//visitor/isscan [运行时间：0.072905s][吞吐率：13.72req/s] [内存消耗：2,711.98kb] [文件加载：48]
+[ info ] [ LANG ] /data/wwwroot/dev.happyoneplus.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'visitor',
+    2 => 'isscan',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'charset' => 'UTF-8',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 5.1.1; OPPO A53m Build/LMY47V; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/42.0.2311.138 Mobile Safari/537.36',
+  'connection' => 'Keep-Alive',
+  'accept-encoding' => 'gzip',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'host' => 'dev.happyoneplus.com',
+  'content-length' => '19',
+)
+[ info ] [ PARAM ] array (
+  'id' => '{}',
+  'DataJson' => '',
+)
+[ info ] [ RUN ] app\index\controller\Visitor->isScan[ /data/wwwroot/dev.happyoneplus.com/application/index/controller/Visitor.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: id[/data/wwwroot/dev.happyoneplus.com/application/index/controller/Visitor.php:142]
+
+---------------------------------------------------------------
+[ 2017-05-12T23:05:11+08:00 ] 121.42.174.228 1.203.80.86 POST //orders/ismessage
+[ log ] dev.happyoneplus.com//orders/ismessage [运行时间：0.081810s][吞吐率：12.22req/s] [内存消耗：2,874.67kb] [文件加载：48]
+[ info ] [ LANG ] /data/wwwroot/dev.happyoneplus.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'orders',
+    2 => 'ismessage',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'charset' => 'UTF-8',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 5.1.1; OPPO A53m Build/LMY47V; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/42.0.2311.138 Mobile Safari/537.36',
+  'connection' => 'Keep-Alive',
+  'accept-encoding' => 'gzip',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'host' => 'dev.happyoneplus.com',
+  'content-length' => '19',
+)
+[ info ] [ PARAM ] array (
+  'id' => '{}',
+  'DataJson' => '',
+)
+[ info ] [ RUN ] app\index\controller\Orders->isMessage[ /data/wwwroot/dev.happyoneplus.com/application/index/controller/Orders.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: id[/data/wwwroot/dev.happyoneplus.com/application/index/controller/Orders.php:1124]
+
+---------------------------------------------------------------
+[ 2017-05-12T23:12:17+08:00 ] 121.42.174.228 1.203.80.86 POST //visitor/isscan
+[ log ] dev.happyoneplus.com//visitor/isscan [运行时间：0.037633s][吞吐率：26.57req/s] [内存消耗：2,711.98kb] [文件加载：48]
+[ info ] [ LANG ] /data/wwwroot/dev.happyoneplus.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'visitor',
+    2 => 'isscan',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'charset' => 'UTF-8',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 5.1.1; OPPO A53m Build/LMY47V; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/42.0.2311.138 Mobile Safari/537.36',
+  'connection' => 'Keep-Alive',
+  'accept-encoding' => 'gzip',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'host' => 'dev.happyoneplus.com',
+  'content-length' => '19',
+)
+[ info ] [ PARAM ] array (
+  'id' => '{}',
+  'DataJson' => '',
+)
+[ info ] [ RUN ] app\index\controller\Visitor->isScan[ /data/wwwroot/dev.happyoneplus.com/application/index/controller/Visitor.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: id[/data/wwwroot/dev.happyoneplus.com/application/index/controller/Visitor.php:142]
+
+---------------------------------------------------------------
+[ 2017-05-12T23:12:53+08:00 ] 121.42.174.228 1.203.80.86 POST //orders/ismessage
+[ log ] dev.happyoneplus.com//orders/ismessage [运行时间：0.039029s][吞吐率：25.62req/s] [内存消耗：2,874.67kb] [文件加载：48]
+[ info ] [ LANG ] /data/wwwroot/dev.happyoneplus.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'orders',
+    2 => 'ismessage',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'charset' => 'UTF-8',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 5.1.1; OPPO A53m Build/LMY47V; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/42.0.2311.138 Mobile Safari/537.36',
+  'connection' => 'Keep-Alive',
+  'accept-encoding' => 'gzip',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'host' => 'dev.happyoneplus.com',
+  'content-length' => '19',
+)
+[ info ] [ PARAM ] array (
+  'id' => '{}',
+  'DataJson' => '',
+)
+[ info ] [ RUN ] app\index\controller\Orders->isMessage[ /data/wwwroot/dev.happyoneplus.com/application/index/controller/Orders.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: id[/data/wwwroot/dev.happyoneplus.com/application/index/controller/Orders.php:1124]
+
+---------------------------------------------------------------
+[ 2017-05-12T23:17:12+08:00 ] 121.42.174.228 1.203.80.86 POST //visitor/isscan
+[ log ] dev.happyoneplus.com//visitor/isscan [运行时间：0.069566s][吞吐率：14.37req/s] [内存消耗：2,711.98kb] [文件加载：48]
+[ info ] [ LANG ] /data/wwwroot/dev.happyoneplus.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'visitor',
+    2 => 'isscan',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'charset' => 'UTF-8',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 5.1.1; OPPO A53m Build/LMY47V; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/42.0.2311.138 Mobile Safari/537.36',
+  'connection' => 'Keep-Alive',
+  'accept-encoding' => 'gzip',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'host' => 'dev.happyoneplus.com',
+  'content-length' => '19',
+)
+[ info ] [ PARAM ] array (
+  'id' => '{}',
+  'DataJson' => '',
+)
+[ info ] [ RUN ] app\index\controller\Visitor->isScan[ /data/wwwroot/dev.happyoneplus.com/application/index/controller/Visitor.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: id[/data/wwwroot/dev.happyoneplus.com/application/index/controller/Visitor.php:142]
+
+---------------------------------------------------------------
+[ 2017-05-12T23:17:12+08:00 ] 121.42.174.228 1.203.80.86 POST //orders/ismessage
+[ log ] dev.happyoneplus.com//orders/ismessage [运行时间：0.067012s][吞吐率：14.92req/s] [内存消耗：2,874.67kb] [文件加载：48]
+[ info ] [ LANG ] /data/wwwroot/dev.happyoneplus.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'orders',
+    2 => 'ismessage',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'charset' => 'UTF-8',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 5.1.1; OPPO A53m Build/LMY47V; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/42.0.2311.138 Mobile Safari/537.36',
+  'connection' => 'Keep-Alive',
+  'accept-encoding' => 'gzip',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'host' => 'dev.happyoneplus.com',
+  'content-length' => '19',
+)
+[ info ] [ PARAM ] array (
+  'id' => '{}',
+  'DataJson' => '',
+)
+[ info ] [ RUN ] app\index\controller\Orders->isMessage[ /data/wwwroot/dev.happyoneplus.com/application/index/controller/Orders.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: id[/data/wwwroot/dev.happyoneplus.com/application/index/controller/Orders.php:1124]
+
+---------------------------------------------------------------
+[ 2017-05-12T23:18:11+08:00 ] 121.42.174.228 1.203.80.86 POST //visitor/isscan
+[ log ] dev.happyoneplus.com//visitor/isscan [运行时间：0.077364s][吞吐率：12.93req/s] [内存消耗：2,711.98kb] [文件加载：48]
+[ info ] [ LANG ] /data/wwwroot/dev.happyoneplus.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'visitor',
+    2 => 'isscan',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'charset' => 'UTF-8',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 5.1.1; OPPO A53m Build/LMY47V; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/42.0.2311.138 Mobile Safari/537.36',
+  'connection' => 'Keep-Alive',
+  'accept-encoding' => 'gzip',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'host' => 'dev.happyoneplus.com',
+  'content-length' => '19',
+)
+[ info ] [ PARAM ] array (
+  'id' => '{}',
+  'DataJson' => '',
+)
+[ info ] [ RUN ] app\index\controller\Visitor->isScan[ /data/wwwroot/dev.happyoneplus.com/application/index/controller/Visitor.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: id[/data/wwwroot/dev.happyoneplus.com/application/index/controller/Visitor.php:142]
+
+---------------------------------------------------------------
+[ 2017-05-12T23:18:11+08:00 ] 121.42.174.228 1.203.80.86 POST //orders/ismessage
+[ log ] dev.happyoneplus.com//orders/ismessage [运行时间：0.077050s][吞吐率：12.98req/s] [内存消耗：2,874.67kb] [文件加载：48]
+[ info ] [ LANG ] /data/wwwroot/dev.happyoneplus.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'orders',
+    2 => 'ismessage',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'charset' => 'UTF-8',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 5.1.1; OPPO A53m Build/LMY47V; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/42.0.2311.138 Mobile Safari/537.36',
+  'connection' => 'Keep-Alive',
+  'accept-encoding' => 'gzip',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'host' => 'dev.happyoneplus.com',
+  'content-length' => '19',
+)
+[ info ] [ PARAM ] array (
+  'id' => '{}',
+  'DataJson' => '',
+)
+[ info ] [ RUN ] app\index\controller\Orders->isMessage[ /data/wwwroot/dev.happyoneplus.com/application/index/controller/Orders.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: id[/data/wwwroot/dev.happyoneplus.com/application/index/controller/Orders.php:1124]
+
+---------------------------------------------------------------
+[ 2017-05-12T23:31:16+08:00 ] 121.42.174.228 1.203.80.234 POST //visitor/isscan
+[ log ] dev.happyoneplus.com//visitor/isscan [运行时间：0.055839s][吞吐率：17.91req/s] [内存消耗：2,711.98kb] [文件加载：48]
+[ info ] [ LANG ] /data/wwwroot/dev.happyoneplus.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'visitor',
+    2 => 'isscan',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'charset' => 'UTF-8',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 5.1.1; OPPO A53m Build/LMY47V; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/42.0.2311.138 Mobile Safari/537.36',
+  'connection' => 'Keep-Alive',
+  'accept-encoding' => 'gzip',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'host' => 'dev.happyoneplus.com',
+  'content-length' => '19',
+)
+[ info ] [ PARAM ] array (
+  'id' => '{}',
+  'DataJson' => '',
+)
+[ info ] [ RUN ] app\index\controller\Visitor->isScan[ /data/wwwroot/dev.happyoneplus.com/application/index/controller/Visitor.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: id[/data/wwwroot/dev.happyoneplus.com/application/index/controller/Visitor.php:142]
+
+---------------------------------------------------------------
+[ 2017-05-12T23:31:16+08:00 ] 121.42.174.228 1.203.80.234 POST //orders/ismessage
+[ log ] dev.happyoneplus.com//orders/ismessage [运行时间：0.052913s][吞吐率：18.90req/s] [内存消耗：2,874.76kb] [文件加载：48]
+[ info ] [ LANG ] /data/wwwroot/dev.happyoneplus.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'orders',
+    2 => 'ismessage',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'charset' => 'UTF-8',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 5.1.1; OPPO A53m Build/LMY47V; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/42.0.2311.138 Mobile Safari/537.36',
+  'connection' => 'Keep-Alive',
+  'accept-encoding' => 'gzip',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'host' => 'dev.happyoneplus.com',
+  'content-length' => '19',
+)
+[ info ] [ PARAM ] array (
+  'id' => '{}',
+  'DataJson' => '',
+)
+[ info ] [ RUN ] app\index\controller\Orders->isMessage[ /data/wwwroot/dev.happyoneplus.com/application/index/controller/Orders.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: id[/data/wwwroot/dev.happyoneplus.com/application/index/controller/Orders.php:1124]
+
+---------------------------------------------------------------
+[ 2017-05-12T23:49:08+08:00 ] 121.42.174.228 222.35.18.4 POST //visitor/isscan
+[ log ] dev.happyoneplus.com//visitor/isscan [运行时间：0.036468s][吞吐率：27.42req/s] [内存消耗：2,711.98kb] [文件加载：48]
+[ info ] [ LANG ] /data/wwwroot/dev.happyoneplus.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'visitor',
+    2 => 'isscan',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'charset' => 'UTF-8',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 5.1.1; OPPO A53m Build/LMY47V; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/42.0.2311.138 Mobile Safari/537.36',
+  'connection' => 'Keep-Alive',
+  'accept-encoding' => 'gzip',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'host' => 'dev.happyoneplus.com',
+  'content-length' => '19',
+)
+[ info ] [ PARAM ] array (
+  'id' => '{}',
+  'DataJson' => '',
+)
+[ info ] [ RUN ] app\index\controller\Visitor->isScan[ /data/wwwroot/dev.happyoneplus.com/application/index/controller/Visitor.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: id[/data/wwwroot/dev.happyoneplus.com/application/index/controller/Visitor.php:142]
+
+---------------------------------------------------------------
+[ 2017-05-12T23:49:08+08:00 ] 121.42.174.228 222.35.18.4 POST //orders/ismessage
+[ log ] dev.happyoneplus.com//orders/ismessage [运行时间：0.037088s][吞吐率：26.96req/s] [内存消耗：2,874.67kb] [文件加载：48]
+[ info ] [ LANG ] /data/wwwroot/dev.happyoneplus.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'orders',
+    2 => 'ismessage',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'charset' => 'UTF-8',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 5.1.1; OPPO A53m Build/LMY47V; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/42.0.2311.138 Mobile Safari/537.36',
+  'connection' => 'Keep-Alive',
+  'accept-encoding' => 'gzip',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'host' => 'dev.happyoneplus.com',
+  'content-length' => '19',
+)
+[ info ] [ PARAM ] array (
+  'id' => '{}',
+  'DataJson' => '',
+)
+[ info ] [ RUN ] app\index\controller\Orders->isMessage[ /data/wwwroot/dev.happyoneplus.com/application/index/controller/Orders.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: id[/data/wwwroot/dev.happyoneplus.com/application/index/controller/Orders.php:1124]
+
+---------------------------------------------------------------
+[ 2017-05-12T23:49:55+08:00 ] 121.42.174.228 222.35.18.4 POST //visitor/isscan
+[ log ] dev.happyoneplus.com//visitor/isscan [运行时间：0.067839s][吞吐率：14.74req/s] [内存消耗：2,711.98kb] [文件加载：48]
+[ info ] [ LANG ] /data/wwwroot/dev.happyoneplus.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'visitor',
+    2 => 'isscan',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'charset' => 'UTF-8',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 5.1.1; OPPO A53m Build/LMY47V; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/42.0.2311.138 Mobile Safari/537.36',
+  'connection' => 'Keep-Alive',
+  'accept-encoding' => 'gzip',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'host' => 'dev.happyoneplus.com',
+  'content-length' => '19',
+)
+[ info ] [ PARAM ] array (
+  'id' => '{}',
+  'DataJson' => '',
+)
+[ info ] [ RUN ] app\index\controller\Visitor->isScan[ /data/wwwroot/dev.happyoneplus.com/application/index/controller/Visitor.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: id[/data/wwwroot/dev.happyoneplus.com/application/index/controller/Visitor.php:142]
+
+---------------------------------------------------------------
+[ 2017-05-12T23:49:55+08:00 ] 121.42.174.228 222.35.18.4 POST //orders/ismessage
+[ log ] dev.happyoneplus.com//orders/ismessage [运行时间：0.076097s][吞吐率：13.14req/s] [内存消耗：2,874.67kb] [文件加载：48]
+[ info ] [ LANG ] /data/wwwroot/dev.happyoneplus.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'orders',
+    2 => 'ismessage',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'charset' => 'UTF-8',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 5.1.1; OPPO A53m Build/LMY47V; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/42.0.2311.138 Mobile Safari/537.36',
+  'connection' => 'Keep-Alive',
+  'accept-encoding' => 'gzip',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'host' => 'dev.happyoneplus.com',
+  'content-length' => '19',
+)
+[ info ] [ PARAM ] array (
+  'id' => '{}',
+  'DataJson' => '',
+)
+[ info ] [ RUN ] app\index\controller\Orders->isMessage[ /data/wwwroot/dev.happyoneplus.com/application/index/controller/Orders.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: id[/data/wwwroot/dev.happyoneplus.com/application/index/controller/Orders.php:1124]
+
+---------------------------------------------------------------

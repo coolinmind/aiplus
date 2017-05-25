@@ -1,0 +1,61 @@
+{include file="header" /}
+<!-- Main Container Start -->
+<div id="mws-container" class="clearfix">
+
+    <!-- Inner Container Start -->
+    <div class="container">
+        <div class="mws-panel grid_4">
+        <div class="mws-panel-header">
+            <span><i class="icon-comments"></i>密码修改</span>
+        </div>
+        <div class="mws-panel-body no-padding">
+            {if condition="$Think.session.tishi eq 1"}
+                <div class="mws-form-message success">
+                    操作成功 点击消失
+                </div>
+
+            {elseif condition="$Think.session.tishi eq 2"/}
+                <div class="mws-form-message error">
+                    操作失败 点击消失
+                </div>
+            {/if}
+            <form class="mws-form" action="/admin/adminupdates" method="post">
+                <div class="mws-form-inline">
+                    <div class="mws-form-row bordered">
+                        <label class="mws-form-label">用户名：</label>
+                        <div class="mws-form-item">
+                            <span>{$res[0]['name']}</span>
+                        </div>
+                    </div>
+                    <div class="mws-form-row bordered">
+                        <label class="mws-form-label">密码：</label>
+                        <div class="mws-form-item">
+                            <input type="password" class="large" name='password' value="******">
+                        </div>
+                    </div>
+                   <div class="mws-form-row bordered">
+                        <label class="mws-form-label">角色：</label>
+                        <div class="mws-form-item">
+                            <select class="large" name='rid'>
+                                {volist name="row" id="v"}
+                                    {if condition="$v.id eq $id"}
+                                        <option value="{$v.id}" selected="selected" >{$v.names}</option>
+                                    {else/}
+                                        <option value="{$v.id}"  >{$v.names}</option>
+
+                                    {/if}
+
+                                {/volist}
+                            </select> 
+                        </div>
+                    </div>
+                <div class="mws-button-row">
+                    <input type="hidden" name='id' value="{$res[0]['id']}">
+                    <input type="submit" value="提交" class="btn btn-danger">
+                </div>
+            </form>
+        </div>
+</div>
+</div>
+
+{include file="footer" /}

@@ -1,0 +1,66 @@
+{include file="header"}
+<div id="mws-container" class="clearfix">
+	<div class="container">
+		<div class="mws-panel grid_8">
+			<div class="mws-panel-header">
+		    	<span><i class="icon-table"></i> 个人身份认证列表</span>
+		    </div>
+		    <div class="mws-panel-body no-padding">
+                <form class="mws-form" action="form_layouts.html">
+                    {if condition="$Think.session.tis1 eq 1"}
+                        <div class="mws-form-message success">
+                            操作成功 点击消失
+                        </div>
+                    {elseif condition="$Think.session.tis1 eq 2"/}
+                        <div class="mws-form-message error">
+                            操作失败 点击消失
+                        </div>
+                    {/if}
+                </form>
+            </div>
+		    <div class="mws-panel-body no-padding">
+		        <table class="mws-datatable mws-table">
+		            <thead>
+		                <tr>
+		                    <th>身份认证信息ID：</th>
+		                    <th>用户ID：</th>
+		                    <th>认证姓名：</th>
+		                    <th>身份证号码：</th>
+		                    <th>认证照片正面：</th>
+		                    <th>认证照片反面：</th>
+		                    <th>审核状态：</th>
+		                    <th>备注信息：</th>
+		                    <th>操作：</th>
+		                </tr>
+		            </thead>
+		            <tbody align='center'>
+		                {volist name="list" id="v"}
+		                	<tr>
+			                    <td style="word-break:break-all">{$v.id}</td>
+			                    <td style="word-break:break-all">{$v.uid}</td>
+			                    <td>{$v.name}</td>
+			                    <td>{$v.id_number}</td>
+			                    <td style="word-break:break-all"><img src="{$v.up_photo}" alt="" width="100px"></td>
+			                    <td style="word-break:break-all"><img src="{$v.back_photo}" alt="" width="100px"></td>
+			                    {if condition="$v.status eq 0"}
+			                    	<td style="word-break:break-all">审核中</td>
+			                    {elseif condition="$v.status eq 1"}
+			                    	<td style="word-break:break-all">审核完成</td>
+			                    {/if}
+			                    <td style="word-break:break-all">{$v.remarks}</td>
+			                    <td>
+			                    	<span class="btn-group">
+	                                    <a href="/admin/authentication/edit?id={$v.id}" class="btn btn-small">
+	                                    	<i class="icon-pencil"></i>
+	                                    </a>
+	                                </span>
+	                            </td>
+		               		</tr>
+		               	{/volist}
+		            </tbody>
+		        </table>
+		    </div>
+		</div>
+	</div>
+</div>
+{include file="footer"}

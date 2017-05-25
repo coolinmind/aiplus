@@ -1,0 +1,83 @@
+{include file="header"}
+<div id="mws-container" class="clearfix">
+    <div class="container">
+        <div class="mws-panel grid_4">
+            <div class="mws-panel-header">
+                <span>卡号状态管理</span>
+            </div>
+            <div class="mws-panel-body no-padding">
+                <form class="mws-form" action="/admin/accounts/update" method="post">
+                    <div class="mws-form-inline">
+                       <div class="mws-form-row bordered">
+                            <label class="mws-form-label">I D 号：</label>
+                            <div class="mws-form-item">
+                                <span>{$res.id}</span>
+                            </div>
+                        </div>
+                        <div class="mws-form-row bordered">
+                            <label class="mws-form-label">用户ID：</label>
+                            <div class="mws-form-item">
+                                <span>{$res.uid}</span>
+                            </div>
+                        </div>
+                        <div class="mws-form-row bordered">
+                            <label class="mws-form-label">钱包ID：</label>
+                            <div class="mws-form-item">
+                                <span>{$res.wallet_id}</span>
+                            </div>
+                        </div>
+                        <div class="mws-form-row bordered">
+                            <label class="mws-form-label">账号类型：</label>
+                            <div class="mws-form-item">
+                                <span>{$res.type}</span>
+                            </div>
+                        </div>
+                        <div class="mws-form-row bordered">
+                            <label class="mws-form-label">账号机构：</label>
+                            <div class="mws-form-item">
+                                <span>{$res.institution}</span>
+                            </div>
+                        </div>
+                        <div class="mws-form-row bordered">
+                            <label class="mws-form-label">账号名称：</label>
+                            <div class="mws-form-item">
+                                <span>{$res.name}</span>
+                            </div>
+                        </div>
+                        <div class="mws-form-row bordered">
+                            <label class="mws-form-label">收款账号：</label>
+                            <div class="mws-form-item">
+                                <span>{$res.num}</span>
+                            </div>
+                        </div>
+                        <div class="mws-form-row bordered">
+                            <label class="mws-form-label">提现金额：</label>
+                            <div class="mws-form-item">
+                                <input type="text" name='account' value="{$res.account}" class="large">
+                            </div>
+                        </div>
+                        <div class="mws-form-row bordered">
+                            <label class="mws-form-label">经验技能：</label>
+                            <div class="mws-form-item">
+                                <select name="is_delete" id="" class="large">
+                                    {if condition="$res.is_delete eq 0"}
+                                        <option value="0">正常</option>
+                                        <option value="1">已删除</option>
+                                    {elseif condition="$res.is_delete eq 1"}
+                                        <option value="1">已删除</option>
+                                        <option value="0">正常</option>
+                                    {/if}
+                                </select>
+                            </div>
+                        </div>
+                        <div class="mws-button-row">
+                            <input type="hidden" value="{$res.id}" name="id">
+                            <input type="submit" value="提交" class="btn btn-danger">
+                        </div>
+                    </div>
+                </form>
+            </div>      
+        </div>
+    </div>
+</div>
+{include file="footer"}

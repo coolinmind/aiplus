@@ -1,0 +1,86 @@
+{include file="header"}
+<div id="mws-container" class="clearfix">
+    <div class="container">
+        <div class="mws-panel grid_4">
+            <div class="mws-panel-header">
+                <span>创建订单</span>
+            </div>
+            <div class="mws-panel-body no-padding">
+                <div class="mws-form" >
+                    <form class="mws-form-inline" action="/admin/orders/insert" method="post">
+                         <fieldset class="wizard-step mws-form-inline" >
+                            <div class="mws-form-row">
+                                <label class="mws-form-label">雇主ID：</label>
+                                <div class="mws-form-item">
+                                    <input type="text" value="" class="required large" name='employ_id' id='employ_id'>
+                                </div>
+                            </div>
+                            <div class="mws-form-row">
+                                <label class="mws-form-label">能人ID：</label>
+                                <div class="mws-form-item">
+                                    <input type="text" value="" class="required large" name='worker_id' id='worker_id'>
+                                </div>
+                            </div>
+                            <div class="mws-form-row">
+                                <label class="mws-form-label">订单标题：</label>
+                                <div class="mws-form-item">
+                                    <input type="text" value="" class="required large"  name='title' id='title'>
+                                </div>
+                            </div>
+                            <div class="mws-form-row">
+                                <label class="mws-form-label">订单价格：</label>
+                                <div class="mws-form-item">
+                                    <input type="text" value="" class="required large"  name='order_price' id='order_price'>
+                                </div>
+                            </div>
+                            <div class="mws-form-row">
+                                <label class="mws-form-label">任务ID：</label>
+                                <div class="mws-form-item">
+                                    <input type="text" value="" class="required large" name='task_id' id='task_id'>
+                                </div>
+                            </div>
+                            <div class="mws-form-row">
+                                <label class="mws-form-label">技能ID：</label>
+                                <div class="mws-form-item">
+                                    <input type="text" value="" class="required large" name='skill_id' id='skill_id'>
+                                </div>
+                            </div>
+                            <div class="mws-button-row">
+                                <input type="submit" value="提交" class="btn btn-danger" id='sub'>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>      
+        </div>
+    </div>
+</div>
+<script src="js/libs/jquery-1.8.3.min.js"></script>
+<script src="js/libs/jquery.mousewheel.min.js"></script>
+<script src="js/libs/jquery.placeholder.min.js"></script>
+<script src="custom-plugins/fileinput.js"></script>
+
+<!-- jQuery-UI Dependent Scripts -->
+<script src="jui/js/jquery-ui-1.9.2.min.js"></script>
+<script src="jui/jquery-ui.custom.min.js"></script>
+<script src="jui/js/jquery.ui.touch-punch.js"></script>
+
+<!-- Plugin Scripts -->
+<script src="plugins/colorpicker/colorpicker-min.js"></script>
+<script src="plugins/validate/jquery.validate-min.js"></script>
+
+<!-- Wizard Plugin -->
+<script src="custom-plugins/wizard/wizard.min.js"></script>
+<script src="custom-plugins/wizard/jquery.form.min.js"></script>
+
+<!-- Core Script -->
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="js/core/mws.js"></script>
+
+<!-- Themer Script (Remove if not needed) -->
+<script src="js/core/themer.js"></script>
+
+<!-- Demo Scripts (remove if not needed) -->
+<script src="js/demo/demo.wizard.js"></script>
+{include file="footer"}
+

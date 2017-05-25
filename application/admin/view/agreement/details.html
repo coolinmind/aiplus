@@ -1,0 +1,127 @@
+{include file="header" /}
+<div id="mws-container" class="clearfix">
+<div class="container">
+<div class="mws-panel grid_8">
+	<div class="mws-panel-header">
+    	<span>合同详情</span>
+    </div>
+    <div class="mws-panel-body no-padding">
+    	<form class="mws-form" action="/admin/agreement/details" method="post">
+    		<input type="hidden" name="id" value="{$data.id}">
+            <div class="mws-form-row">
+            	<div class="mws-form-cols">
+                    <div class="mws-form-col-1-8">
+                        <label class="mws-form-label">合同标题</label>
+                        <div class="mws-form-item">
+                            <input type="text" name="title" value="{$data.title}">
+                        </div>
+                    </div>
+                    <div class="mws-form-col-1-8">
+                        <label class="mws-form-label">甲方姓名</label>
+                        <div class="mws-form-item">
+                            <input name="first_party" type="text" value="{$data.first_party}">
+                        </div>
+                    </div>
+                    <div class="mws-form-col-1-8">
+                        <label class="mws-form-label">乙方姓名</label>
+                        <div class="mws-form-item">
+                            <input name="second_party" type="text" value="{$data.second_party}">
+                        </div>
+                    </div>
+                    <div class="mws-form-col-1-8">
+                        <label class="mws-form-label">任务类型</label>
+                        <div class="mws-form-item">
+                            <input name="mission_type" type="text" value="{$data.mission_type}">
+                        </div>
+                    </div>
+                    <div class="mws-form-col-1-8">
+                        <label class="mws-form-label">工作地点</label>
+                        <div class="mws-form-item">
+                            <input name="address" type="text" value="{$data.address}">
+                        </div>
+                    </div>
+                    <div class="mws-form-col-1-8">
+                        <label class="mws-form-label">甲方身份证号</label>
+                        <div class="mws-form-item">
+                            <input name="first_idnumber" type="text" value="{$data.first_idnumber}">
+                        </div>
+                    </div>
+                    <div class="mws-form-col-1-8">
+                        <label class="mws-form-label">乙方身份证号</label>
+                        <div class="mws-form-item">
+                            <input name="second_idnumber" type="text" value="{$data.second_idnumber}">
+                        </div>
+                    </div>
+                    <div class="mws-form-col-1-8">
+                        <label class="mws-form-label">合同时间</label>
+                        <div class="mws-form-item">
+                            <input name="add_time" type="text" disabled value="{$data.add_time}">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mws-form-row">
+                <div class="mws-form-cols">
+                    <div class="mws-form-col-1-8">
+                        <label class="mws-form-label">开始时间</label>
+                        <div class="mws-form-item">
+                            <input name="begin_time" type="text" value="{$data.begin_time}">
+                        </div>
+                    </div>
+                    <div class="mws-form-col-1-8">
+                        <label class="mws-form-label">结束时间</label>
+                        <div class="mws-form-item">
+                            <input name="end_time" type="text" value="{$data.end_time}">
+                        </div>
+                    </div>
+                    <div class="mws-form-col-1-8">
+                        <label class="mws-form-label">合同价格</label>
+                        <div class="mws-form-item">
+                            <input name="agreement_price" type="text" value="{$data.agreement_price}元">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mws-form-row">
+                <div class="mws-form-cols">
+                    <div class="mws-form-col-4-8">
+                        <label class="mws-form-label">甲方签名</label>
+                        <div class="mws-form-item">
+                            {if condition="$data.first_signature"}
+							<img src="{$data.first_signature}">
+							{else /}
+
+							{/if}
+                        </div>
+                    </div>
+                    <div class="mws-form-col-4-8">
+                        <label class="mws-form-label">乙方签名</label>
+                        <div class="mws-form-item">
+                        	{if condition="$data.second_signature"}
+							<img src="{$data.second_signature}">
+							{else /}
+
+							{/if}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+    		<div class="mws-button-row">
+    			<input type="submit" value="提交" class="btn btn-danger">
+    			<input type="reset" value="重置" class="btn ">
+    			<input id="button" type="button" value="返回" class="btn ">
+    		</div>
+        </form>
+    </div>
+</div>
+</div>
+</div>
+<script>
+	$(function(){
+		$("#button").on('click',function(){
+			window.location.href = '/admin/agreement/index';
+		})
+	})
+</script>
+{include file="footer" /}

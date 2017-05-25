@@ -1,0 +1,64 @@
+{include file="header" /}
+
+        <!-- Main Container Start -->
+        <div id="mws-container" class="clearfix">
+        
+        	<!-- Inner Container Start -->
+            <div class="container">
+
+                <div class="mws-panel grid_8 mws-collapsible">
+                	<div class="mws-panel-header">
+                    	<span><i class="icon-table"></i>用户列表</span>
+                    </div>
+                    <div class="mws-panel-body no-padding">
+                        <form class="mws-form" action="form_layouts.html">
+                            {if condition="$Think.session.tishi eq 1"}
+                                <div class="mws-form-message success">
+                                    操作成功 点击消失
+                                </div>
+
+                            {elseif condition="$Think.session.tishi eq 2"/}
+                                <div class="mws-form-message error">
+                                    操作失败 点击消失
+                                </div>
+                            {/if}
+                        </form>
+                    </div>
+                    <div class="mws-panel-body no-padding">
+                        <table class="mws-table mws-datatable" >
+                            <thead>
+                                <tr>
+                                    <th>I D号：</th>
+                                    <th>用户名：</th>
+                                    <th>邮箱号：</th>
+                                    <th>封禁状态：</th>
+                                    <th>封禁时间：</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody align='center'>
+                               {volist name="list" id="v"}
+                                    <tr>
+                                        <td>{$v.id}</td>
+                                        <td>{$v.username}</td>
+                                        <td>{$v.email}</td>
+                                        {eq name="$v.delstatus" value="1"}
+                                            <td>正常</td>
+                                        {else/}
+                                            <td><span class="badge badge-warning">被封</span></td>
+                                        {/eq}
+                                        <td><span class="badge badge-warning">{$v.deltime}</span></td>
+                                        <td>
+                                            <span class="btn-group">
+                                                <a href="/admin/userlist/userinfo?id={$v.id}" class="btn btn-small"><i class="icon-pencil"></i></a>
+                                                <a href="/admin/sealuser?username={$v.username}" onclick="return confirm('确定封掉{$v.username}用户么?');" class="btn btn-small"><i class="icon-trash"></i></a>
+                                            </span>
+                                        </td>
+                                    </tr>
+                                {/volist}
+                            </tbody>
+                        </table>
+                    </div>
+                </div> 
+                    
+{include file="footer" /}

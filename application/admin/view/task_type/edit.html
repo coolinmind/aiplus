@@ -1,0 +1,33 @@
+{include file="header"}
+<div id="mws-container" class="clearfix">
+    <div class="container">
+        <div class="mws-panel grid_4">
+            <div class="mws-panel-header">
+                <span>修改任务类型</span>
+            </div>
+            <div class="mws-panel-body no-padding">
+                <form class="mws-form" action="/admin/task_type/update" method="post">
+                    <div class="mws-form-inline">
+                       <div class="mws-form-row bordered">
+                            <label class="mws-form-label">I D 号：</label>
+                            <div class="mws-form-item">
+                                <span>{$data.id}</span>
+                            </div>
+                        </div>
+                        <div class="mws-form-row bordered">
+                            <label class="mws-form-label">任务类型名称：</label>
+                            <div class="mws-form-item">
+                                <input type="text" class="large" value="{$data.select}" name='select'>
+                            </div>
+                        </div>
+                        <div class="mws-button-row">
+                            <input type="hidden" value="{$data.id}" name="id">
+                            <input type="submit" value="提交" class="btn btn-danger">
+                        </div>
+                    </div>
+                </form>
+            </div>      
+        </div>
+    </div>
+</div>
+{include file="footer"}

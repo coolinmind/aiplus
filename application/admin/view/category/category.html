@@ -1,0 +1,55 @@
+{include file="header"}
+<div id="mws-container" class="clearfix">
+    <div class="container">
+        <div class="mws-panel grid_8">
+            <div class="mws-panel-header">
+                <span><i class="icon-table"></i>技能类型列表</span>
+            </div>
+            <div class="mws-panel-body no-padding">
+                <form class="mws-form" action="form_layouts.html">
+                    {if condition="$Think.session.tis eq 1"}
+                        <div class="mws-form-message success">
+                            操作成功 点击消失
+                        </div>
+
+                    {elseif condition="$Think.session.tis eq 2"/}
+                        <div class="mws-form-message error">
+                            操作失败 点击消失
+                        </div>
+                    {/if}
+                </form>
+            </div>
+            <div class="mws-panel-body no-padding">
+                <table class="mws-datatable mws-table">
+                    <thead>
+                        <tr>
+                            <th>ID号：</th>
+                            <th>通用技能：</th>
+                            <th>经验技能：</th>
+                            <th>证书技能：</th> 
+                            <th>操作：</th> 
+                        </tr>
+                    </thead>
+                    <tbody align="center">
+                        {volist name="list" id="v"}
+                            <tr>
+                                <td style='width:100px'>{$v.id}</td>
+                                <td style='width:260px'>{$v.general}</td>
+                                <td style='width:260px'>{$v.experience}</td>
+                                <td style='width:260px'>{$v.certificate}</td>
+                                <td>
+                                    <span class="btn-group">
+                                            <a class="btn btn-small btns1" href="/admin/category/edit?id={$v.id}">
+                                                <i class="icon-pencil"></i>
+                                            </a>
+                                    </span>
+                                </td>
+                            </tr>
+                       {/volist}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+{include file="footer"}

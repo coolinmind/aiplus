@@ -1,0 +1,74 @@
+{include file="header" /}
+
+<div id="mws-container" class="clearfix">
+    <div class="container">
+    	<div class="mws-panel grid_7" style='margin-left: 80px'>
+	    	<div class="mws-panel-header">
+	        	<span><i class="icon-table"></i>编辑</span>
+	        </div>
+	        <div class="mws-panel-body no-padding">
+	            <table class="mws-table">
+	                <thead>
+	                    <tr>
+	                        <th>二级菜单名称</th>
+	                        <th>控制器路径</th>
+	                        <th>是否显示</th>
+	                    </tr>
+	                </thead>
+	                <form class="mws-form" method="post" action="/admin/menu/setedit">
+		                <tbody align='center'>
+		                	{volist name="list" id="v"}
+			                    <tr>
+			                        <td>
+										<div class="mws-form-col-1-8">
+					                        <label class="mws-form-label"></label>
+					                        <div class="mws-form-item">
+					                        	<input type="hidden" name='data[{$v.id}][id]' value='{$v.id}'>
+					                            <input type="text" name='data[{$v.id}][menu_name]' value='{$v.menu_name}'>
+					                        </div>
+					                    </div>
+			                        </td>
+			                        <td>
+				                        <div class="mws-form-col-1-8">
+					                        <label class="mws-form-label"></label>
+					                        <div class="mws-form-item">
+					                            <input type="text" name='data[{$v.id}][menu_path]' value='{$v.menu_path}'>
+					                        </div>
+					                    </div>
+					                </td>
+			                        <td>
+										<div class="mws-form-col-1-8">
+					                        <label class="mws-form-label"></label>
+					                        <div class="mws-form-item">
+					                            <select class="large" name='data[{$v.id}][is_show]'>
+					                            	{if condition="$v.is_show eq 1"}
+		                                                <option value='1'>显示</option>
+		                                                <option value="0">隐藏</option>
+		                                            {else/}
+		                                                <option value="0">隐藏</option>
+		                                           		<option value='1'>显示</option>
+													{/if}
+	                                       		</select>
+					                        </div>
+					                    </div>
+			                        </td>
+			                    </tr>
+							{/volist}
+		                    <tr>
+								<td colspan="3">
+									<div class="mws-button-row">
+
+						    			<input type="submit" value="保存" class="btn btn-danger">　　　　　　
+						    			<input type="reset" value="重置" class="btn ">
+						    		</div>
+		    					</td>
+		                    </tr>
+		                </tbody>
+	                </form>
+	            </table>
+	        </div>
+	    </div>
+	</div>
+</div>
+
+{include file="footer" /}

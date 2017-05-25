@@ -1,0 +1,62 @@
+{include file="header" /}
+<div id="mws-container" class="clearfix">
+<div class="container">
+   <div class="mws-panel grid_8 mws-collapsible">
+    	<div class="mws-panel-header">
+        	<span><i class="icon-table"></i> 合同列表</span>
+        <div class="mws-collapse-button mws-inset">
+        <span></span>
+        </div>
+        </div>
+        <div class="mws-panel-inner-wrap">
+        <div class="mws-panel-body no-padding">
+            <div id="DataTables_Table_0_wrapper" class="dataTables_wrapper" role="grid">
+            <div id="DataTables_Table_0_length" class="dataTables_length"></div>
+            <table class="mws-table mws-datatable dataTable" id="DataTables_Table_0" aria-describedby="DataTables_Table_0_info">
+                <thead>
+                    <tr role="row">
+                    <th class="sorting_asc" role="columnheader" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Rendering engine: activate to sort column descending" style="width: 125px;">合同ID
+                    </th>
+                    <th class="sorting" role="columnheader" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="Browser: activate to sort column ascending" style="width: 172px;">合同名称
+                    </th>
+                    <th class="sorting" role="columnheader" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="Platform(s): activate to sort column ascending" style="width: 159px;">合同编号
+                    </th>
+                    <th class="sorting" role="columnheader" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="Engine version: activate to sort column ascending" style="width: 105px;">发起时间
+                    </th>
+                    <th class="sorting" role="columnheader" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="CSS grade: activate to sort column ascending" style="width: 75px;">甲方姓名
+                    </th>
+                    <th class="sorting" role="columnheader" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="CSS grade: activate to sort column ascending" style="width: 75px;">乙方姓名
+                    </th>
+                    <th class="sorting_disabled" role="columnheader" rowspan="1" colspan="1" aria-label="" style="width: 126px;">
+                    操作
+                    </th>
+                    </tr>
+                </thead>
+                
+            <tbody role="alert" aria-live="polite" aria-relevant="all">
+            {foreach name="data" item="vo"}
+            <tr class="odd">
+                <td class="  sorting_1">{$vo.id}</td>
+                <td class=" ">{$vo.title}</td>
+                <td class=" ">{$vo.num}</td>
+                <td class=" ">{$vo.add_time}</td>
+                <td class=" ">{$vo.first_party}</td>
+                <td class=" ">{$vo.second_party}</td>
+                <td class=" ">
+                    <span class="btn-group">
+                        <a href="/admin/agreement/details?id={$vo.id}" class="btn btn-small"><i class="icon-search"></i></a>
+                        <a href="/admin/agreement/details/id/{$vo.id}" class="btn btn-small"><i class="icon-pencil"></i></a>
+                        <a href="/admin/agreement/details/id/{$vo.id}" class="btn btn-small"><i class="icon-trash"></i></a>
+                    </span>
+                </td>
+            </tr>
+			{/foreach}
+            </tbody>
+            </table>
+            </div>
+        </div>
+        </div>
+    </div>
+</div>
+</div>
+{include file="footer" /}

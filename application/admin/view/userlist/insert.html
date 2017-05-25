@@ -1,0 +1,111 @@
+{include file="header" /}
+<div id="mws-container" class="clearfix">
+        
+	<!-- Inner Container Start -->
+    <div class="container">
+        <!-- Panels Start -->
+        
+    	<div class="mws-panel grid_8">
+        	<div class="mws-panel-header">
+            	<span><i class="icon-table"></i> 用户添加</span>
+            </div>
+            <div class="mws-panel-body no-padding">
+            	<form id="form" action="/admin/userlist/insert" method="post" enctype="multipart/form-data">
+            		{if condition="$Think.session.info"}
+	            		<div class="mws-form-message error">
+	                    	添加失败
+	                        <ul>
+	                        	{volist name="$Think.session.info" id="vo"}
+								<li>{$vo}</li>
+								{/volist}
+	                        </ul>
+	                    </div>
+					{/if}
+	                <table class="mws-table">
+	                    <thead>
+	                        <tr>
+	                            <th>手机号</th>
+	                            <th>邮箱</th>
+	                            <th>昵称</th>
+	                            <th>头像</th>
+	                            <th>性别</th>
+	                            <th id="th"><i class="icol-add"></i></th>
+	                        </tr>
+	                    </thead>
+	                    <tbody id="tbody" align="center">
+	                    	{if condition="$Think.session.str"}
+	                    	{$Think.session.str}
+	                   		<script type="text/javascript">
+	                   			var app = true;
+	                   		</script>
+	                    	{/if}
+	                    </tbody>
+	                </table>
+	                <div style="width:100%; text-align:center;margin:10px;" class="mws-button-row">
+                		<input type="submit" value="提交" class="btn btn-danger">&nbsp;&nbsp;&nbsp;&nbsp;
+        				<input type="reset" value="重置" class="btn ">&nbsp;&nbsp;&nbsp;&nbsp;
+        				<input id="btn" type="button" value="导入" class="btn ">
+            		</div>
+                </form>
+                <div id="import" style="width:40%;margin:0 auto;text-align:center;display: none">
+	                <form class="mws-form" action="/admin/userlist/import" method="post" enctype="multipart/form-data">
+	                    <div class="mws-form-inline">
+	                        <div class="mws-form-row bordered">
+	                            <label class="mws-form-label">请选择文件</label>
+	                            <div class="mws-form-item">
+	                                <input type="file" name="filename" class="large">
+	                            </div>
+	                        </div>
+	                    </div>
+	                    <div class="mws-button-row">
+	                        <input id="sure" type="submit" value="确认" class="btn btn-danger">
+	                        <input id="unsure" type="reset" value="返回" class="btn btn-danger">
+	                    </div>
+	                </form>
+                </div>
+            </div>
+        </div>
+        <!-- Panels End -->
+    </div>
+    <!-- Inner Container End -->
+               
+    <!-- Footer -->
+    <div id="mws-footer">
+    	Copyright Your Website 2012. All Rights Reserved.
+    </div>
+    
+</div>
+<script>
+	$(function(){
+		var tr = $("tbody tr i");
+		var element = "<tr><td><input type='text' name='username[]' /></td><td><input type='email' name='email[]' /></td><td><input type='text' name='nickname[]' size='5' /></td><td><input type='file' name='photo[]' /></td><td><select name='sex[]' id=''><option value='2'>保密</option><option value='0'>女士</option><option value='1'>男士</option></select></td><td id='del'><i class='icol-cross-octagon'></i></td></tr>";
+		
+		$("#th").on('click',function(){
+			$("tbody").append(element);
+		})
+		
+		$("tbody").on('click','#del',function(){
+			$(this).parent().remove();
+		})
+
+		//导入数据
+		$("#btn").on('click',function(){
+			$("#import").show();
+			$("#form").hide();
+		})
+		$("#sure").on('click',function(){
+			$("#import").hide();
+		})
+		$("#unsure").on('click',function(){
+			$("#import").hide();
+			$("#form").show();
+		})
+		
+		//检测变量是否存在
+		if (typeof(app) == "undefined") 
+		{
+            $("tbody").append(element);         
+        }
+	})
+</script>
+{include file="footer" /}

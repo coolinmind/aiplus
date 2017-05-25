@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="maximum-scale=1.0, minimum-scale=1.0, user-scalable=0, initial-scale=1.0, width=device-width"/>
+    <meta name="format-detection" content="telephone=no, email=no, date=no, address=no">
+    <title>Hello APP</title>
+
+	<style>
+		#con{
+			margin: 10px;
+			font-size: 24px; 
+		}
+		ul{
+			margin-bottom: 10px;
+		}
+		ul li{ 
+			margin: 5px 10px;
+			padding: 5px;
+			color: #000;
+			word-wrap: break-word;
+		}
+	</style>
+</head>
+<body>
+    <label id="con">Hello APP</label>
+	<div id='sys-info'></div>
+	<div>
+		<table>
+			<tr>
+				<td>
+					<img src="http://dev.happyoneplus.com{$res.icon}" alt="">
+				</td>
+			</tr>
+			<form action="/ine" method="post"  enctype="multipart/form-data">
+			<tr>
+				<td>用户名：<input type="text" class='name' name='userName' value='' /></td>
+			</tr>
+			<tr>
+				<td>密码：<input type="password" class='pwd' name='password' value='' /></td>
+			</tr>
+			<tr>
+				<td>tokin：<input type="test" class='pwds' name='tokin' value='' /></td>
+			</tr>
+			<tr>
+				<td>确认密码：<input type="password" class='email' name='email' value='' /></td>
+			</tr>
+			<tr>
+				<td>上传图片：<input type="file" class='' name='file' value='' /></td>
+			</tr>
+			<tr>	
+					<input type="hidden" class='email' name='system' value='0' />
+				<td><input type="submit" class='sub' value='提交' /></td>
+			</tr>
+		</table>
+		</form>
+	</div>
+</body>

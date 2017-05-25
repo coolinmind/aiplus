@@ -1,0 +1,73 @@
+{include file="header"}
+<div id="mws-container" class="clearfix">
+    <div class="container">
+        <div class="mws-panel grid_8">
+            <div class="mws-panel-header">
+                <span><i class="icon-table"></i>技能类型待审表</span>
+            </div>
+            <div class="mws-panel-body no-padding">
+                <form class="mws-form" action="form_layouts.html">
+                    {if condition="$Think.session.tis eq 1"}
+                        <div class="mws-form-message success">
+                            操作成功 点击消失
+                        </div>
+
+                    {elseif condition="$Think.session.tis eq 2"/}
+                        <div class="mws-form-message error">
+                            操作失败 点击消失
+                        </div>
+                    {/if}
+                </form>
+            </div>
+            <form action="/admin/category/check" method="post">
+                <div class="mws-panel-body no-padding">
+                    <table class="mws-datatable mws-table">
+                        <thead>
+                            <!-- <tr>
+                                <td rowspan="1" colspan="10">
+                                    <input type="submit" id="mws-jui-dialog-mdl-btn" class="btn btn-primary bkform" value=" 提交多选 ">
+                                </td>
+                            </tr> -->
+                            <tr>
+                                <!-- <th width="50px">多选：</th> -->
+                                <th>ID号：</th>
+                                <th>用户ID：</th>
+                                <th>技能类型名称：</th>
+                                <th>技能类型：</th> 
+                                <th>操作：</th> 
+                            </tr>
+                        </thead>
+                        <tbody align="center">
+                            {volist name="res" id="v"}
+                                <tr>
+                                    <!-- <td class="checkbox-column">
+                                        <input type="checkbox" name='id[]' value="{$v.id}">
+                                    </td> -->
+                                    <td>{$v.id}</td>
+                                    <td>{$v.uid}</td>
+                                    <td>{$v.name}</td>
+                                    {if condition="$v.type eq 0"}
+                                        <td>通用技能</td>
+                                    {elseif condition="$v.type eq 1" /}
+                                        <td>经验技能</td>
+                                    {elseif condition="$v.type eq 2" /}
+                                        <td>证书技能</td>
+                                    {/if}
+                                    <td>
+                                        <span class="btn-group">
+                                                <a class="btn btn-small btns1" onclick="return confirm('点击确定会删除掉当前选项并将({$v.name})添加到技能类型表么？');" href="/admin/category_review/submit?id={$v.id}">
+                                                    <i class="icon-edit"></i>
+                                                </a>
+                                        </span>
+                                    </td>
+                                </tr>
+                           {/volist}
+                        </tbody>
+                    </table>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+{include file="footer"}

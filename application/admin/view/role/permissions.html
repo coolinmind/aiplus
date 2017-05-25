@@ -1,0 +1,54 @@
+{include file="header" /}
+
+<div id="mws-container" class="clearfix">
+        
+	<!-- Inner Container Start -->
+    <div class="container">
+		<div class="mws-panel grid_8">
+                	<div class="mws-panel-header">
+                    	<span>权限选择</span>
+                    </div>
+                    <div class="mws-panel-body no-padding">
+                    	<form class="mws-form" action="/admin/role/permissionwrite" method="post">
+                    		<div class="mws-form-inline">
+                    			<div class="mws-form-row">
+                                    {volist name="item" id="v"}
+                                        {if condition="($v.parent_id eq 0) and ($v.is_show eq 1)"}
+                            				<label class="mws-form-label">{$v.menu_name}</label>
+                                                <br>
+                                                <div class="mws-form-item clearfix">
+                                                        <ul class="mws-form-list inline">
+                                                        {volist name="item" id="v1"}
+
+                                                                {eq  name="$v1.parent_id" value="$v.id"}
+                                                                   {if condition="$v1.is_show eq 1"} 
+                                                                        {if condition="isset($res)"} 
+                                                                   		   <li><input type="checkbox" name="data[]" value="{$v1.id}" {in name="$v1.id" value="$res"} checked="checked" {/in}>  <label>{$v1.menu_name}</label></li>
+                                                                        {else /}
+                                                                            <li><input type="checkbox" name="data[]" value="{$v1.id}">  <label>{$v1.menu_name}</label></li>
+                                                                        {/if}
+                                                                    {/if}
+                                                                {/eq}
+
+                                                       {/volist} 
+
+                                                    </ul>
+
+                                                </div>
+                                        {/if}
+
+                                    {/volist}
+                    			</div>
+                    		</div>
+                    		<div class="mws-button-row">
+                                <input type="hidden" name='id' value="{$id}">
+                    			<input type="submit" value="确定授权" class="btn btn-danger">
+                    			<input type="reset" value="重置" class="btn ">
+                    		</div>
+                    	</form>
+                    </div>    	
+                </div>
+ 	</div>
+ </div>
+
+{include file="footer" /}

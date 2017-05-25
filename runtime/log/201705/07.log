@@ -1,0 +1,2670 @@
+[ 2017-05-07T04:12:37+08:00 ] 121.42.174.228 218.203.164.214 GET /
+[ log ] dev.happyoneplus.com/ [运行时间：0.034372s][吞吐率：29.09req/s] [内存消耗：2,985.35kb] [文件加载：50]
+[ info ] [ LANG ] /data/wwwroot/dev.happyoneplus.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'identity',
+  'accept-language' => 'zh-CN,zh;q=0.8,en;q=0.6,it;q=0.4,nb;q=0.2,zh-TW;q=0.2',
+  'host' => 'dev.happyoneplus.com',
+  'accept' => 'ext/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.112 Safari/537.36',
+  'connection' => 'close',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /data/wwwroot/dev.happyoneplus.com/application/index/controller/Index.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-07T15:24:59+08:00 ] 121.42.174.228 117.136.0.239 POST //userinfo/get
+[ log ] dev.happyoneplus.com//userinfo/get [运行时间：0.068902s][吞吐率：14.51req/s] [内存消耗：3,523.27kb] [文件加载：48]
+[ info ] [ LANG ] /data/wwwroot/dev.happyoneplus.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'userinfo',
+    2 => 'get',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'charset' => 'UTF-8',
+  'accept-encoding' => 'gzip',
+  'token-key' => 'b98a7ed061510a3ce43dbf1bc957257ba204c6b0',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 4.4.2; PE-TL20 Build/HuaweiPE-TL20) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Safari/537.36',
+  'connection' => 'Keep-Alive',
+  'accept' => '*/*',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'host' => 'dev.happyoneplus.com',
+  'content-length' => '95',
+)
+[ info ] [ PARAM ] array (
+  'id' => '{"id":"508213bd50056050fd694c05"}',
+  'Skip' => '',
+  'WhereJson' => '',
+  'OrderJson' => '',
+  'Limit' => '',
+  'DataJson' => '',
+)
+[ info ] [ RUN ] app\index\controller\Userinfo->get[ /data/wwwroot/dev.happyoneplus.com/application/index/controller/Userinfo.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001284s ] mysql:dbname=project;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `userinfo` [ RunTime:0.002049s ]
+[ sql ] [ SQL ] SELECT * FROM `userinfo` WHERE  `uid` = '508213bd50056050fd694c05' [ RunTime:0.000765s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wallet` [ RunTime:0.001687s ]
+[ sql ] [ SQL ] SELECT * FROM `wallet` WHERE  `uid` = '508213bd50056050fd694c05' [ RunTime:0.000225s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.000743s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = '508213bd50056050fd694c05' LIMIT 1 [ RunTime:0.000228s ]
+
+---------------------------------------------------------------
+[ 2017-05-07T15:24:59+08:00 ] 121.42.174.228 117.136.0.239 POST //userinfo/get
+[ log ] dev.happyoneplus.com//userinfo/get [运行时间：0.072416s][吞吐率：13.81req/s] [内存消耗：3,523.27kb] [文件加载：48]
+[ info ] [ LANG ] /data/wwwroot/dev.happyoneplus.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'userinfo',
+    2 => 'get',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'charset' => 'UTF-8',
+  'accept-encoding' => 'gzip',
+  'token-key' => 'b98a7ed061510a3ce43dbf1bc957257ba204c6b0',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 4.4.2; PE-TL20 Build/HuaweiPE-TL20) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Safari/537.36',
+  'connection' => 'Keep-Alive',
+  'accept' => '*/*',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'host' => 'dev.happyoneplus.com',
+  'content-length' => '95',
+)
+[ info ] [ PARAM ] array (
+  'id' => '{"id":"508213bd50056050fd694c05"}',
+  'Skip' => '',
+  'WhereJson' => '',
+  'OrderJson' => '',
+  'Limit' => '',
+  'DataJson' => '',
+)
+[ info ] [ RUN ] app\index\controller\Userinfo->get[ /data/wwwroot/dev.happyoneplus.com/application/index/controller/Userinfo.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000426s ] mysql:dbname=project;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `userinfo` [ RunTime:0.001170s ]
+[ sql ] [ SQL ] SELECT * FROM `userinfo` WHERE  `uid` = '508213bd50056050fd694c05' [ RunTime:0.000343s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wallet` [ RunTime:0.000704s ]
+[ sql ] [ SQL ] SELECT * FROM `wallet` WHERE  `uid` = '508213bd50056050fd694c05' [ RunTime:0.000206s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.000708s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = '508213bd50056050fd694c05' LIMIT 1 [ RunTime:0.000249s ]
+
+---------------------------------------------------------------
+[ 2017-05-07T15:25:01+08:00 ] 121.42.174.228 117.136.0.239 POST /user/getallid
+[ log ] dev.happyoneplus.com/user/getallid [运行时间：0.041125s][吞吐率：24.32req/s] [内存消耗：3,580.20kb] [文件加载：48]
+[ info ] [ LANG ] /data/wwwroot/dev.happyoneplus.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'user',
+    2 => 'getallid',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 4.4.2; PE-TL20 Build/HuaweiPE-TL20) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Safari/537.36',
+  'charset' => 'UTF-8',
+  'connection' => 'Keep-Alive',
+  'accept' => '*/*',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'host' => 'dev.happyoneplus.com',
+  'content-length' => '39',
+)
+[ info ] [ PARAM ] array (
+  'id' => '["50715984d8852474454213fd"]',
+)
+[ info ] [ RUN ] app\index\controller\User->getallid[ /data/wwwroot/dev.happyoneplus.com/application/index/controller/User.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000518s ] mysql:dbname=project;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `userinfo` [ RunTime:0.001239s ]
+[ sql ] [ SQL ] SELECT * FROM `userinfo` WHERE  `id` IN ('50715984d8852474454213fd') [ RunTime:0.000348s ]
+
+---------------------------------------------------------------
+[ 2017-05-07T15:25:08+08:00 ] 121.42.174.228 117.136.0.239 POST //resume/gettotal
+[ log ] dev.happyoneplus.com//resume/gettotal [运行时间：0.053947s][吞吐率：18.54req/s] [内存消耗：3,949.64kb] [文件加载：50]
+[ info ] [ LANG ] /data/wwwroot/dev.happyoneplus.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'resume',
+    2 => 'gettotal',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'charset' => 'UTF-8',
+  'accept-encoding' => 'gzip',
+  'token-key' => 'b98a7ed061510a3ce43dbf1bc957257ba204c6b0',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 4.4.2; PE-TL20 Build/HuaweiPE-TL20) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Safari/537.36',
+  'connection' => 'Keep-Alive',
+  'accept' => '*/*',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'host' => 'dev.happyoneplus.com',
+  'content-length' => '50',
+)
+[ info ] [ PARAM ] array (
+  'id' => '{"id":"508213bd50056050fd694c05"}',
+)
+[ info ] [ RUN ] app\index\controller\Resume->getTotal[ /data/wwwroot/dev.happyoneplus.com/application/index/controller/Resume.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000489s ] mysql:dbname=project;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `userinfo` [ RunTime:0.001403s ]
+[ sql ] [ SQL ] SELECT * FROM `userinfo` WHERE  `uid` = '508213bd50056050fd694c05' [ RunTime:0.000453s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `skill` [ RunTime:0.000877s ]
+[ sql ] [ SQL ] SELECT * FROM `skill` WHERE  `uid` = '508213bd50056050fd694c05' [ RunTime:0.000470s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `experience` [ RunTime:0.000744s ]
+[ sql ] [ SQL ] SELECT * FROM `experience` WHERE  `uid` = '508213bd50056050fd694c05' [ RunTime:0.000313s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `proExperience` [ RunTime:0.001118s ]
+[ sql ] [ SQL ] SELECT * FROM `proExperience` WHERE  `uid` = '508213bd50056050fd694c05' [ RunTime:0.000230s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `resume` [ RunTime:0.000733s ]
+[ sql ] [ SQL ] SELECT * FROM `resume` WHERE  `uid` = '508213bd50056050fd694c05' [ RunTime:0.000248s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wallet` [ RunTime:0.000646s ]
+[ sql ] [ SQL ] SELECT * FROM `wallet` WHERE  `uid` = '508213bd50056050fd694c05' [ RunTime:0.000206s ]
+
+---------------------------------------------------------------
+[ 2017-05-07T15:25:13+08:00 ] 121.42.174.228 117.136.0.239 POST //cate/get
+[ log ] dev.happyoneplus.com//cate/get [运行时间：0.078213s][吞吐率：12.79req/s] [内存消耗：3,608.63kb] [文件加载：48]
+[ info ] [ LANG ] /data/wwwroot/dev.happyoneplus.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'cate',
+    2 => 'get',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'charset' => 'UTF-8',
+  'accept-encoding' => 'gzip',
+  'token-key' => 'b98a7ed061510a3ce43dbf1bc957257ba204c6b0',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 4.4.2; PE-TL20 Build/HuaweiPE-TL20) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Safari/537.36',
+  'connection' => 'Keep-Alive',
+  'accept' => '*/*',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'host' => 'dev.happyoneplus.com',
+  'content-length' => '95',
+)
+[ info ] [ PARAM ] array (
+  'id' => '{"id":"508213bd50056050fd694c05"}',
+  'Skip' => '',
+  'WhereJson' => '',
+  'OrderJson' => '',
+  'Limit' => '',
+  'DataJson' => '',
+)
+[ info ] [ RUN ] app\index\controller\Cate->get[ /data/wwwroot/dev.happyoneplus.com/application/index/controller/Cate.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000490s ] mysql:dbname=project;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cate` [ RunTime:0.000974s ]
+[ sql ] [ SQL ] SELECT * FROM `cate` [ RunTime:0.000529s ]
+
+---------------------------------------------------------------
+[ 2017-05-07T15:25:13+08:00 ] 121.42.174.228 117.136.0.239 POST //employ/getdata
+[ log ] dev.happyoneplus.com//employ/getdata [运行时间：0.060780s][吞吐率：16.45req/s] [内存消耗：4,007.26kb] [文件加载：50]
+[ info ] [ LANG ] /data/wwwroot/dev.happyoneplus.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'employ',
+    2 => 'getdata',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'charset' => 'UTF-8',
+  'accept-encoding' => 'gzip',
+  'token-key' => 'b98a7ed061510a3ce43dbf1bc957257ba204c6b0',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 4.4.2; PE-TL20 Build/HuaweiPE-TL20) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Safari/537.36',
+  'connection' => 'Keep-Alive',
+  'accept' => '*/*',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'host' => 'dev.happyoneplus.com',
+  'content-length' => '116',
+)
+[ info ] [ PARAM ] array (
+  'id' => '{"id":"508213bd50056050fd694c05"}',
+  'Skip' => '',
+  'WhereJson' => '',
+  'OrderJson' => '',
+  'Limit' => '{"limit":0}',
+  'DataJson' => '',
+)
+[ info ] [ RUN ] app\index\controller\Employ->getData[ /data/wwwroot/dev.happyoneplus.com/application/index/controller/Employ.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000527s ] mysql:dbname=project;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `employ` [ RunTime:0.001201s ]
+[ sql ] [ SQL ] SELECT * FROM `employ` WHERE  `is_delete` = 0  AND `employ_id` <> '508213bd50056050fd694c05' ORDER BY add_time desc LIMIT 0,10 [ RunTime:0.000691s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `userinfo` [ RunTime:0.000926s ]
+[ sql ] [ SQL ] SELECT * FROM `userinfo` WHERE  `uid` = '510141cd31ab8ba0e93edea8' [ RunTime:0.000261s ]
+[ sql ] [ SQL ] SELECT * FROM `userinfo` WHERE  `uid` = '508407b8bccdabcc445c87b4' [ RunTime:0.000283s ]
+[ sql ] [ SQL ] SELECT * FROM `userinfo` WHERE  `uid` = '508407b8bccdabcc445c87b4' [ RunTime:0.000252s ]
+[ sql ] [ SQL ] SELECT * FROM `userinfo` WHERE  `uid` = '508407b8bccdabcc445c87b4' [ RunTime:0.003909s ]
+[ sql ] [ SQL ] SELECT * FROM `userinfo` WHERE  `uid` = '508407b8bccdabcc445c87b4' [ RunTime:0.000336s ]
+[ sql ] [ SQL ] SELECT * FROM `userinfo` WHERE  `uid` = '5071592517834b3f54145351' [ RunTime:0.001027s ]
+[ sql ] [ SQL ] SELECT * FROM `userinfo` WHERE  `uid` = '512564707e400c227687589b' [ RunTime:0.000264s ]
+[ sql ] [ SQL ] SELECT * FROM `userinfo` WHERE  `uid` = '510141cd31ab8ba0e93edea8' [ RunTime:0.000266s ]
+[ sql ] [ SQL ] SELECT * FROM `userinfo` WHERE  `uid` = '510141cd31ab8ba0e93edea8' [ RunTime:0.000252s ]
+[ sql ] [ SQL ] SELECT * FROM `userinfo` WHERE  `uid` = '510141cd31ab8ba0e93edea8' [ RunTime:0.000277s ]
+
+---------------------------------------------------------------
+[ 2017-05-07T15:25:13+08:00 ] 121.42.174.228 117.136.0.239 POST //skill/getdata
+[ log ] dev.happyoneplus.com//skill/getdata [运行时间：0.061423s][吞吐率：16.28req/s] [内存消耗：4,000.52kb] [文件加载：50]
+[ info ] [ LANG ] /data/wwwroot/dev.happyoneplus.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'skill',
+    2 => 'getdata',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'charset' => 'UTF-8',
+  'accept-encoding' => 'gzip',
+  'token-key' => 'b98a7ed061510a3ce43dbf1bc957257ba204c6b0',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 4.4.2; PE-TL20 Build/HuaweiPE-TL20) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Safari/537.36',
+  'connection' => 'Keep-Alive',
+  'accept' => '*/*',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'host' => 'dev.happyoneplus.com',
+  'content-length' => '116',
+)
+[ info ] [ PARAM ] array (
+  'id' => '{"id":"508213bd50056050fd694c05"}',
+  'Skip' => '',
+  'WhereJson' => '',
+  'OrderJson' => '',
+  'Limit' => '{"limit":0}',
+  'DataJson' => '',
+)
+[ info ] [ RUN ] app\index\Controller\Skill->getData[ /data/wwwroot/dev.happyoneplus.com/application/index/controller/Skill.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000505s ] mysql:dbname=project;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `skill` [ RunTime:0.001159s ]
+[ sql ] [ SQL ] SELECT * FROM `skill` WHERE  `is_delete` = 0 ORDER BY add_time desc LIMIT 0,10 [ RunTime:0.000345s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `userinfo` [ RunTime:0.000913s ]
+[ sql ] [ SQL ] SELECT * FROM `userinfo` WHERE  `uid` = '6558594cc082519c4b206540' [ RunTime:0.000288s ]
+[ sql ] [ SQL ] SELECT * FROM `userinfo` WHERE  `uid` = '508407b8bccdabcc445c87b4' [ RunTime:0.000262s ]
+[ sql ] [ SQL ] SELECT * FROM `userinfo` WHERE  `uid` = '508213bd50056050fd694c05' [ RunTime:0.000262s ]
+[ sql ] [ SQL ] SELECT * FROM `userinfo` WHERE  `uid` = '5071592517834b3f54145351' [ RunTime:0.000251s ]
+[ sql ] [ SQL ] SELECT * FROM `userinfo` WHERE  `uid` = '512564707e400c227687589b' [ RunTime:0.000252s ]
+[ sql ] [ SQL ] SELECT * FROM `userinfo` WHERE  `uid` = '508213bd50056050fd694c05' [ RunTime:0.000270s ]
+[ sql ] [ SQL ] SELECT * FROM `userinfo` WHERE  `uid` = '508213bd50056050fd694c05' [ RunTime:0.000246s ]
+[ sql ] [ SQL ] SELECT * FROM `userinfo` WHERE  `uid` = '508213bd50056050fd694c05' [ RunTime:0.000246s ]
+[ sql ] [ SQL ] SELECT * FROM `userinfo` WHERE  `uid` = '6558594cc082519c4b206540' [ RunTime:0.000247s ]
+[ sql ] [ SQL ] SELECT * FROM `userinfo` WHERE  `uid` = '508213bd50056050fd694c05' [ RunTime:0.000248s ]
+
+---------------------------------------------------------------
+[ 2017-05-07T15:25:13+08:00 ] 121.42.174.228 117.136.0.239 POST //applicantlist/getemploy
+[ log ] dev.happyoneplus.com//applicantlist/getemploy [运行时间：0.056785s][吞吐率：17.61req/s] [内存消耗：3,503.06kb] [文件加载：48]
+[ info ] [ LANG ] /data/wwwroot/dev.happyoneplus.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'applicantlist',
+    2 => 'getemploy',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'charset' => 'UTF-8',
+  'accept-encoding' => 'gzip',
+  'token-key' => 'b98a7ed061510a3ce43dbf1bc957257ba204c6b0',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 4.4.2; PE-TL20 Build/HuaweiPE-TL20) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Safari/537.36',
+  'connection' => 'Keep-Alive',
+  'accept' => '*/*',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'host' => 'dev.happyoneplus.com',
+  'content-length' => '95',
+)
+[ info ] [ PARAM ] array (
+  'id' => '{"id":"508213bd50056050fd694c05"}',
+  'Skip' => '',
+  'WhereJson' => '',
+  'OrderJson' => '',
+  'Limit' => '',
+  'DataJson' => '',
+)
+[ info ] [ RUN ] app\index\controller\Applicantlist->getEmploy[ /data/wwwroot/dev.happyoneplus.com/application/index/controller/Applicantlist.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001408s ] mysql:dbname=project;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `applicant_list` [ RunTime:0.001964s ]
+[ sql ] [ SQL ] SELECT * FROM `applicant_list` WHERE  `applicant_id` = '508213bd50056050fd694c05' [ RunTime:0.000445s ]
+
+---------------------------------------------------------------
+[ 2017-05-07T15:25:13+08:00 ] 121.42.174.228 117.136.0.239 POST //orders/get
+[ log ] dev.happyoneplus.com//orders/get [运行时间：0.098874s][吞吐率：10.11req/s] [内存消耗：4,054.50kb] [文件加载：50]
+[ info ] [ LANG ] /data/wwwroot/dev.happyoneplus.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'orders',
+    2 => 'get',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'charset' => 'UTF-8',
+  'accept-encoding' => 'gzip',
+  'token-key' => 'b98a7ed061510a3ce43dbf1bc957257ba204c6b0',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 4.4.2; PE-TL20 Build/HuaweiPE-TL20) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Safari/537.36',
+  'connection' => 'Keep-Alive',
+  'accept' => '*/*',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'host' => 'dev.happyoneplus.com',
+  'content-length' => '95',
+)
+[ info ] [ PARAM ] array (
+  'id' => '{"id":"508213bd50056050fd694c05"}',
+  'Skip' => '',
+  'WhereJson' => '',
+  'OrderJson' => '',
+  'Limit' => '',
+  'DataJson' => '',
+)
+[ info ] [ RUN ] app\index\controller\Orders->get[ /data/wwwroot/dev.happyoneplus.com/application/index/controller/Orders.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001706s ] mysql:dbname=project;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `orders` [ RunTime:0.001077s ]
+[ sql ] [ SQL ] SELECT * FROM `orders` WHERE  `employ_id` = '508213bd50056050fd694c05'  AND `role_status` < 8 [ RunTime:0.000566s ]
+
+---------------------------------------------------------------
+[ 2017-05-07T15:25:13+08:00 ] 121.42.174.228 117.136.0.239 POST //orders/get
+[ log ] dev.happyoneplus.com//orders/get [运行时间：0.123444s][吞吐率：8.10req/s] [内存消耗：4,054.50kb] [文件加载：50]
+[ info ] [ LANG ] /data/wwwroot/dev.happyoneplus.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'orders',
+    2 => 'get',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'charset' => 'UTF-8',
+  'accept-encoding' => 'gzip',
+  'token-key' => 'b98a7ed061510a3ce43dbf1bc957257ba204c6b0',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 4.4.2; PE-TL20 Build/HuaweiPE-TL20) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Safari/537.36',
+  'connection' => 'Keep-Alive',
+  'accept' => '*/*',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'host' => 'dev.happyoneplus.com',
+  'content-length' => '95',
+)
+[ info ] [ PARAM ] array (
+  'id' => '{"id":"508213bd50056050fd694c05"}',
+  'Skip' => '',
+  'WhereJson' => '',
+  'OrderJson' => '',
+  'Limit' => '',
+  'DataJson' => '',
+)
+[ info ] [ RUN ] app\index\controller\Orders->get[ /data/wwwroot/dev.happyoneplus.com/application/index/controller/Orders.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001784s ] mysql:dbname=project;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `orders` [ RunTime:0.001991s ]
+[ sql ] [ SQL ] SELECT * FROM `orders` WHERE  `employ_id` = '508213bd50056050fd694c05'  AND `role_status` < 8 [ RunTime:0.000598s ]
+
+---------------------------------------------------------------
+[ 2017-05-07T15:25:13+08:00 ] 121.42.174.228 117.136.0.239 POST //orders/get
+[ log ] dev.happyoneplus.com//orders/get [运行时间：0.139509s][吞吐率：7.17req/s] [内存消耗：4,054.50kb] [文件加载：50]
+[ info ] [ LANG ] /data/wwwroot/dev.happyoneplus.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'orders',
+    2 => 'get',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'charset' => 'UTF-8',
+  'accept-encoding' => 'gzip',
+  'token-key' => 'b98a7ed061510a3ce43dbf1bc957257ba204c6b0',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 4.4.2; PE-TL20 Build/HuaweiPE-TL20) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Safari/537.36',
+  'connection' => 'Keep-Alive',
+  'accept' => '*/*',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'host' => 'dev.happyoneplus.com',
+  'content-length' => '95',
+)
+[ info ] [ PARAM ] array (
+  'id' => '{"id":"508213bd50056050fd694c05"}',
+  'Skip' => '',
+  'WhereJson' => '',
+  'OrderJson' => '',
+  'Limit' => '',
+  'DataJson' => '',
+)
+[ info ] [ RUN ] app\index\controller\Orders->get[ /data/wwwroot/dev.happyoneplus.com/application/index/controller/Orders.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000470s ] mysql:dbname=project;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `orders` [ RunTime:0.002088s ]
+[ sql ] [ SQL ] SELECT * FROM `orders` WHERE  `employ_id` = '508213bd50056050fd694c05'  AND `role_status` < 8 [ RunTime:0.001089s ]
+
+---------------------------------------------------------------
+[ 2017-05-07T15:25:13+08:00 ] 121.42.174.228 117.136.0.239 POST //orders/get
+[ log ] dev.happyoneplus.com//orders/get [运行时间：0.136495s][吞吐率：7.33req/s] [内存消耗：4,054.50kb] [文件加载：50]
+[ info ] [ LANG ] /data/wwwroot/dev.happyoneplus.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'orders',
+    2 => 'get',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'charset' => 'UTF-8',
+  'accept-encoding' => 'gzip',
+  'token-key' => 'b98a7ed061510a3ce43dbf1bc957257ba204c6b0',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 4.4.2; PE-TL20 Build/HuaweiPE-TL20) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Safari/537.36',
+  'connection' => 'Keep-Alive',
+  'accept' => '*/*',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'host' => 'dev.happyoneplus.com',
+  'content-length' => '95',
+)
+[ info ] [ PARAM ] array (
+  'id' => '{"id":"508213bd50056050fd694c05"}',
+  'Skip' => '',
+  'WhereJson' => '',
+  'OrderJson' => '',
+  'Limit' => '',
+  'DataJson' => '',
+)
+[ info ] [ RUN ] app\index\controller\Orders->get[ /data/wwwroot/dev.happyoneplus.com/application/index/controller/Orders.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000450s ] mysql:dbname=project;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `orders` [ RunTime:0.001066s ]
+[ sql ] [ SQL ] SELECT * FROM `orders` WHERE  `employ_id` = '508213bd50056050fd694c05'  AND `role_status` < 8 [ RunTime:0.001313s ]
+
+---------------------------------------------------------------
+[ 2017-05-07T15:25:13+08:00 ] 121.42.174.228 117.136.0.239 POST //orders/get
+[ log ] dev.happyoneplus.com//orders/get [运行时间：0.116141s][吞吐率：8.61req/s] [内存消耗：4,054.50kb] [文件加载：50]
+[ info ] [ LANG ] /data/wwwroot/dev.happyoneplus.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'orders',
+    2 => 'get',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'charset' => 'UTF-8',
+  'accept-encoding' => 'gzip',
+  'token-key' => 'b98a7ed061510a3ce43dbf1bc957257ba204c6b0',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 4.4.2; PE-TL20 Build/HuaweiPE-TL20) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Safari/537.36',
+  'connection' => 'Keep-Alive',
+  'accept' => '*/*',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'host' => 'dev.happyoneplus.com',
+  'content-length' => '95',
+)
+[ info ] [ PARAM ] array (
+  'id' => '{"id":"508213bd50056050fd694c05"}',
+  'Skip' => '',
+  'WhereJson' => '',
+  'OrderJson' => '',
+  'Limit' => '',
+  'DataJson' => '',
+)
+[ info ] [ RUN ] app\index\controller\Orders->get[ /data/wwwroot/dev.happyoneplus.com/application/index/controller/Orders.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000463s ] mysql:dbname=project;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `orders` [ RunTime:0.001095s ]
+[ sql ] [ SQL ] SELECT * FROM `orders` WHERE  `employ_id` = '508213bd50056050fd694c05'  AND `role_status` < 8 [ RunTime:0.000338s ]
+
+---------------------------------------------------------------
+[ 2017-05-07T15:25:35+08:00 ] 121.42.174.228 117.136.0.239 POST //skill/unionfind
+[ log ] dev.happyoneplus.com//skill/unionfind [运行时间：0.045325s][吞吐率：22.06req/s] [内存消耗：3,671.66kb] [文件加载：54]
+[ info ] [ LANG ] /data/wwwroot/dev.happyoneplus.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'skill',
+    2 => 'unionfind',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'charset' => 'UTF-8',
+  'accept-encoding' => 'gzip',
+  'token-key' => 'b98a7ed061510a3ce43dbf1bc957257ba204c6b0',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 4.4.2; PE-TL20 Build/HuaweiPE-TL20) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Safari/537.36',
+  'connection' => 'Keep-Alive',
+  'accept' => '*/*',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'host' => 'dev.happyoneplus.com',
+  'content-length' => '198',
+)
+[ info ] [ PARAM ] array (
+  'id' => '{"id":"508213bd50056050fd694c05"}',
+  'whereJson' => '{"limit":0,"skill_type":"","unit":"","order":"最近","address":""}',
+)
+[ info ] [ RUN ] app\index\Controller\Skill->UnionFind[ /data/wwwroot/dev.happyoneplus.com/application/index/controller/Skill.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000467s ] mysql:dbname=project;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `skill` [ RunTime:0.001115s ]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column '最近' in 'order clause'[/data/wwwroot/dev.happyoneplus.com/thinkphp/library/think/db/Connection.php:399]
+
+---------------------------------------------------------------
+[ 2017-05-07T15:25:35+08:00 ] 121.42.174.228 117.136.0.239 POST //cate/get
+[ log ] dev.happyoneplus.com//cate/get [运行时间：0.081988s][吞吐率：12.20req/s] [内存消耗：3,608.63kb] [文件加载：48]
+[ info ] [ LANG ] /data/wwwroot/dev.happyoneplus.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'cate',
+    2 => 'get',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'charset' => 'UTF-8',
+  'accept-encoding' => 'gzip',
+  'token-key' => 'b98a7ed061510a3ce43dbf1bc957257ba204c6b0',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 4.4.2; PE-TL20 Build/HuaweiPE-TL20) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Safari/537.36',
+  'connection' => 'Keep-Alive',
+  'accept' => '*/*',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'host' => 'dev.happyoneplus.com',
+  'content-length' => '95',
+)
+[ info ] [ PARAM ] array (
+  'id' => '{"id":"508213bd50056050fd694c05"}',
+  'Skip' => '',
+  'WhereJson' => '',
+  'OrderJson' => '',
+  'Limit' => '',
+  'DataJson' => '',
+)
+[ info ] [ RUN ] app\index\controller\Cate->get[ /data/wwwroot/dev.happyoneplus.com/application/index/controller/Cate.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000486s ] mysql:dbname=project;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cate` [ RunTime:0.000977s ]
+[ sql ] [ SQL ] SELECT * FROM `cate` [ RunTime:0.000526s ]
+
+---------------------------------------------------------------
+[ 2017-05-07T15:25:45+08:00 ] 121.42.174.228 117.136.0.239 POST //skill/unionfind
+[ log ] dev.happyoneplus.com//skill/unionfind [运行时间：0.050307s][吞吐率：19.88req/s] [内存消耗：3,607.66kb] [文件加载：48]
+[ info ] [ LANG ] /data/wwwroot/dev.happyoneplus.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'skill',
+    2 => 'unionfind',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'charset' => 'UTF-8',
+  'accept-encoding' => 'gzip',
+  'token-key' => 'b98a7ed061510a3ce43dbf1bc957257ba204c6b0',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 4.4.2; PE-TL20 Build/HuaweiPE-TL20) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Safari/537.36',
+  'connection' => 'Keep-Alive',
+  'accept' => '*/*',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'host' => 'dev.happyoneplus.com',
+  'content-length' => '198',
+)
+[ info ] [ PARAM ] array (
+  'id' => '{"id":"508213bd50056050fd694c05"}',
+  'whereJson' => '{"limit":0,"skill_type":"","unit":"","order":"最热","address":""}',
+)
+[ info ] [ RUN ] app\index\Controller\Skill->UnionFind[ /data/wwwroot/dev.happyoneplus.com/application/index/controller/Skill.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000502s ] mysql:dbname=project;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `skill` [ RunTime:0.001135s ]
+[ sql ] [ SQL ] SELECT * FROM `skill` WHERE  `uid` <> '508213bd50056050fd694c05'  AND `address` LIKE '%%'  AND `skill_type` LIKE '%%'  AND `unit` LIKE '%%' ORDER BY review_times desc LIMIT 0,10 [ RunTime:0.000672s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `userinfo` [ RunTime:0.000904s ]
+[ sql ] [ SQL ] SELECT * FROM `userinfo` WHERE  `uid` = '6558594cc082519c4b206540' LIMIT 1 [ RunTime:0.000262s ]
+[ sql ] [ SQL ] SELECT * FROM `userinfo` WHERE  `uid` = '508407b8bccdabcc445c87b4' LIMIT 1 [ RunTime:0.000285s ]
+[ sql ] [ SQL ] SELECT * FROM `userinfo` WHERE  `uid` = '512564707e400c227687589b' LIMIT 1 [ RunTime:0.000252s ]
+[ sql ] [ SQL ] SELECT * FROM `userinfo` WHERE  `uid` = '512564707e400c227687589b' LIMIT 1 [ RunTime:0.000249s ]
+[ sql ] [ SQL ] SELECT * FROM `userinfo` WHERE  `uid` = '5071592517834b3f54145351' LIMIT 1 [ RunTime:0.000272s ]
+[ sql ] [ SQL ] SELECT * FROM `userinfo` WHERE  `uid` = '510141cd31ab8ba0e93edea8' LIMIT 1 [ RunTime:0.000250s ]
+[ sql ] [ SQL ] SELECT * FROM `userinfo` WHERE  `uid` = '6558594cc082519c4b206540' LIMIT 1 [ RunTime:0.000248s ]
+[ sql ] [ SQL ] SELECT * FROM `userinfo` WHERE  `uid` = '508407b8bccdabcc445c87b4' LIMIT 1 [ RunTime:0.000269s ]
+[ sql ] [ SQL ] SELECT * FROM `userinfo` WHERE  `uid` = '6558594cc082519c4b206540' LIMIT 1 [ RunTime:0.000246s ]
+[ sql ] [ SQL ] SELECT * FROM `userinfo` WHERE  `uid` = '6558594cc082519c4b206540' LIMIT 1 [ RunTime:0.000251s ]
+
+---------------------------------------------------------------
+[ 2017-05-07T15:25:45+08:00 ] 121.42.174.228 117.136.0.239 POST //orders/get
+[ log ] dev.happyoneplus.com//orders/get [运行时间：0.043084s][吞吐率：23.21req/s] [内存消耗：4,054.50kb] [文件加载：50]
+[ info ] [ LANG ] /data/wwwroot/dev.happyoneplus.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'orders',
+    2 => 'get',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'charset' => 'UTF-8',
+  'accept-encoding' => 'gzip',
+  'token-key' => 'b98a7ed061510a3ce43dbf1bc957257ba204c6b0',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 4.4.2; PE-TL20 Build/HuaweiPE-TL20) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Safari/537.36',
+  'connection' => 'Keep-Alive',
+  'accept' => '*/*',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'host' => 'dev.happyoneplus.com',
+  'content-length' => '95',
+)
+[ info ] [ PARAM ] array (
+  'id' => '{"id":"508213bd50056050fd694c05"}',
+  'Skip' => '',
+  'WhereJson' => '',
+  'OrderJson' => '',
+  'Limit' => '',
+  'DataJson' => '',
+)
+[ info ] [ RUN ] app\index\controller\Orders->get[ /data/wwwroot/dev.happyoneplus.com/application/index/controller/Orders.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000459s ] mysql:dbname=project;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `orders` [ RunTime:0.001129s ]
+[ sql ] [ SQL ] SELECT * FROM `orders` WHERE  `employ_id` = '508213bd50056050fd694c05'  AND `role_status` < 8 [ RunTime:0.000476s ]
+
+---------------------------------------------------------------
+[ 2017-05-07T15:25:45+08:00 ] 121.42.174.228 117.136.0.239 POST //orders/get
+[ log ] dev.happyoneplus.com//orders/get [运行时间：0.064299s][吞吐率：15.55req/s] [内存消耗：4,054.50kb] [文件加载：50]
+[ info ] [ LANG ] /data/wwwroot/dev.happyoneplus.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'orders',
+    2 => 'get',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'charset' => 'UTF-8',
+  'accept-encoding' => 'gzip',
+  'token-key' => 'b98a7ed061510a3ce43dbf1bc957257ba204c6b0',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 4.4.2; PE-TL20 Build/HuaweiPE-TL20) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Safari/537.36',
+  'connection' => 'Keep-Alive',
+  'accept' => '*/*',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'host' => 'dev.happyoneplus.com',
+  'content-length' => '95',
+)
+[ info ] [ PARAM ] array (
+  'id' => '{"id":"508213bd50056050fd694c05"}',
+  'Skip' => '',
+  'WhereJson' => '',
+  'OrderJson' => '',
+  'Limit' => '',
+  'DataJson' => '',
+)
+[ info ] [ RUN ] app\index\controller\Orders->get[ /data/wwwroot/dev.happyoneplus.com/application/index/controller/Orders.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000919s ] mysql:dbname=project;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `orders` [ RunTime:0.001952s ]
+[ sql ] [ SQL ] SELECT * FROM `orders` WHERE  `employ_id` = '508213bd50056050fd694c05'  AND `role_status` < 8 [ RunTime:0.000350s ]
+
+---------------------------------------------------------------
+[ 2017-05-07T15:25:45+08:00 ] 121.42.174.228 117.136.0.239 POST //orders/get
+[ log ] dev.happyoneplus.com//orders/get [运行时间：0.063119s][吞吐率：15.84req/s] [内存消耗：4,054.50kb] [文件加载：50]
+[ info ] [ LANG ] /data/wwwroot/dev.happyoneplus.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'orders',
+    2 => 'get',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'charset' => 'UTF-8',
+  'accept-encoding' => 'gzip',
+  'token-key' => 'b98a7ed061510a3ce43dbf1bc957257ba204c6b0',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 4.4.2; PE-TL20 Build/HuaweiPE-TL20) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Safari/537.36',
+  'connection' => 'Keep-Alive',
+  'accept' => '*/*',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'host' => 'dev.happyoneplus.com',
+  'content-length' => '95',
+)
+[ info ] [ PARAM ] array (
+  'id' => '{"id":"508213bd50056050fd694c05"}',
+  'Skip' => '',
+  'WhereJson' => '',
+  'OrderJson' => '',
+  'Limit' => '',
+  'DataJson' => '',
+)
+[ info ] [ RUN ] app\index\controller\Orders->get[ /data/wwwroot/dev.happyoneplus.com/application/index/controller/Orders.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000481s ] mysql:dbname=project;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `orders` [ RunTime:0.001073s ]
+[ sql ] [ SQL ] SELECT * FROM `orders` WHERE  `employ_id` = '508213bd50056050fd694c05'  AND `role_status` < 8 [ RunTime:0.000339s ]
+
+---------------------------------------------------------------
+[ 2017-05-07T15:25:45+08:00 ] 121.42.174.228 117.136.0.239 POST //orders/get
+[ log ] dev.happyoneplus.com//orders/get [运行时间：0.053285s][吞吐率：18.77req/s] [内存消耗：4,054.50kb] [文件加载：50]
+[ info ] [ LANG ] /data/wwwroot/dev.happyoneplus.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'orders',
+    2 => 'get',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'charset' => 'UTF-8',
+  'accept-encoding' => 'gzip',
+  'token-key' => 'b98a7ed061510a3ce43dbf1bc957257ba204c6b0',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 4.4.2; PE-TL20 Build/HuaweiPE-TL20) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Safari/537.36',
+  'connection' => 'Keep-Alive',
+  'accept' => '*/*',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'host' => 'dev.happyoneplus.com',
+  'content-length' => '95',
+)
+[ info ] [ PARAM ] array (
+  'id' => '{"id":"508213bd50056050fd694c05"}',
+  'Skip' => '',
+  'WhereJson' => '',
+  'OrderJson' => '',
+  'Limit' => '',
+  'DataJson' => '',
+)
+[ info ] [ RUN ] app\index\controller\Orders->get[ /data/wwwroot/dev.happyoneplus.com/application/index/controller/Orders.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001569s ] mysql:dbname=project;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `orders` [ RunTime:0.001913s ]
+[ sql ] [ SQL ] SELECT * FROM `orders` WHERE  `employ_id` = '508213bd50056050fd694c05'  AND `role_status` < 8 [ RunTime:0.000350s ]
+
+---------------------------------------------------------------
+[ 2017-05-07T15:25:45+08:00 ] 121.42.174.228 117.136.0.239 POST //orders/get
+[ log ] dev.happyoneplus.com//orders/get [运行时间：0.084061s][吞吐率：11.90req/s] [内存消耗：4,054.50kb] [文件加载：50]
+[ info ] [ LANG ] /data/wwwroot/dev.happyoneplus.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'orders',
+    2 => 'get',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'charset' => 'UTF-8',
+  'accept-encoding' => 'gzip',
+  'token-key' => 'b98a7ed061510a3ce43dbf1bc957257ba204c6b0',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 4.4.2; PE-TL20 Build/HuaweiPE-TL20) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Safari/537.36',
+  'connection' => 'Keep-Alive',
+  'accept' => '*/*',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'host' => 'dev.happyoneplus.com',
+  'content-length' => '95',
+)
+[ info ] [ PARAM ] array (
+  'id' => '{"id":"508213bd50056050fd694c05"}',
+  'Skip' => '',
+  'WhereJson' => '',
+  'OrderJson' => '',
+  'Limit' => '',
+  'DataJson' => '',
+)
+[ info ] [ RUN ] app\index\controller\Orders->get[ /data/wwwroot/dev.happyoneplus.com/application/index/controller/Orders.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000829s ] mysql:dbname=project;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `orders` [ RunTime:0.001094s ]
+[ sql ] [ SQL ] SELECT * FROM `orders` WHERE  `employ_id` = '508213bd50056050fd694c05'  AND `role_status` < 8 [ RunTime:0.001391s ]
+
+---------------------------------------------------------------
+[ 2017-05-07T15:25:46+08:00 ] 121.42.174.228 117.136.0.239 POST //orders/get
+[ log ] dev.happyoneplus.com//orders/get [运行时间：0.157102s][吞吐率：6.37req/s] [内存消耗：4,054.50kb] [文件加载：50]
+[ info ] [ LANG ] /data/wwwroot/dev.happyoneplus.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'orders',
+    2 => 'get',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'charset' => 'UTF-8',
+  'accept-encoding' => 'gzip',
+  'token-key' => 'b98a7ed061510a3ce43dbf1bc957257ba204c6b0',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 4.4.2; PE-TL20 Build/HuaweiPE-TL20) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Safari/537.36',
+  'connection' => 'Keep-Alive',
+  'accept' => '*/*',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'host' => 'dev.happyoneplus.com',
+  'content-length' => '95',
+)
+[ info ] [ PARAM ] array (
+  'id' => '{"id":"508213bd50056050fd694c05"}',
+  'Skip' => '',
+  'WhereJson' => '',
+  'OrderJson' => '',
+  'Limit' => '',
+  'DataJson' => '',
+)
+[ info ] [ RUN ] app\index\controller\Orders->get[ /data/wwwroot/dev.happyoneplus.com/application/index/controller/Orders.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004348s ] mysql:dbname=project;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `orders` [ RunTime:0.001409s ]
+[ sql ] [ SQL ] SELECT * FROM `orders` WHERE  `employ_id` = '508213bd50056050fd694c05'  AND `role_status` < 8 [ RunTime:0.000377s ]
+
+---------------------------------------------------------------
+[ 2017-05-07T15:25:46+08:00 ] 121.42.174.228 117.136.0.239 POST //orders/get
+[ log ] dev.happyoneplus.com//orders/get [运行时间：0.165821s][吞吐率：6.03req/s] [内存消耗：4,054.50kb] [文件加载：50]
+[ info ] [ LANG ] /data/wwwroot/dev.happyoneplus.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'orders',
+    2 => 'get',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'charset' => 'UTF-8',
+  'accept-encoding' => 'gzip',
+  'token-key' => 'b98a7ed061510a3ce43dbf1bc957257ba204c6b0',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 4.4.2; PE-TL20 Build/HuaweiPE-TL20) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Safari/537.36',
+  'connection' => 'Keep-Alive',
+  'accept' => '*/*',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'host' => 'dev.happyoneplus.com',
+  'content-length' => '95',
+)
+[ info ] [ PARAM ] array (
+  'id' => '{"id":"508213bd50056050fd694c05"}',
+  'Skip' => '',
+  'WhereJson' => '',
+  'OrderJson' => '',
+  'Limit' => '',
+  'DataJson' => '',
+)
+[ info ] [ RUN ] app\index\controller\Orders->get[ /data/wwwroot/dev.happyoneplus.com/application/index/controller/Orders.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000410s ] mysql:dbname=project;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `orders` [ RunTime:0.001068s ]
+[ sql ] [ SQL ] SELECT * FROM `orders` WHERE  `employ_id` = '508213bd50056050fd694c05'  AND `role_status` < 8 [ RunTime:0.001047s ]
+
+---------------------------------------------------------------
+[ 2017-05-07T15:25:46+08:00 ] 121.42.174.228 117.136.0.239 POST //orders/get
+[ log ] dev.happyoneplus.com//orders/get [运行时间：0.160432s][吞吐率：6.23req/s] [内存消耗：4,054.50kb] [文件加载：50]
+[ info ] [ LANG ] /data/wwwroot/dev.happyoneplus.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'orders',
+    2 => 'get',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'charset' => 'UTF-8',
+  'accept-encoding' => 'gzip',
+  'token-key' => 'b98a7ed061510a3ce43dbf1bc957257ba204c6b0',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 4.4.2; PE-TL20 Build/HuaweiPE-TL20) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Safari/537.36',
+  'connection' => 'Keep-Alive',
+  'accept' => '*/*',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'host' => 'dev.happyoneplus.com',
+  'content-length' => '95',
+)
+[ info ] [ PARAM ] array (
+  'id' => '{"id":"508213bd50056050fd694c05"}',
+  'Skip' => '',
+  'WhereJson' => '',
+  'OrderJson' => '',
+  'Limit' => '',
+  'DataJson' => '',
+)
+[ info ] [ RUN ] app\index\controller\Orders->get[ /data/wwwroot/dev.happyoneplus.com/application/index/controller/Orders.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003313s ] mysql:dbname=project;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `orders` [ RunTime:0.001889s ]
+[ sql ] [ SQL ] SELECT * FROM `orders` WHERE  `employ_id` = '508213bd50056050fd694c05'  AND `role_status` < 8 [ RunTime:0.000975s ]
+
+---------------------------------------------------------------
+[ 2017-05-07T15:25:46+08:00 ] 121.42.174.228 117.136.0.239 POST //orders/get
+[ log ] dev.happyoneplus.com//orders/get [运行时间：0.131856s][吞吐率：7.58req/s] [内存消耗：4,054.50kb] [文件加载：50]
+[ info ] [ LANG ] /data/wwwroot/dev.happyoneplus.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'orders',
+    2 => 'get',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'charset' => 'UTF-8',
+  'accept-encoding' => 'gzip',
+  'token-key' => 'b98a7ed061510a3ce43dbf1bc957257ba204c6b0',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 4.4.2; PE-TL20 Build/HuaweiPE-TL20) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Safari/537.36',
+  'connection' => 'Keep-Alive',
+  'accept' => '*/*',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'host' => 'dev.happyoneplus.com',
+  'content-length' => '95',
+)
+[ info ] [ PARAM ] array (
+  'id' => '{"id":"508213bd50056050fd694c05"}',
+  'Skip' => '',
+  'WhereJson' => '',
+  'OrderJson' => '',
+  'Limit' => '',
+  'DataJson' => '',
+)
+[ info ] [ RUN ] app\index\controller\Orders->get[ /data/wwwroot/dev.happyoneplus.com/application/index/controller/Orders.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000454s ] mysql:dbname=project;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `orders` [ RunTime:0.001124s ]
+[ sql ] [ SQL ] SELECT * FROM `orders` WHERE  `employ_id` = '508213bd50056050fd694c05'  AND `role_status` < 8 [ RunTime:0.000430s ]
+
+---------------------------------------------------------------
+[ 2017-05-07T15:25:48+08:00 ] 121.42.174.228 117.136.0.239 POST //orders/get
+[ log ] dev.happyoneplus.com//orders/get [运行时间：0.047508s][吞吐率：21.05req/s] [内存消耗：4,054.50kb] [文件加载：50]
+[ info ] [ LANG ] /data/wwwroot/dev.happyoneplus.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'orders',
+    2 => 'get',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'charset' => 'UTF-8',
+  'accept-encoding' => 'gzip',
+  'token-key' => 'b98a7ed061510a3ce43dbf1bc957257ba204c6b0',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 4.4.2; PE-TL20 Build/HuaweiPE-TL20) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Safari/537.36',
+  'connection' => 'Keep-Alive',
+  'accept' => '*/*',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'host' => 'dev.happyoneplus.com',
+  'content-length' => '95',
+)
+[ info ] [ PARAM ] array (
+  'id' => '{"id":"508213bd50056050fd694c05"}',
+  'Skip' => '',
+  'WhereJson' => '',
+  'OrderJson' => '',
+  'Limit' => '',
+  'DataJson' => '',
+)
+[ info ] [ RUN ] app\index\controller\Orders->get[ /data/wwwroot/dev.happyoneplus.com/application/index/controller/Orders.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000496s ] mysql:dbname=project;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `orders` [ RunTime:0.001242s ]
+[ sql ] [ SQL ] SELECT * FROM `orders` WHERE  `employ_id` = '508213bd50056050fd694c05'  AND `role_status` < 8 [ RunTime:0.000379s ]
+
+---------------------------------------------------------------
+[ 2017-05-07T15:25:48+08:00 ] 121.42.174.228 117.136.0.239 POST //cate/get
+[ log ] dev.happyoneplus.com//cate/get [运行时间：0.088010s][吞吐率：11.36req/s] [内存消耗：3,608.63kb] [文件加载：48]
+[ info ] [ LANG ] /data/wwwroot/dev.happyoneplus.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'cate',
+    2 => 'get',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'charset' => 'UTF-8',
+  'accept-encoding' => 'gzip',
+  'token-key' => 'b98a7ed061510a3ce43dbf1bc957257ba204c6b0',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 4.4.2; PE-TL20 Build/HuaweiPE-TL20) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Safari/537.36',
+  'connection' => 'Keep-Alive',
+  'accept' => '*/*',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'host' => 'dev.happyoneplus.com',
+  'content-length' => '95',
+)
+[ info ] [ PARAM ] array (
+  'id' => '{"id":"508213bd50056050fd694c05"}',
+  'Skip' => '',
+  'WhereJson' => '',
+  'OrderJson' => '',
+  'Limit' => '',
+  'DataJson' => '',
+)
+[ info ] [ RUN ] app\index\controller\Cate->get[ /data/wwwroot/dev.happyoneplus.com/application/index/controller/Cate.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000468s ] mysql:dbname=project;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cate` [ RunTime:0.001013s ]
+[ sql ] [ SQL ] SELECT * FROM `cate` [ RunTime:0.000492s ]
+
+---------------------------------------------------------------
+[ 2017-05-07T15:25:51+08:00 ] 121.42.174.228 117.136.0.239 POST //employ/unionfind
+[ log ] dev.happyoneplus.com//employ/unionfind [运行时间：0.053866s][吞吐率：18.56req/s] [内存消耗：3,615.45kb] [文件加载：48]
+[ info ] [ LANG ] /data/wwwroot/dev.happyoneplus.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'employ',
+    2 => 'unionfind',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'charset' => 'UTF-8',
+  'accept-encoding' => 'gzip',
+  'token-key' => 'b98a7ed061510a3ce43dbf1bc957257ba204c6b0',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 4.4.2; PE-TL20 Build/HuaweiPE-TL20) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Safari/537.36',
+  'connection' => 'Keep-Alive',
+  'accept' => '*/*',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'host' => 'dev.happyoneplus.com',
+  'content-length' => '226',
+)
+[ info ] [ PARAM ] array (
+  'id' => '{"id":"508213bd50056050fd694c05"}',
+  'whereJson' => '{"limit":0,"task_type":"","order":"默认排序","settlement_type":"","address":""}',
+)
+[ info ] [ RUN ] app\index\controller\Employ->UnionFind[ /data/wwwroot/dev.happyoneplus.com/application/index/controller/Employ.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000510s ] mysql:dbname=project;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `employ` [ RunTime:0.001138s ]
+[ sql ] [ SQL ] SELECT * FROM `employ` WHERE  `employ_id` <> '508213bd50056050fd694c05'  AND `address` LIKE '%%'  AND `task_type` LIKE '%%'  AND `settlement_type` LIKE '%%' LIMIT 0,10 [ RunTime:0.000612s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `userinfo` [ RunTime:0.000908s ]
+[ sql ] [ SQL ] SELECT * FROM `userinfo` WHERE  `uid` = '5071592517834b3f54145351' LIMIT 1 [ RunTime:0.000296s ]
+[ sql ] [ SQL ] SELECT * FROM `userinfo` WHERE  `uid` = '512564707e400c227687589b' LIMIT 1 [ RunTime:0.000296s ]
+[ sql ] [ SQL ] SELECT * FROM `userinfo` WHERE  `uid` = '510141cd31ab8ba0e93edea8' LIMIT 1 [ RunTime:0.000443s ]
+[ sql ] [ SQL ] SELECT * FROM `userinfo` WHERE  `uid` = '6558594cc082519c4b206540' LIMIT 1 [ RunTime:0.000505s ]
+[ sql ] [ SQL ] SELECT * FROM `userinfo` WHERE  `uid` = '6558594cc082519c4b206540' LIMIT 1 [ RunTime:0.000389s ]
+[ sql ] [ SQL ] SELECT * FROM `userinfo` WHERE  `uid` = '510141cd31ab8ba0e93edea8' LIMIT 1 [ RunTime:0.000302s ]
+[ sql ] [ SQL ] SELECT * FROM `userinfo` WHERE  `uid` = '510141cd31ab8ba0e93edea8' LIMIT 1 [ RunTime:0.000253s ]
+[ sql ] [ SQL ] SELECT * FROM `userinfo` WHERE  `uid` = '510141cd31ab8ba0e93edea8' LIMIT 1 [ RunTime:0.000251s ]
+[ sql ] [ SQL ] SELECT * FROM `userinfo` WHERE  `uid` = '5071592517834b3f54145351' LIMIT 1 [ RunTime:0.000276s ]
+[ sql ] [ SQL ] SELECT * FROM `userinfo` WHERE  `uid` = '508407b8bccdabcc445c87b4' LIMIT 1 [ RunTime:0.000331s ]
+
+---------------------------------------------------------------
+[ 2017-05-07T15:25:52+08:00 ] 121.42.174.228 117.136.0.239 POST //applicantlist/getemploy
+[ log ] dev.happyoneplus.com//applicantlist/getemploy [运行时间：0.049643s][吞吐率：20.14req/s] [内存消耗：3,503.06kb] [文件加载：48]
+[ info ] [ LANG ] /data/wwwroot/dev.happyoneplus.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'applicantlist',
+    2 => 'getemploy',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'charset' => 'UTF-8',
+  'accept-encoding' => 'gzip',
+  'token-key' => 'b98a7ed061510a3ce43dbf1bc957257ba204c6b0',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 4.4.2; PE-TL20 Build/HuaweiPE-TL20) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Safari/537.36',
+  'connection' => 'Keep-Alive',
+  'accept' => '*/*',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'host' => 'dev.happyoneplus.com',
+  'content-length' => '95',
+)
+[ info ] [ PARAM ] array (
+  'id' => '{"id":"508213bd50056050fd694c05"}',
+  'Skip' => '',
+  'WhereJson' => '',
+  'OrderJson' => '',
+  'Limit' => '',
+  'DataJson' => '',
+)
+[ info ] [ RUN ] app\index\controller\Applicantlist->getEmploy[ /data/wwwroot/dev.happyoneplus.com/application/index/controller/Applicantlist.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000902s ] mysql:dbname=project;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `applicant_list` [ RunTime:0.002034s ]
+[ sql ] [ SQL ] SELECT * FROM `applicant_list` WHERE  `applicant_id` = '508213bd50056050fd694c05' [ RunTime:0.000301s ]
+
+---------------------------------------------------------------
+[ 2017-05-07T15:25:52+08:00 ] 121.42.174.228 117.136.0.239 POST //cate/get
+[ log ] dev.happyoneplus.com//cate/get [运行时间：0.090980s][吞吐率：10.99req/s] [内存消耗：3,608.63kb] [文件加载：48]
+[ info ] [ LANG ] /data/wwwroot/dev.happyoneplus.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'cate',
+    2 => 'get',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'charset' => 'UTF-8',
+  'accept-encoding' => 'gzip',
+  'token-key' => 'b98a7ed061510a3ce43dbf1bc957257ba204c6b0',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 4.4.2; PE-TL20 Build/HuaweiPE-TL20) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Safari/537.36',
+  'connection' => 'Keep-Alive',
+  'accept' => '*/*',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'host' => 'dev.happyoneplus.com',
+  'content-length' => '95',
+)
+[ info ] [ PARAM ] array (
+  'id' => '{"id":"508213bd50056050fd694c05"}',
+  'Skip' => '',
+  'WhereJson' => '',
+  'OrderJson' => '',
+  'Limit' => '',
+  'DataJson' => '',
+)
+[ info ] [ RUN ] app\index\controller\Cate->get[ /data/wwwroot/dev.happyoneplus.com/application/index/controller/Cate.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000493s ] mysql:dbname=project;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cate` [ RunTime:0.000991s ]
+[ sql ] [ SQL ] SELECT * FROM `cate` [ RunTime:0.000504s ]
+
+---------------------------------------------------------------
+[ 2017-05-07T15:25:59+08:00 ] 121.42.174.228 117.136.0.239 POST //skill/unionfind
+[ log ] dev.happyoneplus.com//skill/unionfind [运行时间：0.044049s][吞吐率：22.70req/s] [内存消耗：3,671.66kb] [文件加载：54]
+[ info ] [ LANG ] /data/wwwroot/dev.happyoneplus.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'skill',
+    2 => 'unionfind',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'charset' => 'UTF-8',
+  'accept-encoding' => 'gzip',
+  'token-key' => 'b98a7ed061510a3ce43dbf1bc957257ba204c6b0',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 4.4.2; PE-TL20 Build/HuaweiPE-TL20) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Safari/537.36',
+  'connection' => 'Keep-Alive',
+  'accept' => '*/*',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'host' => 'dev.happyoneplus.com',
+  'content-length' => '198',
+)
+[ info ] [ PARAM ] array (
+  'id' => '{"id":"508213bd50056050fd694c05"}',
+  'whereJson' => '{"limit":0,"skill_type":"","unit":"","order":"最近","address":""}',
+)
+[ info ] [ RUN ] app\index\Controller\Skill->UnionFind[ /data/wwwroot/dev.happyoneplus.com/application/index/controller/Skill.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000493s ] mysql:dbname=project;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `skill` [ RunTime:0.001131s ]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column '最近' in 'order clause'[/data/wwwroot/dev.happyoneplus.com/thinkphp/library/think/db/Connection.php:399]
+
+---------------------------------------------------------------
+[ 2017-05-07T15:26:00+08:00 ] 121.42.174.228 117.136.0.239 POST //cate/get
+[ log ] dev.happyoneplus.com//cate/get [运行时间：0.082951s][吞吐率：12.06req/s] [内存消耗：3,608.63kb] [文件加载：48]
+[ info ] [ LANG ] /data/wwwroot/dev.happyoneplus.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'cate',
+    2 => 'get',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'charset' => 'UTF-8',
+  'accept-encoding' => 'gzip',
+  'token-key' => 'b98a7ed061510a3ce43dbf1bc957257ba204c6b0',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 4.4.2; PE-TL20 Build/HuaweiPE-TL20) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Safari/537.36',
+  'connection' => 'Keep-Alive',
+  'accept' => '*/*',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'host' => 'dev.happyoneplus.com',
+  'content-length' => '95',
+)
+[ info ] [ PARAM ] array (
+  'id' => '{"id":"508213bd50056050fd694c05"}',
+  'Skip' => '',
+  'WhereJson' => '',
+  'OrderJson' => '',
+  'Limit' => '',
+  'DataJson' => '',
+)
+[ info ] [ RUN ] app\index\controller\Cate->get[ /data/wwwroot/dev.happyoneplus.com/application/index/controller/Cate.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000498s ] mysql:dbname=project;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cate` [ RunTime:0.001110s ]
+[ sql ] [ SQL ] SELECT * FROM `cate` [ RunTime:0.000563s ]
+
+---------------------------------------------------------------
+[ 2017-05-07T15:26:09+08:00 ] 121.42.174.228 117.136.0.239 POST //cate/get
+[ log ] dev.happyoneplus.com//cate/get [运行时间：0.093053s][吞吐率：10.75req/s] [内存消耗：3,608.63kb] [文件加载：48]
+[ info ] [ LANG ] /data/wwwroot/dev.happyoneplus.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'cate',
+    2 => 'get',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'charset' => 'UTF-8',
+  'accept-encoding' => 'gzip',
+  'token-key' => 'b98a7ed061510a3ce43dbf1bc957257ba204c6b0',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 4.4.2; PE-TL20 Build/HuaweiPE-TL20) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Safari/537.36',
+  'connection' => 'Keep-Alive',
+  'accept' => '*/*',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'host' => 'dev.happyoneplus.com',
+  'content-length' => '95',
+)
+[ info ] [ PARAM ] array (
+  'id' => '{"id":"508213bd50056050fd694c05"}',
+  'Skip' => '',
+  'WhereJson' => '',
+  'OrderJson' => '',
+  'Limit' => '',
+  'DataJson' => '',
+)
+[ info ] [ RUN ] app\index\controller\Cate->get[ /data/wwwroot/dev.happyoneplus.com/application/index/controller/Cate.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000544s ] mysql:dbname=project;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cate` [ RunTime:0.001014s ]
+[ sql ] [ SQL ] SELECT * FROM `cate` [ RunTime:0.000497s ]
+
+---------------------------------------------------------------
+[ 2017-05-07T15:26:10+08:00 ] 121.42.174.228 117.136.0.239 POST //employ/unionfind
+[ log ] dev.happyoneplus.com//employ/unionfind [运行时间：0.048380s][吞吐率：20.67req/s] [内存消耗：3,678.15kb] [文件加载：54]
+[ info ] [ LANG ] /data/wwwroot/dev.happyoneplus.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'employ',
+    2 => 'unionfind',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'charset' => 'UTF-8',
+  'accept-encoding' => 'gzip',
+  'token-key' => 'b98a7ed061510a3ce43dbf1bc957257ba204c6b0',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 4.4.2; PE-TL20 Build/HuaweiPE-TL20) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Safari/537.36',
+  'connection' => 'Keep-Alive',
+  'accept' => '*/*',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'host' => 'dev.happyoneplus.com',
+  'content-length' => '244',
+)
+[ info ] [ PARAM ] array (
+  'id' => '{"id":"508213bd50056050fd694c05"}',
+  'whereJson' => '{"limit":0,"task_type":"","order":"财运指数最高","settlement_type":"","address":""}',
+)
+[ info ] [ RUN ] app\index\controller\Employ->UnionFind[ /data/wwwroot/dev.happyoneplus.com/application/index/controller/Employ.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000483s ] mysql:dbname=project;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `employ` [ RunTime:0.001122s ]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column '财运指数最高' in 'order clause'[/data/wwwroot/dev.happyoneplus.com/thinkphp/library/think/db/Connection.php:399]
+
+---------------------------------------------------------------
+[ 2017-05-07T15:26:13+08:00 ] 121.42.174.228 117.136.0.239 POST //applicantlist/getemploy
+[ log ] dev.happyoneplus.com//applicantlist/getemploy [运行时间：0.041023s][吞吐率：24.38req/s] [内存消耗：3,503.06kb] [文件加载：48]
+[ info ] [ LANG ] /data/wwwroot/dev.happyoneplus.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'applicantlist',
+    2 => 'getemploy',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'charset' => 'UTF-8',
+  'accept-encoding' => 'gzip',
+  'token-key' => 'b98a7ed061510a3ce43dbf1bc957257ba204c6b0',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 4.4.2; PE-TL20 Build/HuaweiPE-TL20) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Safari/537.36',
+  'connection' => 'Keep-Alive',
+  'accept' => '*/*',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'host' => 'dev.happyoneplus.com',
+  'content-length' => '95',
+)
+[ info ] [ PARAM ] array (
+  'id' => '{"id":"508213bd50056050fd694c05"}',
+  'Skip' => '',
+  'WhereJson' => '',
+  'OrderJson' => '',
+  'Limit' => '',
+  'DataJson' => '',
+)
+[ info ] [ RUN ] app\index\controller\Applicantlist->getEmploy[ /data/wwwroot/dev.happyoneplus.com/application/index/controller/Applicantlist.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000515s ] mysql:dbname=project;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `applicant_list` [ RunTime:0.001121s ]
+[ sql ] [ SQL ] SELECT * FROM `applicant_list` WHERE  `applicant_id` = '508213bd50056050fd694c05' [ RunTime:0.000290s ]
+
+---------------------------------------------------------------
+[ 2017-05-07T15:26:25+08:00 ] 121.42.174.228 117.136.0.239 POST //employ/unionfind
+[ log ] dev.happyoneplus.com//employ/unionfind [运行时间：0.040218s][吞吐率：24.86req/s] [内存消耗：3,587.80kb] [文件加载：48]
+[ info ] [ LANG ] /data/wwwroot/dev.happyoneplus.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'employ',
+    2 => 'unionfind',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'charset' => 'UTF-8',
+  'accept-encoding' => 'gzip',
+  'token-key' => 'b98a7ed061510a3ce43dbf1bc957257ba204c6b0',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 4.4.2; PE-TL20 Build/HuaweiPE-TL20) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Safari/537.36',
+  'connection' => 'Keep-Alive',
+  'accept' => '*/*',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'host' => 'dev.happyoneplus.com',
+  'content-length' => '226',
+)
+[ info ] [ PARAM ] array (
+  'id' => '{"id":"508213bd50056050fd694c05"}',
+  'whereJson' => '{"limit":0,"task_type":"在线翻译","order":"","settlement_type":"","address":""}',
+)
+[ info ] [ RUN ] app\index\controller\Employ->UnionFind[ /data/wwwroot/dev.happyoneplus.com/application/index/controller/Employ.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000494s ] mysql:dbname=project;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `employ` [ RunTime:0.001145s ]
+[ sql ] [ SQL ] SELECT * FROM `employ` WHERE  `employ_id` <> '508213bd50056050fd694c05'  AND `address` LIKE '%%'  AND `task_type` = '在线翻译'  AND `settlement_type` LIKE '%%' LIMIT 0,10 [ RunTime:0.000575s ]
+
+---------------------------------------------------------------
+[ 2017-05-07T15:26:25+08:00 ] 121.42.174.228 117.136.0.239 POST //employ/getdata
+[ log ] dev.happyoneplus.com//employ/getdata [运行时间：0.059200s][吞吐率：16.89req/s] [内存消耗：4,007.26kb] [文件加载：50]
+[ info ] [ LANG ] /data/wwwroot/dev.happyoneplus.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'employ',
+    2 => 'getdata',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'charset' => 'UTF-8',
+  'accept-encoding' => 'gzip',
+  'token-key' => 'b98a7ed061510a3ce43dbf1bc957257ba204c6b0',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 4.4.2; PE-TL20 Build/HuaweiPE-TL20) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Safari/537.36',
+  'connection' => 'Keep-Alive',
+  'accept' => '*/*',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'host' => 'dev.happyoneplus.com',
+  'content-length' => '116',
+)
+[ info ] [ PARAM ] array (
+  'id' => '{"id":"508213bd50056050fd694c05"}',
+  'Skip' => '',
+  'WhereJson' => '',
+  'OrderJson' => '',
+  'Limit' => '{"limit":0}',
+  'DataJson' => '',
+)
+[ info ] [ RUN ] app\index\controller\Employ->getData[ /data/wwwroot/dev.happyoneplus.com/application/index/controller/Employ.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000569s ] mysql:dbname=project;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `employ` [ RunTime:0.001579s ]
+[ sql ] [ SQL ] SELECT * FROM `employ` WHERE  `is_delete` = 0  AND `employ_id` <> '508213bd50056050fd694c05' ORDER BY add_time desc LIMIT 0,10 [ RunTime:0.000402s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `userinfo` [ RunTime:0.000967s ]
+[ sql ] [ SQL ] SELECT * FROM `userinfo` WHERE  `uid` = '510141cd31ab8ba0e93edea8' [ RunTime:0.000255s ]
+[ sql ] [ SQL ] SELECT * FROM `userinfo` WHERE  `uid` = '508407b8bccdabcc445c87b4' [ RunTime:0.000277s ]
+[ sql ] [ SQL ] SELECT * FROM `userinfo` WHERE  `uid` = '508407b8bccdabcc445c87b4' [ RunTime:0.000248s ]
+[ sql ] [ SQL ] SELECT * FROM `userinfo` WHERE  `uid` = '508407b8bccdabcc445c87b4' [ RunTime:0.000246s ]
+[ sql ] [ SQL ] SELECT * FROM `userinfo` WHERE  `uid` = '508407b8bccdabcc445c87b4' [ RunTime:0.000247s ]
+[ sql ] [ SQL ] SELECT * FROM `userinfo` WHERE  `uid` = '5071592517834b3f54145351' [ RunTime:0.000285s ]
+[ sql ] [ SQL ] SELECT * FROM `userinfo` WHERE  `uid` = '512564707e400c227687589b' [ RunTime:0.000266s ]
+[ sql ] [ SQL ] SELECT * FROM `userinfo` WHERE  `uid` = '510141cd31ab8ba0e93edea8' [ RunTime:0.000242s ]
+[ sql ] [ SQL ] SELECT * FROM `userinfo` WHERE  `uid` = '510141cd31ab8ba0e93edea8' [ RunTime:0.000357s ]
+[ sql ] [ SQL ] SELECT * FROM `userinfo` WHERE  `uid` = '510141cd31ab8ba0e93edea8' [ RunTime:0.000363s ]
+
+---------------------------------------------------------------
+[ 2017-05-07T15:26:26+08:00 ] 121.42.174.228 117.136.0.239 POST //applicantlist/getemploy
+[ log ] dev.happyoneplus.com//applicantlist/getemploy [运行时间：0.077347s][吞吐率：12.93req/s] [内存消耗：3,503.06kb] [文件加载：48]
+[ info ] [ LANG ] /data/wwwroot/dev.happyoneplus.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'applicantlist',
+    2 => 'getemploy',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'charset' => 'UTF-8',
+  'accept-encoding' => 'gzip',
+  'token-key' => 'b98a7ed061510a3ce43dbf1bc957257ba204c6b0',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 4.4.2; PE-TL20 Build/HuaweiPE-TL20) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Safari/537.36',
+  'connection' => 'Keep-Alive',
+  'accept' => '*/*',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'host' => 'dev.happyoneplus.com',
+  'content-length' => '95',
+)
+[ info ] [ PARAM ] array (
+  'id' => '{"id":"508213bd50056050fd694c05"}',
+  'Skip' => '',
+  'WhereJson' => '',
+  'OrderJson' => '',
+  'Limit' => '',
+  'DataJson' => '',
+)
+[ info ] [ RUN ] app\index\controller\Applicantlist->getEmploy[ /data/wwwroot/dev.happyoneplus.com/application/index/controller/Applicantlist.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000358s ] mysql:dbname=project;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `applicant_list` [ RunTime:0.001975s ]
+[ sql ] [ SQL ] SELECT * FROM `applicant_list` WHERE  `applicant_id` = '508213bd50056050fd694c05' [ RunTime:0.000992s ]
+
+---------------------------------------------------------------
+[ 2017-05-07T15:26:26+08:00 ] 121.42.174.228 117.136.0.239 POST //cate/get
+[ log ] dev.happyoneplus.com//cate/get [运行时间：0.124624s][吞吐率：8.02req/s] [内存消耗：3,608.63kb] [文件加载：48]
+[ info ] [ LANG ] /data/wwwroot/dev.happyoneplus.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'cate',
+    2 => 'get',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'charset' => 'UTF-8',
+  'accept-encoding' => 'gzip',
+  'token-key' => 'b98a7ed061510a3ce43dbf1bc957257ba204c6b0',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 4.4.2; PE-TL20 Build/HuaweiPE-TL20) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Safari/537.36',
+  'connection' => 'Keep-Alive',
+  'accept' => '*/*',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'host' => 'dev.happyoneplus.com',
+  'content-length' => '95',
+)
+[ info ] [ PARAM ] array (
+  'id' => '{"id":"508213bd50056050fd694c05"}',
+  'Skip' => '',
+  'WhereJson' => '',
+  'OrderJson' => '',
+  'Limit' => '',
+  'DataJson' => '',
+)
+[ info ] [ RUN ] app\index\controller\Cate->get[ /data/wwwroot/dev.happyoneplus.com/application/index/controller/Cate.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002212s ] mysql:dbname=project;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cate` [ RunTime:0.002058s ]
+[ sql ] [ SQL ] SELECT * FROM `cate` [ RunTime:0.000486s ]
+
+---------------------------------------------------------------
+[ 2017-05-07T15:26:38+08:00 ] 121.42.174.228 117.136.0.239 POST //cate/get
+[ log ] dev.happyoneplus.com//cate/get [运行时间：0.079098s][吞吐率：12.64req/s] [内存消耗：3,608.63kb] [文件加载：48]
+[ info ] [ LANG ] /data/wwwroot/dev.happyoneplus.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'cate',
+    2 => 'get',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'charset' => 'UTF-8',
+  'accept-encoding' => 'gzip',
+  'token-key' => 'b98a7ed061510a3ce43dbf1bc957257ba204c6b0',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 4.4.2; PE-TL20 Build/HuaweiPE-TL20) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Safari/537.36',
+  'connection' => 'Keep-Alive',
+  'accept' => '*/*',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'host' => 'dev.happyoneplus.com',
+  'content-length' => '95',
+)
+[ info ] [ PARAM ] array (
+  'id' => '{"id":"508213bd50056050fd694c05"}',
+  'Skip' => '',
+  'WhereJson' => '',
+  'OrderJson' => '',
+  'Limit' => '',
+  'DataJson' => '',
+)
+[ info ] [ RUN ] app\index\controller\Cate->get[ /data/wwwroot/dev.happyoneplus.com/application/index/controller/Cate.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000492s ] mysql:dbname=project;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cate` [ RunTime:0.000993s ]
+[ sql ] [ SQL ] SELECT * FROM `cate` [ RunTime:0.000534s ]
+
+---------------------------------------------------------------
+[ 2017-05-07T15:26:39+08:00 ] 121.42.174.228 117.136.0.239 POST //employ/unionfind
+[ log ] dev.happyoneplus.com//employ/unionfind [运行时间：0.038468s][吞吐率：26.00req/s] [内存消耗：3,587.80kb] [文件加载：48]
+[ info ] [ LANG ] /data/wwwroot/dev.happyoneplus.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'employ',
+    2 => 'unionfind',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'charset' => 'UTF-8',
+  'accept-encoding' => 'gzip',
+  'token-key' => 'b98a7ed061510a3ce43dbf1bc957257ba204c6b0',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 4.4.2; PE-TL20 Build/HuaweiPE-TL20) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Safari/537.36',
+  'connection' => 'Keep-Alive',
+  'accept' => '*/*',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'host' => 'dev.happyoneplus.com',
+  'content-length' => '226',
+)
+[ info ] [ PARAM ] array (
+  'id' => '{"id":"508213bd50056050fd694c05"}',
+  'whereJson' => '{"limit":0,"task_type":"校园代理","order":"","settlement_type":"","address":""}',
+)
+[ info ] [ RUN ] app\index\controller\Employ->UnionFind[ /data/wwwroot/dev.happyoneplus.com/application/index/controller/Employ.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000537s ] mysql:dbname=project;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `employ` [ RunTime:0.001123s ]
+[ sql ] [ SQL ] SELECT * FROM `employ` WHERE  `employ_id` <> '508213bd50056050fd694c05'  AND `address` LIKE '%%'  AND `task_type` = '校园代理'  AND `settlement_type` LIKE '%%' LIMIT 0,10 [ RunTime:0.000582s ]
+
+---------------------------------------------------------------
+[ 2017-05-07T15:26:39+08:00 ] 121.42.174.228 117.136.0.239 POST //employ/getdata
+[ log ] dev.happyoneplus.com//employ/getdata [运行时间：0.055522s][吞吐率：18.01req/s] [内存消耗：4,007.26kb] [文件加载：50]
+[ info ] [ LANG ] /data/wwwroot/dev.happyoneplus.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'employ',
+    2 => 'getdata',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'charset' => 'UTF-8',
+  'accept-encoding' => 'gzip',
+  'token-key' => 'b98a7ed061510a3ce43dbf1bc957257ba204c6b0',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 4.4.2; PE-TL20 Build/HuaweiPE-TL20) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Safari/537.36',
+  'connection' => 'Keep-Alive',
+  'accept' => '*/*',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'host' => 'dev.happyoneplus.com',
+  'content-length' => '116',
+)
+[ info ] [ PARAM ] array (
+  'id' => '{"id":"508213bd50056050fd694c05"}',
+  'Skip' => '',
+  'WhereJson' => '',
+  'OrderJson' => '',
+  'Limit' => '{"limit":0}',
+  'DataJson' => '',
+)
+[ info ] [ RUN ] app\index\controller\Employ->getData[ /data/wwwroot/dev.happyoneplus.com/application/index/controller/Employ.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000505s ] mysql:dbname=project;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `employ` [ RunTime:0.001117s ]
+[ sql ] [ SQL ] SELECT * FROM `employ` WHERE  `is_delete` = 0  AND `employ_id` <> '508213bd50056050fd694c05' ORDER BY add_time desc LIMIT 0,10 [ RunTime:0.000395s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `userinfo` [ RunTime:0.000925s ]
+[ sql ] [ SQL ] SELECT * FROM `userinfo` WHERE  `uid` = '510141cd31ab8ba0e93edea8' [ RunTime:0.000260s ]
+[ sql ] [ SQL ] SELECT * FROM `userinfo` WHERE  `uid` = '508407b8bccdabcc445c87b4' [ RunTime:0.000342s ]
+[ sql ] [ SQL ] SELECT * FROM `userinfo` WHERE  `uid` = '508407b8bccdabcc445c87b4' [ RunTime:0.000367s ]
+[ sql ] [ SQL ] SELECT * FROM `userinfo` WHERE  `uid` = '508407b8bccdabcc445c87b4' [ RunTime:0.000378s ]
+[ sql ] [ SQL ] SELECT * FROM `userinfo` WHERE  `uid` = '508407b8bccdabcc445c87b4' [ RunTime:0.000255s ]
+[ sql ] [ SQL ] SELECT * FROM `userinfo` WHERE  `uid` = '5071592517834b3f54145351' [ RunTime:0.000383s ]
+[ sql ] [ SQL ] SELECT * FROM `userinfo` WHERE  `uid` = '512564707e400c227687589b' [ RunTime:0.000372s ]
+[ sql ] [ SQL ] SELECT * FROM `userinfo` WHERE  `uid` = '510141cd31ab8ba0e93edea8' [ RunTime:0.000266s ]
+[ sql ] [ SQL ] SELECT * FROM `userinfo` WHERE  `uid` = '510141cd31ab8ba0e93edea8' [ RunTime:0.000272s ]
+[ sql ] [ SQL ] SELECT * FROM `userinfo` WHERE  `uid` = '510141cd31ab8ba0e93edea8' [ RunTime:0.000328s ]
+
+---------------------------------------------------------------
+[ 2017-05-07T15:26:41+08:00 ] 121.42.174.228 117.136.0.239 POST //applicantlist/getemploy
+[ log ] dev.happyoneplus.com//applicantlist/getemploy [运行时间：0.040421s][吞吐率：24.74req/s] [内存消耗：3,503.06kb] [文件加载：48]
+[ info ] [ LANG ] /data/wwwroot/dev.happyoneplus.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'applicantlist',
+    2 => 'getemploy',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'charset' => 'UTF-8',
+  'accept-encoding' => 'gzip',
+  'token-key' => 'b98a7ed061510a3ce43dbf1bc957257ba204c6b0',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 4.4.2; PE-TL20 Build/HuaweiPE-TL20) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Safari/537.36',
+  'connection' => 'Keep-Alive',
+  'accept' => '*/*',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'host' => 'dev.happyoneplus.com',
+  'content-length' => '95',
+)
+[ info ] [ PARAM ] array (
+  'id' => '{"id":"508213bd50056050fd694c05"}',
+  'Skip' => '',
+  'WhereJson' => '',
+  'OrderJson' => '',
+  'Limit' => '',
+  'DataJson' => '',
+)
+[ info ] [ RUN ] app\index\controller\Applicantlist->getEmploy[ /data/wwwroot/dev.happyoneplus.com/application/index/controller/Applicantlist.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000552s ] mysql:dbname=project;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `applicant_list` [ RunTime:0.001065s ]
+[ sql ] [ SQL ] SELECT * FROM `applicant_list` WHERE  `applicant_id` = '508213bd50056050fd694c05' [ RunTime:0.000378s ]
+
+---------------------------------------------------------------
+[ 2017-05-07T15:26:48+08:00 ] 121.42.174.228 117.136.0.239 POST //employ/unionfind
+[ log ] dev.happyoneplus.com//employ/unionfind [运行时间：0.041327s][吞吐率：24.20req/s] [内存消耗：3,587.48kb] [文件加载：48]
+[ info ] [ LANG ] /data/wwwroot/dev.happyoneplus.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'employ',
+    2 => 'unionfind',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'charset' => 'UTF-8',
+  'accept-encoding' => 'gzip',
+  'token-key' => 'b98a7ed061510a3ce43dbf1bc957257ba204c6b0',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 4.4.2; PE-TL20 Build/HuaweiPE-TL20) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Safari/537.36',
+  'connection' => 'Keep-Alive',
+  'accept' => '*/*',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'host' => 'dev.happyoneplus.com',
+  'content-length' => '208',
+)
+[ info ] [ PARAM ] array (
+  'id' => '{"id":"508213bd50056050fd694c05"}',
+  'whereJson' => '{"limit":0,"task_type":"","order":"","settlement_type":"","address":"北京"}',
+)
+[ info ] [ RUN ] app\index\controller\Employ->UnionFind[ /data/wwwroot/dev.happyoneplus.com/application/index/controller/Employ.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000482s ] mysql:dbname=project;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `employ` [ RunTime:0.001165s ]
+[ sql ] [ SQL ] SELECT * FROM `employ` WHERE  `employ_id` <> '508213bd50056050fd694c05'  AND `address` = '北京'  AND `task_type` LIKE '%%'  AND `settlement_type` LIKE '%%' LIMIT 0,10 [ RunTime:0.000568s ]
+
+---------------------------------------------------------------
+[ 2017-05-07T15:26:48+08:00 ] 121.42.174.228 117.136.0.239 POST //employ/getdata
+[ log ] dev.happyoneplus.com//employ/getdata [运行时间：0.058118s][吞吐率：17.21req/s] [内存消耗：4,007.26kb] [文件加载：50]
+[ info ] [ LANG ] /data/wwwroot/dev.happyoneplus.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'employ',
+    2 => 'getdata',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'charset' => 'UTF-8',
+  'accept-encoding' => 'gzip',
+  'token-key' => 'b98a7ed061510a3ce43dbf1bc957257ba204c6b0',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 4.4.2; PE-TL20 Build/HuaweiPE-TL20) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Safari/537.36',
+  'connection' => 'Keep-Alive',
+  'accept' => '*/*',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'host' => 'dev.happyoneplus.com',
+  'content-length' => '116',
+)
+[ info ] [ PARAM ] array (
+  'id' => '{"id":"508213bd50056050fd694c05"}',
+  'Skip' => '',
+  'WhereJson' => '',
+  'OrderJson' => '',
+  'Limit' => '{"limit":0}',
+  'DataJson' => '',
+)
+[ info ] [ RUN ] app\index\controller\Employ->getData[ /data/wwwroot/dev.happyoneplus.com/application/index/controller/Employ.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000496s ] mysql:dbname=project;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `employ` [ RunTime:0.001216s ]
+[ sql ] [ SQL ] SELECT * FROM `employ` WHERE  `is_delete` = 0  AND `employ_id` <> '508213bd50056050fd694c05' ORDER BY add_time desc LIMIT 0,10 [ RunTime:0.000366s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `userinfo` [ RunTime:0.000893s ]
+[ sql ] [ SQL ] SELECT * FROM `userinfo` WHERE  `uid` = '510141cd31ab8ba0e93edea8' [ RunTime:0.000288s ]
+[ sql ] [ SQL ] SELECT * FROM `userinfo` WHERE  `uid` = '508407b8bccdabcc445c87b4' [ RunTime:0.000280s ]
+[ sql ] [ SQL ] SELECT * FROM `userinfo` WHERE  `uid` = '508407b8bccdabcc445c87b4' [ RunTime:0.000247s ]
+[ sql ] [ SQL ] SELECT * FROM `userinfo` WHERE  `uid` = '508407b8bccdabcc445c87b4' [ RunTime:0.000245s ]
+[ sql ] [ SQL ] SELECT * FROM `userinfo` WHERE  `uid` = '508407b8bccdabcc445c87b4' [ RunTime:0.000278s ]
+[ sql ] [ SQL ] SELECT * FROM `userinfo` WHERE  `uid` = '5071592517834b3f54145351' [ RunTime:0.000248s ]
+[ sql ] [ SQL ] SELECT * FROM `userinfo` WHERE  `uid` = '512564707e400c227687589b' [ RunTime:0.000261s ]
+[ sql ] [ SQL ] SELECT * FROM `userinfo` WHERE  `uid` = '510141cd31ab8ba0e93edea8' [ RunTime:0.000257s ]
+[ sql ] [ SQL ] SELECT * FROM `userinfo` WHERE  `uid` = '510141cd31ab8ba0e93edea8' [ RunTime:0.000242s ]
+[ sql ] [ SQL ] SELECT * FROM `userinfo` WHERE  `uid` = '510141cd31ab8ba0e93edea8' [ RunTime:0.000306s ]
+
+---------------------------------------------------------------
+[ 2017-05-07T15:26:49+08:00 ] 121.42.174.228 117.136.0.239 POST //cate/get
+[ log ] dev.happyoneplus.com//cate/get [运行时间：0.094584s][吞吐率：10.57req/s] [内存消耗：3,608.63kb] [文件加载：48]
+[ info ] [ LANG ] /data/wwwroot/dev.happyoneplus.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'cate',
+    2 => 'get',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'charset' => 'UTF-8',
+  'accept-encoding' => 'gzip',
+  'token-key' => 'b98a7ed061510a3ce43dbf1bc957257ba204c6b0',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 4.4.2; PE-TL20 Build/HuaweiPE-TL20) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Safari/537.36',
+  'connection' => 'Keep-Alive',
+  'accept' => '*/*',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'host' => 'dev.happyoneplus.com',
+  'content-length' => '95',
+)
+[ info ] [ PARAM ] array (
+  'id' => '{"id":"508213bd50056050fd694c05"}',
+  'Skip' => '',
+  'WhereJson' => '',
+  'OrderJson' => '',
+  'Limit' => '',
+  'DataJson' => '',
+)
+[ info ] [ RUN ] app\index\controller\Cate->get[ /data/wwwroot/dev.happyoneplus.com/application/index/controller/Cate.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000583s ] mysql:dbname=project;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cate` [ RunTime:0.001141s ]
+[ sql ] [ SQL ] SELECT * FROM `cate` [ RunTime:0.000512s ]
+
+---------------------------------------------------------------
+[ 2017-05-07T15:26:49+08:00 ] 121.42.174.228 117.136.0.239 POST //applicantlist/getemploy
+[ log ] dev.happyoneplus.com//applicantlist/getemploy [运行时间：0.051537s][吞吐率：19.40req/s] [内存消耗：3,503.06kb] [文件加载：48]
+[ info ] [ LANG ] /data/wwwroot/dev.happyoneplus.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'applicantlist',
+    2 => 'getemploy',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'charset' => 'UTF-8',
+  'accept-encoding' => 'gzip',
+  'token-key' => 'b98a7ed061510a3ce43dbf1bc957257ba204c6b0',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 4.4.2; PE-TL20 Build/HuaweiPE-TL20) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Safari/537.36',
+  'connection' => 'Keep-Alive',
+  'accept' => '*/*',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'host' => 'dev.happyoneplus.com',
+  'content-length' => '95',
+)
+[ info ] [ PARAM ] array (
+  'id' => '{"id":"508213bd50056050fd694c05"}',
+  'Skip' => '',
+  'WhereJson' => '',
+  'OrderJson' => '',
+  'Limit' => '',
+  'DataJson' => '',
+)
+[ info ] [ RUN ] app\index\controller\Applicantlist->getEmploy[ /data/wwwroot/dev.happyoneplus.com/application/index/controller/Applicantlist.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000505s ] mysql:dbname=project;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `applicant_list` [ RunTime:0.001062s ]
+[ sql ] [ SQL ] SELECT * FROM `applicant_list` WHERE  `applicant_id` = '508213bd50056050fd694c05' [ RunTime:0.000289s ]
+
+---------------------------------------------------------------
+[ 2017-05-07T17:22:33+08:00 ] 121.42.174.228 222.128.191.65 POST //userinfo/get
+[ log ] dev.happyoneplus.com//userinfo/get [运行时间：0.073611s][吞吐率：13.58req/s] [内存消耗：3,522.21kb] [文件加载：48]
+[ info ] [ LANG ] /data/wwwroot/dev.happyoneplus.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'userinfo',
+    2 => 'get',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'charset' => 'UTF-8',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 7.1.1; TA-1000 Build/NMF26F; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/56.0.2924.87 Mobile Safari/537.36',
+  'connection' => 'Keep-Alive',
+  'token-key' => '5e05c38f99c648310859f8f311301000057d5f76',
+  'accept-encoding' => 'gzip',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'host' => 'dev.happyoneplus.com',
+  'content-length' => '95',
+)
+[ info ] [ PARAM ] array (
+  'id' => '{"id":"510141cd31ab8ba0e93edea8"}',
+  'DataJson' => '',
+  'Limit' => '',
+  'OrderJson' => '',
+  'Skip' => '',
+  'WhereJson' => '',
+)
+[ info ] [ RUN ] app\index\controller\Userinfo->get[ /data/wwwroot/dev.happyoneplus.com/application/index/controller/Userinfo.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001634s ] mysql:dbname=project;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `userinfo` [ RunTime:0.002065s ]
+[ sql ] [ SQL ] SELECT * FROM `userinfo` WHERE  `uid` = '510141cd31ab8ba0e93edea8' [ RunTime:0.000761s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wallet` [ RunTime:0.001081s ]
+[ sql ] [ SQL ] SELECT * FROM `wallet` WHERE  `uid` = '510141cd31ab8ba0e93edea8' [ RunTime:0.000227s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.001049s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = '510141cd31ab8ba0e93edea8' LIMIT 1 [ RunTime:0.000233s ]
+
+---------------------------------------------------------------
+[ 2017-05-07T17:22:33+08:00 ] 121.42.174.228 222.128.191.65 POST //userinfo/get
+[ log ] dev.happyoneplus.com//userinfo/get [运行时间：0.074875s][吞吐率：13.36req/s] [内存消耗：3,522.21kb] [文件加载：48]
+[ info ] [ LANG ] /data/wwwroot/dev.happyoneplus.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'userinfo',
+    2 => 'get',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'charset' => 'UTF-8',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 7.1.1; TA-1000 Build/NMF26F; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/56.0.2924.87 Mobile Safari/537.36',
+  'connection' => 'Keep-Alive',
+  'token-key' => '5e05c38f99c648310859f8f311301000057d5f76',
+  'accept-encoding' => 'gzip',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'host' => 'dev.happyoneplus.com',
+  'content-length' => '95',
+)
+[ info ] [ PARAM ] array (
+  'id' => '{"id":"510141cd31ab8ba0e93edea8"}',
+  'DataJson' => '',
+  'Limit' => '',
+  'OrderJson' => '',
+  'Skip' => '',
+  'WhereJson' => '',
+)
+[ info ] [ RUN ] app\index\controller\Userinfo->get[ /data/wwwroot/dev.happyoneplus.com/application/index/controller/Userinfo.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000437s ] mysql:dbname=project;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `userinfo` [ RunTime:0.001208s ]
+[ sql ] [ SQL ] SELECT * FROM `userinfo` WHERE  `uid` = '510141cd31ab8ba0e93edea8' [ RunTime:0.000343s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wallet` [ RunTime:0.000679s ]
+[ sql ] [ SQL ] SELECT * FROM `wallet` WHERE  `uid` = '510141cd31ab8ba0e93edea8' [ RunTime:0.000218s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.000724s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = '510141cd31ab8ba0e93edea8' LIMIT 1 [ RunTime:0.000226s ]
+
+---------------------------------------------------------------
+[ 2017-05-07T17:22:34+08:00 ] 121.42.174.228 222.128.191.65 POST /user/getallid
+[ log ] dev.happyoneplus.com/user/getallid [运行时间：0.043746s][吞吐率：22.86req/s] [内存消耗：3,579.32kb] [文件加载：48]
+[ info ] [ LANG ] /data/wwwroot/dev.happyoneplus.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'user',
+    2 => 'getallid',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'charset' => 'UTF-8',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 7.1.1; TA-1000 Build/NMF26F; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/56.0.2924.87 Mobile Safari/537.36',
+  'connection' => 'Keep-Alive',
+  'accept-encoding' => 'gzip',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'host' => 'dev.happyoneplus.com',
+  'content-length' => '9',
+)
+[ info ] [ PARAM ] array (
+  'id' => '[]',
+)
+[ info ] [ RUN ] app\index\controller\User->getallid[ /data/wwwroot/dev.happyoneplus.com/application/index/controller/User.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000470s ] mysql:dbname=project;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `userinfo` [ RunTime:0.001228s ]
+[ sql ] [ SQL ] SELECT * FROM `userinfo` WHERE  `id` IN ('') [ RunTime:0.000315s ]
+
+---------------------------------------------------------------
+[ 2017-05-07T17:22:45+08:00 ] 121.42.174.228 222.128.191.65 POST //cate/get
+[ log ] dev.happyoneplus.com//cate/get [运行时间：0.169942s][吞吐率：5.88req/s] [内存消耗：3,608.42kb] [文件加载：48]
+[ info ] [ LANG ] /data/wwwroot/dev.happyoneplus.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'cate',
+    2 => 'get',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'charset' => 'UTF-8',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 7.1.1; TA-1000 Build/NMF26F; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/56.0.2924.87 Mobile Safari/537.36',
+  'connection' => 'Keep-Alive',
+  'token-key' => '5e05c38f99c648310859f8f311301000057d5f76',
+  'accept-encoding' => 'gzip',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'host' => 'dev.happyoneplus.com',
+  'content-length' => '95',
+)
+[ info ] [ PARAM ] array (
+  'id' => '{"id":"510141cd31ab8ba0e93edea8"}',
+  'DataJson' => '',
+  'Limit' => '',
+  'OrderJson' => '',
+  'Skip' => '',
+  'WhereJson' => '',
+)
+[ info ] [ RUN ] app\index\controller\Cate->get[ /data/wwwroot/dev.happyoneplus.com/application/index/controller/Cate.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000517s ] mysql:dbname=project;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cate` [ RunTime:0.001025s ]
+[ sql ] [ SQL ] SELECT * FROM `cate` [ RunTime:0.000525s ]
+
+---------------------------------------------------------------
+[ 2017-05-07T17:22:45+08:00 ] 121.42.174.228 222.128.191.65 POST //employ/getdata
+[ log ] dev.happyoneplus.com//employ/getdata [运行时间：0.150201s][吞吐率：6.66req/s] [内存消耗：4,008.64kb] [文件加载：50]
+[ info ] [ LANG ] /data/wwwroot/dev.happyoneplus.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'employ',
+    2 => 'getdata',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'charset' => 'UTF-8',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 7.1.1; TA-1000 Build/NMF26F; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/56.0.2924.87 Mobile Safari/537.36',
+  'connection' => 'Keep-Alive',
+  'token-key' => '5e05c38f99c648310859f8f311301000057d5f76',
+  'accept-encoding' => 'gzip',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'host' => 'dev.happyoneplus.com',
+  'content-length' => '116',
+)
+[ info ] [ PARAM ] array (
+  'id' => '{"id":"510141cd31ab8ba0e93edea8"}',
+  'DataJson' => '',
+  'Limit' => '{"limit":0}',
+  'OrderJson' => '',
+  'Skip' => '',
+  'WhereJson' => '',
+)
+[ info ] [ RUN ] app\index\controller\Employ->getData[ /data/wwwroot/dev.happyoneplus.com/application/index/controller/Employ.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002293s ] mysql:dbname=project;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `employ` [ RunTime:0.001989s ]
+[ sql ] [ SQL ] SELECT * FROM `employ` WHERE  `is_delete` = 0  AND `employ_id` <> '510141cd31ab8ba0e93edea8' ORDER BY add_time desc LIMIT 0,10 [ RunTime:0.000886s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `userinfo` [ RunTime:0.003725s ]
+[ sql ] [ SQL ] SELECT * FROM `userinfo` WHERE  `uid` = '508407b8bccdabcc445c87b4' [ RunTime:0.001133s ]
+[ sql ] [ SQL ] SELECT * FROM `userinfo` WHERE  `uid` = '508407b8bccdabcc445c87b4' [ RunTime:0.001021s ]
+[ sql ] [ SQL ] SELECT * FROM `userinfo` WHERE  `uid` = '508407b8bccdabcc445c87b4' [ RunTime:0.001157s ]
+[ sql ] [ SQL ] SELECT * FROM `userinfo` WHERE  `uid` = '508407b8bccdabcc445c87b4' [ RunTime:0.000264s ]
+[ sql ] [ SQL ] SELECT * FROM `userinfo` WHERE  `uid` = '5071592517834b3f54145351' [ RunTime:0.000312s ]
+[ sql ] [ SQL ] SELECT * FROM `userinfo` WHERE  `uid` = '512564707e400c227687589b' [ RunTime:0.000288s ]
+[ sql ] [ SQL ] SELECT * FROM `userinfo` WHERE  `uid` = '508213bd50056050fd694c05' [ RunTime:0.000373s ]
+[ sql ] [ SQL ] SELECT * FROM `userinfo` WHERE  `uid` = '508213bd50056050fd694c05' [ RunTime:0.000284s ]
+[ sql ] [ SQL ] SELECT * FROM `userinfo` WHERE  `uid` = '508213bd50056050fd694c05' [ RunTime:0.000246s ]
+[ sql ] [ SQL ] SELECT * FROM `userinfo` WHERE  `uid` = '6558594cc082519c4b206540' [ RunTime:0.000725s ]
+
+---------------------------------------------------------------
+[ 2017-05-07T17:22:45+08:00 ] 121.42.174.228 222.128.191.65 POST //skill/getdata
+[ log ] dev.happyoneplus.com//skill/getdata [运行时间：0.141814s][吞吐率：7.05req/s] [内存消耗：4,000.53kb] [文件加载：50]
+[ info ] [ LANG ] /data/wwwroot/dev.happyoneplus.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'skill',
+    2 => 'getdata',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'charset' => 'UTF-8',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 7.1.1; TA-1000 Build/NMF26F; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/56.0.2924.87 Mobile Safari/537.36',
+  'connection' => 'Keep-Alive',
+  'token-key' => '5e05c38f99c648310859f8f311301000057d5f76',
+  'accept-encoding' => 'gzip',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'host' => 'dev.happyoneplus.com',
+  'content-length' => '116',
+)
+[ info ] [ PARAM ] array (
+  'id' => '{"id":"510141cd31ab8ba0e93edea8"}',
+  'DataJson' => '',
+  'Limit' => '{"limit":0}',
+  'OrderJson' => '',
+  'Skip' => '',
+  'WhereJson' => '',
+)
+[ info ] [ RUN ] app\index\Controller\Skill->getData[ /data/wwwroot/dev.happyoneplus.com/application/index/controller/Skill.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000402s ] mysql:dbname=project;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `skill` [ RunTime:0.001638s ]
+[ sql ] [ SQL ] SELECT * FROM `skill` WHERE  `is_delete` = 0 ORDER BY add_time desc LIMIT 0,10 [ RunTime:0.000587s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `userinfo` [ RunTime:0.001408s ]
+[ sql ] [ SQL ] SELECT * FROM `userinfo` WHERE  `uid` = '6558594cc082519c4b206540' [ RunTime:0.000269s ]
+[ sql ] [ SQL ] SELECT * FROM `userinfo` WHERE  `uid` = '508407b8bccdabcc445c87b4' [ RunTime:0.000714s ]
+[ sql ] [ SQL ] SELECT * FROM `userinfo` WHERE  `uid` = '508213bd50056050fd694c05' [ RunTime:0.000339s ]
+[ sql ] [ SQL ] SELECT * FROM `userinfo` WHERE  `uid` = '5071592517834b3f54145351' [ RunTime:0.000261s ]
+[ sql ] [ SQL ] SELECT * FROM `userinfo` WHERE  `uid` = '512564707e400c227687589b' [ RunTime:0.000275s ]
+[ sql ] [ SQL ] SELECT * FROM `userinfo` WHERE  `uid` = '508213bd50056050fd694c05' [ RunTime:0.000260s ]
+[ sql ] [ SQL ] SELECT * FROM `userinfo` WHERE  `uid` = '508213bd50056050fd694c05' [ RunTime:0.000265s ]
+[ sql ] [ SQL ] SELECT * FROM `userinfo` WHERE  `uid` = '508213bd50056050fd694c05' [ RunTime:0.000249s ]
+[ sql ] [ SQL ] SELECT * FROM `userinfo` WHERE  `uid` = '6558594cc082519c4b206540' [ RunTime:0.000259s ]
+[ sql ] [ SQL ] SELECT * FROM `userinfo` WHERE  `uid` = '508213bd50056050fd694c05' [ RunTime:0.000266s ]
+
+---------------------------------------------------------------
+[ 2017-05-07T17:22:45+08:00 ] 121.42.174.228 222.128.191.65 POST //applicantlist/getemploy
+[ log ] dev.happyoneplus.com//applicantlist/getemploy [运行时间：0.059762s][吞吐率：16.73req/s] [内存消耗：3,522.93kb] [文件加载：48]
+[ info ] [ LANG ] /data/wwwroot/dev.happyoneplus.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'applicantlist',
+    2 => 'getemploy',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'charset' => 'UTF-8',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 7.1.1; TA-1000 Build/NMF26F; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/56.0.2924.87 Mobile Safari/537.36',
+  'connection' => 'Keep-Alive',
+  'token-key' => '5e05c38f99c648310859f8f311301000057d5f76',
+  'accept-encoding' => 'gzip',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'host' => 'dev.happyoneplus.com',
+  'content-length' => '95',
+)
+[ info ] [ PARAM ] array (
+  'id' => '{"id":"510141cd31ab8ba0e93edea8"}',
+  'DataJson' => '',
+  'Limit' => '',
+  'OrderJson' => '',
+  'Skip' => '',
+  'WhereJson' => '',
+)
+[ info ] [ RUN ] app\index\controller\Applicantlist->getEmploy[ /data/wwwroot/dev.happyoneplus.com/application/index/controller/Applicantlist.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000461s ] mysql:dbname=project;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `applicant_list` [ RunTime:0.005096s ]
+[ sql ] [ SQL ] SELECT * FROM `applicant_list` WHERE  `applicant_id` = '510141cd31ab8ba0e93edea8' [ RunTime:0.000913s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `employ` [ RunTime:0.001222s ]
+[ sql ] [ SQL ] SELECT * FROM `employ` WHERE  `id` = '5732637b335b3455637746e6' LIMIT 1 [ RunTime:0.000305s ]
+[ sql ] [ SQL ] SELECT * FROM `employ` WHERE  `id` = '570229b3c09ac39aff8a1020' LIMIT 1 [ RunTime:0.000255s ]
+
+---------------------------------------------------------------
+[ 2017-05-07T17:22:45+08:00 ] 121.42.174.228 222.128.191.65 POST //orders/get
+[ log ] dev.happyoneplus.com//orders/get [运行时间：0.296777s][吞吐率：3.37req/s] [内存消耗：4,061.44kb] [文件加载：50]
+[ info ] [ LANG ] /data/wwwroot/dev.happyoneplus.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'orders',
+    2 => 'get',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'charset' => 'UTF-8',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 7.1.1; TA-1000 Build/NMF26F; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/56.0.2924.87 Mobile Safari/537.36',
+  'connection' => 'Keep-Alive',
+  'token-key' => '5e05c38f99c648310859f8f311301000057d5f76',
+  'accept-encoding' => 'gzip',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'host' => 'dev.happyoneplus.com',
+  'content-length' => '95',
+)
+[ info ] [ PARAM ] array (
+  'id' => '{"id":"510141cd31ab8ba0e93edea8"}',
+  'DataJson' => '',
+  'Limit' => '',
+  'OrderJson' => '',
+  'Skip' => '',
+  'WhereJson' => '',
+)
+[ info ] [ RUN ] app\index\controller\Orders->get[ /data/wwwroot/dev.happyoneplus.com/application/index/controller/Orders.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000525s ] mysql:dbname=project;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `orders` [ RunTime:0.002150s ]
+[ sql ] [ SQL ] SELECT * FROM `orders` WHERE  `employ_id` = '510141cd31ab8ba0e93edea8'  AND `role_status` < 8 [ RunTime:0.000535s ]
+
+---------------------------------------------------------------
+[ 2017-05-07T17:22:45+08:00 ] 121.42.174.228 222.128.191.65 POST //orders/get
+[ log ] dev.happyoneplus.com//orders/get [运行时间：0.334692s][吞吐率：2.99req/s] [内存消耗：4,061.44kb] [文件加载：50]
+[ info ] [ LANG ] /data/wwwroot/dev.happyoneplus.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'orders',
+    2 => 'get',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'charset' => 'UTF-8',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 7.1.1; TA-1000 Build/NMF26F; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/56.0.2924.87 Mobile Safari/537.36',
+  'connection' => 'Keep-Alive',
+  'token-key' => '5e05c38f99c648310859f8f311301000057d5f76',
+  'accept-encoding' => 'gzip',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'host' => 'dev.happyoneplus.com',
+  'content-length' => '95',
+)
+[ info ] [ PARAM ] array (
+  'id' => '{"id":"510141cd31ab8ba0e93edea8"}',
+  'DataJson' => '',
+  'Limit' => '',
+  'OrderJson' => '',
+  'Skip' => '',
+  'WhereJson' => '',
+)
+[ info ] [ RUN ] app\index\controller\Orders->get[ /data/wwwroot/dev.happyoneplus.com/application/index/controller/Orders.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000427s ] mysql:dbname=project;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `orders` [ RunTime:0.006416s ]
+[ sql ] [ SQL ] SELECT * FROM `orders` WHERE  `employ_id` = '510141cd31ab8ba0e93edea8'  AND `role_status` < 8 [ RunTime:0.000456s ]
+
+---------------------------------------------------------------
+[ 2017-05-07T17:22:45+08:00 ] 121.42.174.228 222.128.191.65 POST //orders/get
+[ log ] dev.happyoneplus.com//orders/get [运行时间：0.344331s][吞吐率：2.90req/s] [内存消耗：4,061.44kb] [文件加载：50]
+[ info ] [ LANG ] /data/wwwroot/dev.happyoneplus.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'orders',
+    2 => 'get',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'charset' => 'UTF-8',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 7.1.1; TA-1000 Build/NMF26F; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/56.0.2924.87 Mobile Safari/537.36',
+  'connection' => 'Keep-Alive',
+  'token-key' => '5e05c38f99c648310859f8f311301000057d5f76',
+  'accept-encoding' => 'gzip',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'host' => 'dev.happyoneplus.com',
+  'content-length' => '95',
+)
+[ info ] [ PARAM ] array (
+  'id' => '{"id":"510141cd31ab8ba0e93edea8"}',
+  'DataJson' => '',
+  'Limit' => '',
+  'OrderJson' => '',
+  'Skip' => '',
+  'WhereJson' => '',
+)
+[ info ] [ RUN ] app\index\controller\Orders->get[ /data/wwwroot/dev.happyoneplus.com/application/index/controller/Orders.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000542s ] mysql:dbname=project;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `orders` [ RunTime:0.001186s ]
+[ sql ] [ SQL ] SELECT * FROM `orders` WHERE  `employ_id` = '510141cd31ab8ba0e93edea8'  AND `role_status` < 8 [ RunTime:0.000382s ]
+
+---------------------------------------------------------------
+[ 2017-05-07T17:22:45+08:00 ] 121.42.174.228 222.128.191.65 POST //orders/get
+[ log ] dev.happyoneplus.com//orders/get [运行时间：0.358276s][吞吐率：2.79req/s] [内存消耗：4,061.44kb] [文件加载：50]
+[ info ] [ LANG ] /data/wwwroot/dev.happyoneplus.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'orders',
+    2 => 'get',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'charset' => 'UTF-8',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 7.1.1; TA-1000 Build/NMF26F; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/56.0.2924.87 Mobile Safari/537.36',
+  'connection' => 'Keep-Alive',
+  'token-key' => '5e05c38f99c648310859f8f311301000057d5f76',
+  'accept-encoding' => 'gzip',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'host' => 'dev.happyoneplus.com',
+  'content-length' => '95',
+)
+[ info ] [ PARAM ] array (
+  'id' => '{"id":"510141cd31ab8ba0e93edea8"}',
+  'DataJson' => '',
+  'Limit' => '',
+  'OrderJson' => '',
+  'Skip' => '',
+  'WhereJson' => '',
+)
+[ info ] [ RUN ] app\index\controller\Orders->get[ /data/wwwroot/dev.happyoneplus.com/application/index/controller/Orders.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000340s ] mysql:dbname=project;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `orders` [ RunTime:0.000893s ]
+[ sql ] [ SQL ] SELECT * FROM `orders` WHERE  `employ_id` = '510141cd31ab8ba0e93edea8'  AND `role_status` < 8 [ RunTime:0.000345s ]
+
+---------------------------------------------------------------
+[ 2017-05-07T17:22:45+08:00 ] 121.42.174.228 222.128.191.65 POST //orders/get
+[ log ] dev.happyoneplus.com//orders/get [运行时间：0.349269s][吞吐率：2.86req/s] [内存消耗：4,061.44kb] [文件加载：50]
+[ info ] [ LANG ] /data/wwwroot/dev.happyoneplus.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'orders',
+    2 => 'get',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'charset' => 'UTF-8',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 7.1.1; TA-1000 Build/NMF26F; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/56.0.2924.87 Mobile Safari/537.36',
+  'connection' => 'Keep-Alive',
+  'token-key' => '5e05c38f99c648310859f8f311301000057d5f76',
+  'accept-encoding' => 'gzip',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'host' => 'dev.happyoneplus.com',
+  'content-length' => '95',
+)
+[ info ] [ PARAM ] array (
+  'id' => '{"id":"510141cd31ab8ba0e93edea8"}',
+  'DataJson' => '',
+  'Limit' => '',
+  'OrderJson' => '',
+  'Skip' => '',
+  'WhereJson' => '',
+)
+[ info ] [ RUN ] app\index\controller\Orders->get[ /data/wwwroot/dev.happyoneplus.com/application/index/controller/Orders.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000492s ] mysql:dbname=project;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `orders` [ RunTime:0.014936s ]
+[ sql ] [ SQL ] SELECT * FROM `orders` WHERE  `employ_id` = '510141cd31ab8ba0e93edea8'  AND `role_status` < 8 [ RunTime:0.000367s ]
+
+---------------------------------------------------------------
+[ 2017-05-07T17:22:45+08:00 ] 121.42.174.228 222.128.191.65 POST //orders/get
+[ log ] dev.happyoneplus.com//orders/get [运行时间：0.357415s][吞吐率：2.80req/s] [内存消耗：4,061.44kb] [文件加载：50]
+[ info ] [ LANG ] /data/wwwroot/dev.happyoneplus.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'orders',
+    2 => 'get',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'charset' => 'UTF-8',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 7.1.1; TA-1000 Build/NMF26F; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/56.0.2924.87 Mobile Safari/537.36',
+  'connection' => 'Keep-Alive',
+  'token-key' => '5e05c38f99c648310859f8f311301000057d5f76',
+  'accept-encoding' => 'gzip',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'host' => 'dev.happyoneplus.com',
+  'content-length' => '95',
+)
+[ info ] [ PARAM ] array (
+  'id' => '{"id":"510141cd31ab8ba0e93edea8"}',
+  'DataJson' => '',
+  'Limit' => '',
+  'OrderJson' => '',
+  'Skip' => '',
+  'WhereJson' => '',
+)
+[ info ] [ RUN ] app\index\controller\Orders->get[ /data/wwwroot/dev.happyoneplus.com/application/index/controller/Orders.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000304s ] mysql:dbname=project;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `orders` [ RunTime:0.000890s ]
+[ sql ] [ SQL ] SELECT * FROM `orders` WHERE  `employ_id` = '510141cd31ab8ba0e93edea8'  AND `role_status` < 8 [ RunTime:0.015061s ]
+
+---------------------------------------------------------------
+[ 2017-05-07T17:22:45+08:00 ] 121.42.174.228 222.128.191.65 POST //orders/get
+[ log ] dev.happyoneplus.com//orders/get [运行时间：0.331348s][吞吐率：3.02req/s] [内存消耗：4,061.44kb] [文件加载：50]
+[ info ] [ LANG ] /data/wwwroot/dev.happyoneplus.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'orders',
+    2 => 'get',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'charset' => 'UTF-8',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 7.1.1; TA-1000 Build/NMF26F; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/56.0.2924.87 Mobile Safari/537.36',
+  'connection' => 'Keep-Alive',
+  'token-key' => '5e05c38f99c648310859f8f311301000057d5f76',
+  'accept-encoding' => 'gzip',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'host' => 'dev.happyoneplus.com',
+  'content-length' => '95',
+)
+[ info ] [ PARAM ] array (
+  'id' => '{"id":"510141cd31ab8ba0e93edea8"}',
+  'DataJson' => '',
+  'Limit' => '',
+  'OrderJson' => '',
+  'Skip' => '',
+  'WhereJson' => '',
+)
+[ info ] [ RUN ] app\index\controller\Orders->get[ /data/wwwroot/dev.happyoneplus.com/application/index/controller/Orders.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003537s ] mysql:dbname=project;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `orders` [ RunTime:0.002239s ]
+[ sql ] [ SQL ] SELECT * FROM `orders` WHERE  `employ_id` = '510141cd31ab8ba0e93edea8'  AND `role_status` < 8 [ RunTime:0.000807s ]
+
+---------------------------------------------------------------
+[ 2017-05-07T17:22:45+08:00 ] 121.42.174.228 222.128.191.65 POST //orders/get
+[ log ] dev.happyoneplus.com//orders/get [运行时间：0.333939s][吞吐率：2.99req/s] [内存消耗：4,061.44kb] [文件加载：50]
+[ info ] [ LANG ] /data/wwwroot/dev.happyoneplus.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'orders',
+    2 => 'get',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'charset' => 'UTF-8',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 7.1.1; TA-1000 Build/NMF26F; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/56.0.2924.87 Mobile Safari/537.36',
+  'connection' => 'Keep-Alive',
+  'token-key' => '5e05c38f99c648310859f8f311301000057d5f76',
+  'accept-encoding' => 'gzip',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'host' => 'dev.happyoneplus.com',
+  'content-length' => '95',
+)
+[ info ] [ PARAM ] array (
+  'id' => '{"id":"510141cd31ab8ba0e93edea8"}',
+  'DataJson' => '',
+  'Limit' => '',
+  'OrderJson' => '',
+  'Skip' => '',
+  'WhereJson' => '',
+)
+[ info ] [ RUN ] app\index\controller\Orders->get[ /data/wwwroot/dev.happyoneplus.com/application/index/controller/Orders.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001015s ] mysql:dbname=project;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `orders` [ RunTime:0.003450s ]
+[ sql ] [ SQL ] SELECT * FROM `orders` WHERE  `employ_id` = '510141cd31ab8ba0e93edea8'  AND `role_status` < 8 [ RunTime:0.001659s ]
+
+---------------------------------------------------------------
+[ 2017-05-07T17:22:45+08:00 ] 121.42.174.228 222.128.191.65 POST //orders/get
+[ log ] dev.happyoneplus.com//orders/get [运行时间：0.188949s][吞吐率：5.29req/s] [内存消耗：4,061.44kb] [文件加载：50]
+[ info ] [ LANG ] /data/wwwroot/dev.happyoneplus.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'orders',
+    2 => 'get',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'charset' => 'UTF-8',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 7.1.1; TA-1000 Build/NMF26F; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/56.0.2924.87 Mobile Safari/537.36',
+  'connection' => 'Keep-Alive',
+  'token-key' => '5e05c38f99c648310859f8f311301000057d5f76',
+  'accept-encoding' => 'gzip',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'host' => 'dev.happyoneplus.com',
+  'content-length' => '95',
+)
+[ info ] [ PARAM ] array (
+  'id' => '{"id":"510141cd31ab8ba0e93edea8"}',
+  'DataJson' => '',
+  'Limit' => '',
+  'OrderJson' => '',
+  'Skip' => '',
+  'WhereJson' => '',
+)
+[ info ] [ RUN ] app\index\controller\Orders->get[ /data/wwwroot/dev.happyoneplus.com/application/index/controller/Orders.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000452s ] mysql:dbname=project;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `orders` [ RunTime:0.001956s ]
+[ sql ] [ SQL ] SELECT * FROM `orders` WHERE  `employ_id` = '510141cd31ab8ba0e93edea8'  AND `role_status` < 8 [ RunTime:0.000347s ]
+
+---------------------------------------------------------------
+[ 2017-05-07T17:22:45+08:00 ] 121.42.174.228 222.128.191.65 POST //orders/get
+[ log ] dev.happyoneplus.com//orders/get [运行时间：0.167351s][吞吐率：5.98req/s] [内存消耗：4,061.44kb] [文件加载：50]
+[ info ] [ LANG ] /data/wwwroot/dev.happyoneplus.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'orders',
+    2 => 'get',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'charset' => 'UTF-8',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 7.1.1; TA-1000 Build/NMF26F; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/56.0.2924.87 Mobile Safari/537.36',
+  'connection' => 'Keep-Alive',
+  'token-key' => '5e05c38f99c648310859f8f311301000057d5f76',
+  'accept-encoding' => 'gzip',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'host' => 'dev.happyoneplus.com',
+  'content-length' => '95',
+)
+[ info ] [ PARAM ] array (
+  'id' => '{"id":"510141cd31ab8ba0e93edea8"}',
+  'DataJson' => '',
+  'Limit' => '',
+  'OrderJson' => '',
+  'Skip' => '',
+  'WhereJson' => '',
+)
+[ info ] [ RUN ] app\index\controller\Orders->get[ /data/wwwroot/dev.happyoneplus.com/application/index/controller/Orders.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000361s ] mysql:dbname=project;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `orders` [ RunTime:0.000952s ]
+[ sql ] [ SQL ] SELECT * FROM `orders` WHERE  `employ_id` = '510141cd31ab8ba0e93edea8'  AND `role_status` < 8 [ RunTime:0.000960s ]
+
+---------------------------------------------------------------

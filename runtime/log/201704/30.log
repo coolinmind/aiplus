@@ -1,0 +1,421 @@
+[ 2017-04-30T09:22:54+08:00 ] 121.42.174.228 42.156.251.185 GET /
+[ log ] dev.happyoneplus.com/ [运行时间：0.035474s][吞吐率：28.19req/s] [内存消耗：2,983.31kb] [文件加载：50]
+[ info ] [ LANG ] /data/wwwroot/dev.happyoneplus.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'spiderman',
+  'accept-language' => 'en-us,en-gb,en;q=0.7,*;q=0.3',
+  'accept-charset' => 'utf-8,ISO-8859-1;q=0.7,*;q=0.7',
+  'accept' => 'text/html,application/xml;q=0.9,application/xhtml+xml,text/xml;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5',
+  'accept-encoding' => 'x-gzip, gzip, deflate',
+  'host' => 'dev.happyoneplus.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /data/wwwroot/dev.happyoneplus.com/application/index/controller/Index.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-30T12:15:47+08:00 ] 121.42.174.228 124.207.221.194 POST //userinfo/get
+[ log ] dev.happyoneplus.com//userinfo/get [运行时间：0.083932s][吞吐率：11.91req/s] [内存消耗：3,523.27kb] [文件加载：48]
+[ info ] [ LANG ] /data/wwwroot/dev.happyoneplus.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'userinfo',
+    2 => 'get',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'charset' => 'UTF-8',
+  'accept-encoding' => 'gzip',
+  'token-key' => 'b98a7ed061510a3ce43dbf1bc957257ba204c6b0',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 4.4.2; PE-TL20 Build/HuaweiPE-TL20) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Safari/537.36',
+  'connection' => 'Keep-Alive',
+  'accept' => '*/*',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'host' => 'dev.happyoneplus.com',
+  'content-length' => '95',
+)
+[ info ] [ PARAM ] array (
+  'id' => '{"id":"508213bd50056050fd694c05"}',
+  'Skip' => '',
+  'WhereJson' => '',
+  'OrderJson' => '',
+  'Limit' => '',
+  'DataJson' => '',
+)
+[ info ] [ RUN ] app\index\controller\Userinfo->get[ /data/wwwroot/dev.happyoneplus.com/application/index/controller/Userinfo.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001302s ] mysql:dbname=project;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `userinfo` [ RunTime:0.002164s ]
+[ sql ] [ SQL ] SELECT * FROM `userinfo` WHERE  `uid` = '508213bd50056050fd694c05' [ RunTime:0.000880s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wallet` [ RunTime:0.001352s ]
+[ sql ] [ SQL ] SELECT * FROM `wallet` WHERE  `uid` = '508213bd50056050fd694c05' [ RunTime:0.000502s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.001337s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = '508213bd50056050fd694c05' LIMIT 1 [ RunTime:0.001931s ]
+
+---------------------------------------------------------------
+[ 2017-04-30T12:15:47+08:00 ] 121.42.174.228 124.207.221.194 POST //userinfo/get
+[ log ] dev.happyoneplus.com//userinfo/get [运行时间：0.087187s][吞吐率：11.47req/s] [内存消耗：3,523.27kb] [文件加载：48]
+[ info ] [ LANG ] /data/wwwroot/dev.happyoneplus.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'userinfo',
+    2 => 'get',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'charset' => 'UTF-8',
+  'accept-encoding' => 'gzip',
+  'token-key' => 'b98a7ed061510a3ce43dbf1bc957257ba204c6b0',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 4.4.2; PE-TL20 Build/HuaweiPE-TL20) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Safari/537.36',
+  'connection' => 'Keep-Alive',
+  'accept' => '*/*',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'host' => 'dev.happyoneplus.com',
+  'content-length' => '95',
+)
+[ info ] [ PARAM ] array (
+  'id' => '{"id":"508213bd50056050fd694c05"}',
+  'Skip' => '',
+  'WhereJson' => '',
+  'OrderJson' => '',
+  'Limit' => '',
+  'DataJson' => '',
+)
+[ info ] [ RUN ] app\index\controller\Userinfo->get[ /data/wwwroot/dev.happyoneplus.com/application/index/controller/Userinfo.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001460s ] mysql:dbname=project;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `userinfo` [ RunTime:0.001894s ]
+[ sql ] [ SQL ] SELECT * FROM `userinfo` WHERE  `uid` = '508213bd50056050fd694c05' [ RunTime:0.000941s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wallet` [ RunTime:0.001237s ]
+[ sql ] [ SQL ] SELECT * FROM `wallet` WHERE  `uid` = '508213bd50056050fd694c05' [ RunTime:0.000795s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.001201s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = '508213bd50056050fd694c05' LIMIT 1 [ RunTime:0.000592s ]
+
+---------------------------------------------------------------
+[ 2017-04-30T12:15:48+08:00 ] 121.42.174.228 124.207.221.194 POST /user/getallid
+[ log ] dev.happyoneplus.com/user/getallid [运行时间：0.040658s][吞吐率：24.60req/s] [内存消耗：3,579.48kb] [文件加载：48]
+[ info ] [ LANG ] /data/wwwroot/dev.happyoneplus.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'user',
+    2 => 'getallid',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 4.4.2; PE-TL20 Build/HuaweiPE-TL20) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Safari/537.36',
+  'charset' => 'UTF-8',
+  'connection' => 'Keep-Alive',
+  'accept' => '*/*',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'host' => 'dev.happyoneplus.com',
+  'content-length' => '9',
+)
+[ info ] [ PARAM ] array (
+  'id' => '[]',
+)
+[ info ] [ RUN ] app\index\controller\User->getallid[ /data/wwwroot/dev.happyoneplus.com/application/index/controller/User.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000473s ] mysql:dbname=project;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `userinfo` [ RunTime:0.001223s ]
+[ sql ] [ SQL ] SELECT * FROM `userinfo` WHERE  `id` IN ('') [ RunTime:0.000322s ]
+
+---------------------------------------------------------------
+[ 2017-04-30T12:15:55+08:00 ] 121.42.174.228 124.207.221.194 POST //skill/get
+[ log ] dev.happyoneplus.com//skill/get [运行时间：0.078533s][吞吐率：12.73req/s] [内存消耗：3,971.84kb] [文件加载：50]
+[ info ] [ LANG ] /data/wwwroot/dev.happyoneplus.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'skill',
+    2 => 'get',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'charset' => 'UTF-8',
+  'accept-encoding' => 'gzip',
+  'token-key' => 'b98a7ed061510a3ce43dbf1bc957257ba204c6b0',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 4.4.2; PE-TL20 Build/HuaweiPE-TL20) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Safari/537.36',
+  'connection' => 'Keep-Alive',
+  'accept' => '*/*',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'host' => 'dev.happyoneplus.com',
+  'content-length' => '161',
+)
+[ info ] [ PARAM ] array (
+  'id' => '{"id":"508213bd50056050fd694c05"}',
+  'Skip' => '',
+  'WhereJson' => '{"skilltype":"经验技能"}',
+  'OrderJson' => '',
+  'Limit' => '',
+  'DataJson' => '',
+)
+[ info ] [ RUN ] app\index\Controller\Skill->get[ /data/wwwroot/dev.happyoneplus.com/application/index/controller/Skill.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001327s ] mysql:dbname=project;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `skill` [ RunTime:0.001976s ]
+[ sql ] [ SQL ] SELECT * FROM `skill` WHERE  `uid` = '508213bd50056050fd694c05'  AND `skillType` = '经验技能'  AND `is_delete` = 0 [ RunTime:0.000568s ]
+
+---------------------------------------------------------------
+[ 2017-04-30T12:15:55+08:00 ] 121.42.174.228 124.207.221.194 POST //skill/get
+[ log ] dev.happyoneplus.com//skill/get [运行时间：0.081168s][吞吐率：12.32req/s] [内存消耗：3,972.23kb] [文件加载：50]
+[ info ] [ LANG ] /data/wwwroot/dev.happyoneplus.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'skill',
+    2 => 'get',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'charset' => 'UTF-8',
+  'accept-encoding' => 'gzip',
+  'token-key' => 'b98a7ed061510a3ce43dbf1bc957257ba204c6b0',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 4.4.2; PE-TL20 Build/HuaweiPE-TL20) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Safari/537.36',
+  'connection' => 'Keep-Alive',
+  'accept' => '*/*',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'host' => 'dev.happyoneplus.com',
+  'content-length' => '161',
+)
+[ info ] [ PARAM ] array (
+  'id' => '{"id":"508213bd50056050fd694c05"}',
+  'Skip' => '',
+  'WhereJson' => '{"skilltype":"通用技能"}',
+  'OrderJson' => '',
+  'Limit' => '',
+  'DataJson' => '',
+)
+[ info ] [ RUN ] app\index\Controller\Skill->get[ /data/wwwroot/dev.happyoneplus.com/application/index/controller/Skill.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000513s ] mysql:dbname=project;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `skill` [ RunTime:0.001169s ]
+[ sql ] [ SQL ] SELECT * FROM `skill` WHERE  `uid` = '508213bd50056050fd694c05'  AND `skillType` = '通用技能'  AND `is_delete` = 0 [ RunTime:0.000627s ]
+
+---------------------------------------------------------------
+[ 2017-04-30T12:15:57+08:00 ] 121.42.174.228 124.207.221.194 POST //skill/get
+[ log ] dev.happyoneplus.com//skill/get [运行时间：0.043719s][吞吐率：22.87req/s] [内存消耗：3,971.54kb] [文件加载：50]
+[ info ] [ LANG ] /data/wwwroot/dev.happyoneplus.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'skill',
+    2 => 'get',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'charset' => 'UTF-8',
+  'accept-encoding' => 'gzip',
+  'token-key' => 'b98a7ed061510a3ce43dbf1bc957257ba204c6b0',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 4.4.2; PE-TL20 Build/HuaweiPE-TL20) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Safari/537.36',
+  'connection' => 'Keep-Alive',
+  'accept' => '*/*',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'host' => 'dev.happyoneplus.com',
+  'content-length' => '161',
+)
+[ info ] [ PARAM ] array (
+  'id' => '{"id":"508213bd50056050fd694c05"}',
+  'Skip' => '',
+  'WhereJson' => '{"skilltype":"证书技能"}',
+  'OrderJson' => '',
+  'Limit' => '',
+  'DataJson' => '',
+)
+[ info ] [ RUN ] app\index\Controller\Skill->get[ /data/wwwroot/dev.happyoneplus.com/application/index/controller/Skill.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000479s ] mysql:dbname=project;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `skill` [ RunTime:0.001127s ]
+[ sql ] [ SQL ] SELECT * FROM `skill` WHERE  `uid` = '508213bd50056050fd694c05'  AND `skillType` = '证书技能'  AND `is_delete` = 0 [ RunTime:0.000569s ]
+
+---------------------------------------------------------------
+[ 2017-04-30T15:59:29+08:00 ] 121.42.174.228 140.205.205.9 GET /
+[ log ] dev.happyoneplus.com/ [运行时间：0.033372s][吞吐率：29.97req/s] [内存消耗：2,982.92kb] [文件加载：50]
+[ info ] [ LANG ] /data/wwwroot/dev.happyoneplus.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'dev.happyoneplus.com',
+  'accept-language' => 'en',
+  'accept-encoding' => 'gzip,deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows; U; MSIE 9.0; Windows NT 9.0; en-US)',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /data/wwwroot/dev.happyoneplus.com/application/index/controller/Index.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-30T17:51:47+08:00 ] 121.42.174.228 118.26.179.76 POST //userinfo/get
+[ log ] dev.happyoneplus.com//userinfo/get [运行时间：0.042750s][吞吐率：23.39req/s] [内存消耗：3,522.82kb] [文件加载：48]
+[ info ] [ LANG ] /data/wwwroot/dev.happyoneplus.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'userinfo',
+    2 => 'get',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'charset' => 'UTF-8',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 5.1.1; OPPO A53m Build/LMY47V; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/42.0.2311.138 Mobile Safari/537.36',
+  'connection' => 'Keep-Alive',
+  'accept-encoding' => 'gzip',
+  'token-key' => 'c426670f42efb656375e3f7591741366fb2e0a43',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'host' => 'dev.happyoneplus.com',
+  'content-length' => '95',
+)
+[ info ] [ PARAM ] array (
+  'id' => '{"id":"5071592517834b3f54145351"}',
+  'DataJson' => '',
+  'Limit' => '',
+  'OrderJson' => '',
+  'Skip' => '',
+  'WhereJson' => '',
+)
+[ info ] [ RUN ] app\index\controller\Userinfo->get[ /data/wwwroot/dev.happyoneplus.com/application/index/controller/Userinfo.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000463s ] mysql:dbname=project;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `userinfo` [ RunTime:0.001242s ]
+[ sql ] [ SQL ] SELECT * FROM `userinfo` WHERE  `uid` = '5071592517834b3f54145351' [ RunTime:0.000313s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wallet` [ RunTime:0.000819s ]
+[ sql ] [ SQL ] SELECT * FROM `wallet` WHERE  `uid` = '5071592517834b3f54145351' [ RunTime:0.000210s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.000786s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = '5071592517834b3f54145351' LIMIT 1 [ RunTime:0.000233s ]
+
+---------------------------------------------------------------
+[ 2017-04-30T17:51:47+08:00 ] 121.42.174.228 118.26.179.76 POST //userinfo/get
+[ log ] dev.happyoneplus.com//userinfo/get [运行时间：0.042467s][吞吐率：23.55req/s] [内存消耗：3,522.82kb] [文件加载：48]
+[ info ] [ LANG ] /data/wwwroot/dev.happyoneplus.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'userinfo',
+    2 => 'get',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'charset' => 'UTF-8',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 5.1.1; OPPO A53m Build/LMY47V; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/42.0.2311.138 Mobile Safari/537.36',
+  'connection' => 'Keep-Alive',
+  'accept-encoding' => 'gzip',
+  'token-key' => 'c426670f42efb656375e3f7591741366fb2e0a43',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'host' => 'dev.happyoneplus.com',
+  'content-length' => '95',
+)
+[ info ] [ PARAM ] array (
+  'id' => '{"id":"5071592517834b3f54145351"}',
+  'DataJson' => '',
+  'Limit' => '',
+  'OrderJson' => '',
+  'Skip' => '',
+  'WhereJson' => '',
+)
+[ info ] [ RUN ] app\index\controller\Userinfo->get[ /data/wwwroot/dev.happyoneplus.com/application/index/controller/Userinfo.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000526s ] mysql:dbname=project;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `userinfo` [ RunTime:0.001227s ]
+[ sql ] [ SQL ] SELECT * FROM `userinfo` WHERE  `uid` = '5071592517834b3f54145351' [ RunTime:0.000321s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wallet` [ RunTime:0.000770s ]
+[ sql ] [ SQL ] SELECT * FROM `wallet` WHERE  `uid` = '5071592517834b3f54145351' [ RunTime:0.000287s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.000781s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = '5071592517834b3f54145351' LIMIT 1 [ RunTime:0.000223s ]
+
+---------------------------------------------------------------
+[ 2017-04-30T17:51:48+08:00 ] 121.42.174.228 118.26.179.76 POST /user/getallid
+[ log ] dev.happyoneplus.com/user/getallid [运行时间：0.039982s][吞吐率：25.01req/s] [内存消耗：3,579.23kb] [文件加载：48]
+[ info ] [ LANG ] /data/wwwroot/dev.happyoneplus.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'user',
+    2 => 'getallid',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'charset' => 'UTF-8',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 5.1.1; OPPO A53m Build/LMY47V; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/42.0.2311.138 Mobile Safari/537.36',
+  'connection' => 'Keep-Alive',
+  'accept-encoding' => 'gzip',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'host' => 'dev.happyoneplus.com',
+  'content-length' => '9',
+)
+[ info ] [ PARAM ] array (
+  'id' => '[]',
+)
+[ info ] [ RUN ] app\index\controller\User->getallid[ /data/wwwroot/dev.happyoneplus.com/application/index/controller/User.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000490s ] mysql:dbname=project;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `userinfo` [ RunTime:0.001243s ]
+[ sql ] [ SQL ] SELECT * FROM `userinfo` WHERE  `id` IN ('') [ RunTime:0.000314s ]
+
+---------------------------------------------------------------

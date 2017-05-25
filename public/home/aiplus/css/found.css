@@ -1,0 +1,1282 @@
+﻿.list {
+	margin-top: 42px
+}
+
+.list .left-side {
+	padding-left: 0px;
+	padding-right: 0px
+}
+
+.list .left-side .index-search {
+	height: 46px;
+	position: relative
+}
+
+.list .left-side .index-search .icon-shixian-search {
+	position: absolute;
+	top: 16px;
+	left: 16px;
+	font-size: 14px;
+	color: #666;
+	z-index: 10
+}
+
+.list .left-side .index-search .index-search-value {
+	border: 1px solid #e0e0e0;
+	background-color: #fff;
+	height: 46px;
+	width: 88%;
+	font-size: 14px;
+	color: #999;
+	text-indent: 40px;
+	outline: none
+}
+
+.list .left-side .index-search .index-search-value:focus {
+	border-color: #ffca08;
+	color: #333
+}
+
+.list .left-side .index-search .index-search-btn {
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	width: 13%;
+	height: 46px;
+	border-radius: 0px 3px 3px 0px;
+	letter-spacing: 4px;
+	font-size: 16px
+}
+
+.list .left-side .filter {
+	background-color: #fff;
+	padding: 20px;
+	margin-top: 20px
+}
+
+.list .left-side .filter .main-filter {
+	height: auto;
+	overflow: visible
+}
+
+.list .left-side .filter hr.for-famous {
+	margin-top: 15px;
+	margin-bottom: 12px
+}
+
+.list .left-side .filter .main-filter dd {
+	width: 100%;
+	min-height: 42px;
+	position: relative
+}
+
+.list .left-side .filter .main-filter dd .filter-title {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	height: 42px;
+	display: inline-block;
+	font-weight: 600;
+	font-size: 16px;
+	width: 75px;
+	line-height: 42px
+}
+
+.list .left-side .filter .main-filter dd .filter-title em {
+	font-style: normal
+}
+
+.list .left-side .filter .main-filter dd .filter-title i {
+	display: none
+}
+
+.list .left-side .filter .main-filter dd .filter-context {
+	min-height: 42px;
+	margin-left: 75px;
+	font-size: 14px;
+	overflow: hidden
+}
+
+.list .left-side .filter .main-filter dd .filter-context .first-select,.list .left-side .filter .main-filter dd .filter-context .second-select {
+	height: 22px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	overflow: hidden
+}
+
+.list .left-side .filter .main-filter dd .filter-context .second-select.famous-company {
+	margin-bottom: 0
+}
+
+.list .left-side .filter .main-filter dd .filter-context .second-select {
+	height: auto
+}
+
+.list .left-side .filter .main-filter dd .filter-context .first-select .more {
+	display: inline-block;
+	float: right;
+	width: 11%;
+	height: 22px;
+	font-size: 14px;
+	cursor: pointer;
+	color: #666;
+	line-height: 22px
+}
+
+.list .left-side .filter .main-filter dd .filter-context .first-select .more i {
+	font-size: 12px;
+	margin-left: 3px
+}
+
+.list .left-side .filter .main-filter dd .filter-context .first-select.show {
+	height: auto
+}
+
+.list .left-side .filter .main-filter dd .filter-context .first-select .choice,.list .left-side .filter .main-filter dd .filter-context .second-select .choice {
+	list-style: none;
+	height: auto;
+	overflow: hidden
+}
+
+.list .left-side .filter .main-filter dd .filter-context .first-select .choice {
+	width: 89%
+}
+
+.list .left-side .filter .main-filter dd .filter-context .second-select .choice {
+	width: 100%
+}
+
+.list .left-side .filter .main-filter dd .filter-context .no-more .choice,.list .left-side .filter .main-filter dd .filter-context .no-more .choice {
+	width: 100%
+}
+
+.list .left-side .filter .main-filter dd .filter-context .first-select .choice li,.list .left-side .filter .main-filter dd .filter-context .second-select .choice li {
+	float: left;
+	height: 22px;
+	line-height: 22px;
+	padding: 0px 6px;
+	margin-bottom: 10px;
+	margin-right: 12px
+}
+
+.list .left-side .filter .main-filter dd .filter-context .second-select .choice li i {
+	display: none
+}
+
+.list .left-side .filter .main-filter dd .filter-context .first-select .choice li a,.list .left-side .filter .main-filter dd .filter-context .second-select .choice li a,.list .left-side .filter .link {
+	color: #666;
+	transition: all 0.2s ease-in;
+	-webkit-transition: all 0.2s ease-in;
+	-moz-transition: all 0.2s ease-in;
+	-o-transition: all 0.2s ease-in;
+	-ms-transition: all 0.2s ease-in
+}
+
+.list .left-side .filter .main-filter dd .filter-context .first-select .choice li a:hover,.list .left-side .filter .main-filter dd .filter-context .second-select .choice li a:hover,.list .left-side .filter .link:hover {
+	text-decoration: none;
+	color: #ffca08
+}
+
+.list .left-side .filter .main-filter dd .filter-context .first-select .text-active li.active {
+	background-color: #ffca08;
+	height: 22px;
+	line-height: 22px;
+	padding: 0px 6px
+}
+
+.list .left-side .filter .main-filter dd .filter-context .first-select .text-active li.active a {
+	color: #fff
+}
+
+.list .left-side .filter .main-filter dd .filter-context .first-select .more.active {
+	color: #ffca08
+}
+
+.list .left-side .filter .main-filter dd .filter-context .second-select .choice li.active {
+	background-color: #ffca08
+}
+
+.list .left-side .filter .main-filter dd .filter-context .second-select .choice li.active a {
+	color: #fff
+}
+
+.list .left-side .filter .main-filter dd .filter-context .first-select .text-active li label {
+	font-weight: normal
+}
+
+.list .left-side .filter .main-filter dd .filter-context .first-select .text-active li.active label {
+	color: #fff
+}
+
+.list .left-side .filter .main-filter dd .filter-context .first-select .text-active li label:hover {
+	color: #ffca08;
+	cursor: pointer
+}
+
+.list .left-side .filter .main-filter dd .filter-context .first-select .text-active li.active label:hover {
+	color: #fff;
+	cursor: pointer
+}
+
+.list .left-side .filter .main-filter dd .filter-context .second-select .choice li label {
+	font-weight: normal
+}
+
+.list .left-side .filter .main-filter dd .filter-context .second-select .choice li.active label {
+	color: #fff
+}
+
+.list .left-side .filter .main-filter dd .filter-context .second-select .choice li label:hover {
+	color: #ffca08;
+	cursor: pointer
+}
+
+.list .left-side .filter .main-filter dd .filter-context .second-select .choice li.active label:hover {
+	color: #fff;
+	cursor: pointer
+}
+
+.list .left-side .filter .link {
+	text-decoration: none
+}
+
+.list .left-side .filter .main-filter .order-by .link {
+	line-height: 42px;
+	margin-left: 6px
+}
+
+.list .left-side .filter .main-filter dd .filter-context b {
+	margin-left: 2px;
+	line-height: 42px;
+	margin-right: 2px
+}
+
+.list .left-side .filter .main-filter dd .filter-context .dropbox {
+	height: 40px;
+	display: inline-block;
+	border: 1px solid #ededed;
+	border-radius: 3px;
+	vertical-align: top;
+	cursor: pointer;
+	margin-left: 6px;
+	margin-right: 12px;
+	position: relative;
+	color: #666
+}
+
+.list .left-side .filter .main-filter dd .filter-context .dropbox.open {
+	border: 1px solid #ffca08;
+	color: #ffca08
+}
+
+.list .left-side .filter .main-filter dd .filter-context .dropbox span {
+	line-height: 40px;
+	padding-left: 10px;
+	padding-right: 32px;
+	display: block
+}
+
+.list .left-side .filter .main-filter dd .filter-context .dropbox span .icon-shixian-drop-arrow {
+	font-size: 12px;
+	position: absolute;
+	right: 12px;
+	top: 0
+}
+
+.list .left-side .filter .main-filter dd .filter-context .dropbox.open .dropdown-menu {
+	margin-top: 7px;
+	min-width: 108px;
+	padding: 10px 0px
+}
+
+.list .left-side .filter .main-filter dd .filter-context .dropbox.open .dropdown-menu li a {
+	padding: 4px 18px
+}
+
+.list .left-side .filter .main-filter dd .filter-context .dropbox.open .dropdown-menu li label {
+	padding: 4px 15px;
+	color: #333;
+	font-weight: normal
+}
+
+.list .left-side .filter .main-filter dd .filter-context .dropbox.open .dropdown-menu li label:hover {
+	padding: 4px 15px;
+	color: #262626;
+	cursor: pointer;
+	background-color: #f5f5f5
+}
+
+.list .left-side .filter .main-filter .order-by {
+	width: 75px;
+	display: inline-block
+}
+
+.list .left-side .filter .main-filter .order-by .filter-context {
+	width: 60px;
+	overflow: visible
+}
+
+.list .left-side .filter .main-filter .experience {
+	width: 390px;
+	display: inline-block;
+	vertical-align: top
+}
+
+.list .left-side .filter .main-filter  .filter-title {
+	display: none
+}
+
+.list .left-side .filter .main-filter .experience .filter-context {
+	width: 715px;
+	overflow: visible;
+	margin-left: 0px
+}
+
+.list .left-side .filter .mobile-filter {
+	display: none
+}
+
+.list .left-side .engineer-list {
+	width: 100%;
+	padding-top: 42px
+}
+
+.list .left-side .engineer-list .like-full-time {
+	margin-bottom: 5px;
+	border-radius: 0
+}
+
+.list .left-side .engineer-list .engineer {
+	padding: 26px;
+	width: 100%;
+	height: 340px;
+	background-color: #fff;
+	margin-bottom: 20px
+}
+
+.list .left-side .engineer-list .engineer .engineer-info {
+	display: inline-block;
+	vertical-align: top;
+	width: 540px;
+	overflow: hidden
+}
+
+@media screen and (min-width: 992px) {
+	.list .left-side .engineer-list .engineer:hover {
+		transform: scale(1.003)
+	}
+}
+
+.list .left-side .engineer-list .engineer .engineer-info a dl {
+	height: 46px
+}
+
+.list .left-side .engineer-list .engineer .engineer-info a dl dd {
+	float: left;
+	height: 46px;
+	line-height: 46px;
+	color: #999;
+	font-size: 14px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	-webkit-line-clamp: 1;
+	display: -webkit-box;
+	-webkit-box-orient: vertical
+}
+
+.list .left-side .engineer-list .engineer .engineer-info a dl dd i {
+	margin-right: 5px
+}
+
+.list .left-side .engineer-list .engineer .engineer-info a dl dd b {
+	font-weight: 400;
+	font-size: 16px;
+	color: #333
+}
+
+.list .left-side .engineer-list .engineer .engineer-info a dl dd img {
+	width: 46px;
+	height: 46px;
+	border-radius: 50%;
+	float: right
+}
+
+.list .left-side .engineer-list .engineer .engineer-info a dl .company {
+	width: 37%
+}
+
+.list .left-side .engineer-list .engineer .engineer-info a dl .job {
+	width: 42%
+}
+
+.list .left-side .engineer-list .engineer .engineer-info a dl .date {
+	width: 67px;
+	float: right
+}
+
+.list .left-side .engineer-list .engineer .engineer-info a dl .user-header {
+	width: 46px;
+	float: right;
+	margin: 0;
+	display: inline-block
+}
+
+.list .left-side .engineer-list .engineer .engineer-info a h5 {
+	border-left: 5px solid #34c99d;
+	text-indent: 6px;
+	color: #666;
+	margin-bottom: 20px
+}
+
+.list .left-side .engineer-list .engineer .engineer-info a .limit-line-5 {
+	font-size: 14px;
+	line-height: 30px;
+	height: 180px;
+	overflow: hidden;
+	color: #666;
+	display: -webkit-box;
+	-webkit-line-clamp: 6;
+	-webkit-box-orient: vertical;
+	text-overflow: ellipsis
+}
+
+.list .left-side .engineer-list .engineer .about {
+	display: inline-block;
+	vertical-align: top;
+	width: 220px;
+	border-left: 1px solid #f4f4f4;
+	height: 259px;
+	padding-left: 30px;
+	margin-left: 30px;
+	position: relative
+}
+
+.list .left-side .engineer-list .engineer .about h4 {
+	margin: 0;
+	font-weight: 400;
+	height: 46px;
+	color: #666;
+	line-height: 36px;
+	margin-bottom: 15px
+}
+
+.list .left-side .engineer-list .engineer .about h4 span {
+	font-size: 26px;
+	color: #ffca08;
+	margin-right: 4px
+}
+
+.list .left-side .engineer-list .engineer .about h4 i {
+	font-style: normal;
+	margin-left: 4px
+}
+
+.list .left-side .engineer-list .engineer .about p {
+	line-height: 24px;
+	font-size: 12px;
+	color: #999;
+	min-height: 24px;
+	line-height: 24px;
+	overflow: hidden
+}
+
+.list .left-side .engineer-list .engineer .about p span {
+	width: 75px;
+	display: inline-block;
+	vertical-align: top
+}
+
+.list .left-side .engineer-list .engineer .about p b {
+	display: inline-block;
+	font-weight: 400;
+	line-height: 22px;
+	width: 114px;
+	vertical-align: top;
+	float: right;
+	max-height: 88px;
+	-webkit-line-clamp: 4;
+	-webkit-box-orient: vertical;
+	text-overflow: ellipsis;
+	overflow: hidden
+}
+
+.list .left-side .engineer-list .engineer .about .just {
+	width: 162px;
+	height: 46px;
+	border: 2px solid #ffca08;
+	color: #ffca08;
+	font-size: 14px;
+	letter-spacing: 2px;
+	display: inline-block;
+	text-align: center;
+	line-height: 44px;
+	border-radius: 3px;
+	margin-top: 15px;
+	position: absolute;
+	bottom: -20px;
+	left: 30px
+}
+
+.list .left-side .engineer-list .engineer .about .just:hover {
+	background-color: #ffc800;
+	color: #fff;
+	text-decoration: none
+}
+
+@media screen and (max-width: 900px) and (min-width: 600px) {
+	.side-nav {
+		margin: 0;
+		right: 30px;
+		left: auto
+	}
+
+	.side-nav ul li {
+		border-radius: 50%;
+		display: none;
+		background-color: #ffca08
+	}
+
+	.side-nav ul .go-top {
+		display: block
+	}
+
+	.side-nav ul li a {
+		color: #fff
+	}
+}
+
+@media screen and (max-width: 900px) and (min-width: 600px) {
+	.list .left-side .engineer-list .engineer .engineer-info {
+		width: 100%
+	}
+
+	.list .left-side .engineer-list .engineer .engineer-info a .limit-line-5 {
+		height: 90px;
+		-webkit-line-clamp: 3
+	}
+
+	.list .left-side .engineer-list .engineer .about {
+		width: 100%;
+		height: 46px;
+		border: none;
+		margin: 0;
+		margin-top: 20px;
+		padding: 0
+	}
+
+	.list .left-side .engineer-list .engineer .about h4 {
+		display: inline-block;
+		margin: 0
+	}
+
+	.list .left-side .engineer-list .engineer .about p {
+		display: none
+	}
+
+	.list .left-side .engineer-list .engineer .about .just {
+		float: right;
+		margin: 0;
+		position: static
+	}
+}
+
+@media screen and (max-width: 1199px) and (min-width: 900px) {
+	.list .left-side .engineer-list .engineer .engineer-info {
+		width: 100%
+	}
+
+	.list .left-side .engineer-list .engineer .engineer-info a .limit-line-5 {
+		height: 90px;
+		-webkit-line-clamp: 3
+	}
+
+	.list .left-side .engineer-list .engineer .about {
+		width: 100%;
+		height: 46px;
+		border: none;
+		margin: 0;
+		margin-top: 20px;
+		padding: 0
+	}
+
+	.list .left-side .engineer-list .engineer .about h4 {
+		display: inline-block;
+		margin: 0
+	}
+
+	.list .left-side .engineer-list .engineer .about p {
+		display: none
+	}
+
+	.list .left-side .engineer-list .engineer .about .just {
+		float: right;
+		margin: 0;
+		position: static
+	}
+}
+
+@media screen and (max-width: 1199px) and (min-width: 1101px) {
+	.list .left-side .engineer-list .engineer .engineer-info {
+		width: 100%
+	}
+
+	.list .left-side .engineer-list .engineer .engineer-info a .limit-line-5 {
+		height: 120px;
+		-webkit-line-clamp: 4
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.side-nav {
+		margin: 0;
+		right: 20px;
+		left: auto
+	}
+
+	.side-nav ul li {
+		border-radius: 50%;
+		display: none;
+		background-color: #ffca08
+	}
+
+	.side-nav ul .go-top {
+		display: block
+	}
+
+	.side-nav ul li a {
+		color: #fff
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.searching .navigator {
+		display: none
+	}
+
+	.searching .shixian-dropdown-menu {
+		display: none
+	}
+
+	.searching .user-tools {
+		width: 73%
+	}
+
+	.searching .user-tools .nav-search {
+		margin: 0;
+		padding: 0;
+		width: 100%
+	}
+
+	.searching .user-tools .nav-search form button {
+		color: #666666;
+		position: absolute;
+		right: 52px;
+		padding: 0;
+		top: 0px
+	}
+
+	.searching .user-tools .nav-search form .search-value {
+		float: right;
+		width: 81%;
+		display: inline-block
+	}
+
+	.searching .user-tools .nav-search .hide-input {
+		display: inline-block;
+		float: right;
+		margin-right: 20px
+	}
+
+	.searching .user-tools dd:hover {
+		background-color: transparent
+	}
+
+	.searching .user-tools .user-dropdown {
+		display: none
+	}
+
+	.list {
+		margin-top: 0px;
+		padding: 0
+	}
+
+	.list .left-side .index-search {
+		display: none
+	}
+
+	.list .left-side .filter {
+		padding: 0px;
+		margin-top: 0px;
+		width: 100%;
+		height: 46px
+	}
+
+	.list .left-side .filter .main-filter {
+		height: auto
+	}
+
+	.list .left-side .filter .main-filter dd {
+		width: 33.33% !important;
+		height: 46px;
+		float: left
+	}
+
+	.list .left-side .filter .main-filter dd .filter-title {
+		font-weight: 400;
+		font-size: 12px;
+		color: #666;
+		text-align: center;
+		width: 100%;
+		height: 46px;
+		line-height: 46px;
+		background-color: #fff;
+		border-top: 1px solid #ddd;
+		border-bottom: 1px solid #dddddd;
+		position: relative
+	}
+
+	.list .left-side .filter .main-filter .experience .filter-title {
+		display: inline-block
+	}
+
+	.list .left-side .filter .main-filter dd .filter-title em {
+		display: none
+	}
+
+	.list .left-side .filter .main-filter dd .filter-title i {
+		display: inline-block
+	}
+
+	.list .left-side .filter .main-filter dd .filter-title .line {
+		position: absolute;
+		border-right: 1px solid #ddd;
+		height: 24px;
+		top: 11px;
+		right: 0px
+	}
+
+	.list .left-side .filter .main-filter dd .filter-title.active {
+		color: #ffca08
+	}
+
+	.list .left-side .filter .main-filter dd .filter-context {
+		display: none
+	}
+
+	.filter-fixed .header {
+		position: fixed;
+		top: 0px;
+		left: 0px
+	}
+
+	.filter-fixed .list {
+		display: block;
+		z-index: 1
+	}
+
+	.filter-fixed .list .left-side {
+		display: inline-block;
+		z-index: 100
+	}
+
+	.filter-fixed .list .left-side .filter {
+		position: fixed;
+		left: 0px;
+		top: 45px;
+		width: 100%;
+		display: block
+	}
+
+	.filter-fixed .list .left-side .engineer-list,.filter-fixed .paging {
+		display: none
+	}
+
+	.filter-fixed .list .left-side .filter .main-filter dd .filter-context {
+		position: fixed;
+		top: 91px;
+		left: 0px;
+		right: 0px;
+		width: 100%;
+		bottom: 53px;
+		background-color: #ececec;
+		margin: 0;
+		overflow-y: scroll;
+		font-size: 12px
+	}
+
+	.filter-fixed .list .left-side .filter .main-filter dd .filter-context.active {
+		display: block
+	}
+
+	.filter-fixed .list .left-side .filter .main-filter dd .filter-context .no-more .choice,.filter-fixed .list .left-side .filter .main-filter dd .filter-context .no-more .choice {
+		width: 100%
+	}
+
+	.filter-fixed .list .left-side .filter .main-filter .place .filter-context .first-select,.filter-fixed .list .left-side .filter .main-filter .place .filter-context .second-select {
+		width: 50%;
+		display: inline-block;
+		float: left;
+		height: auto;
+		margin: 0
+	}
+
+	.filter-fixed .list .left-side .filter .main-filter .place .filter-context {
+		background-color: #fff
+	}
+
+	.filter-fixed .list .left-side .filter .main-filter .place .filter-context .first-select {
+		background-color: #ececec
+	}
+
+	.filter-fixed .list .left-side .filter .main-filter .place .filter-context .first-select li .icon-shixian-selected {
+		display: none
+	}
+
+	.filter-fixed .list .left-side .filter .main-filter .place .filter-context .first-select li.active .icon-shixian-selected {
+		display: inherit
+	}
+
+	.filter-fixed .list .left-side .filter .main-filter .place .filter-context .first-select .more {
+		display: none
+	}
+
+	.filter-fixed .list .left-side .filter .main-filter .place .filter-context .first-select .choice,.filter-fixed .list .left-side .filter .main-filter .place .filter-context .second-select .choice {
+		width: 100%;
+		display: inline-block
+	}
+
+	.filter-fixed .list .left-side .filter .main-filter dd .filter-context .first-select .choice li,.filter-fixed .list .left-side .filter .main-filter dd .filter-context .second-select .choice li {
+		padding: 0;
+		margin: 0;
+		width: 100%;
+		height: 33px;
+		line-height: 33px;
+		text-indent: 25px;
+		margin-bottom: 4px
+	}
+
+	.filter-fixed .list .left-side .filter .main-filter dd .filter-context .first-select .choice li.active {
+		background-color: #fff;
+		color: #ffca08
+	}
+
+	.filter-fixed .list .left-side .filter .main-filter dd .filter-context .second-select .choice li.active {
+		background-color: #fff;
+		color: #ffca08
+	}
+
+	.filter-fixed .list .left-side .filter .main-filter dd .filter-context .second-select .choice li.active .icon-shixian-selected {
+		display: inherit
+	}
+
+	.filter-fixed .list .left-side .filter .main-filter dd .filter-context .second-select .choice li.active a {
+		color: #ffca08
+	}
+
+	.filter-fixed .list .left-side .filter .main-filter dd .filter-context .second-select .choice li.active a i,.filter-fixed .list .left-side .filter .main-filter .role .filter-context .second-select .choice li.active a i {
+		display: inline-block;
+		float: right;
+		margin-right: 20px;
+		padding-top: 6px;
+		font-size: 18px;
+		color: #ffca08
+	}
+
+	.filter-fixed .list .left-side .filter .main-filter .order-by .filter-context {
+		width: 100%
+	}
+
+	.filter-fixed .list .left-side .filter .main-filter .order-by .filter-context,.filter-fixed .list .left-side .filter .main-filter .experience .filter-context {
+		padding: 12px 0px
+		
+	}
+
+	.filter-fixed .list .left-side .filter .main-filter .order-by .link {
+		display: inline-block;
+		height: 24px;
+		width: 29.333%;
+		line-height: 24px;
+		text-align: center;
+		border: 1px solid #c6c6c6;
+		margin: 2%
+	}
+
+	.filter-fixed .list .left-side .filter .main-filter .experience .filter-context {
+		width: 100%
+	}
+
+	.filter-fixed .list .left-side .filter .main-filter dd .filter-context b {
+		display: block;
+		line-height: 24px;
+		font-weight: 400;
+		text-indent: 2%;
+		font-size: 14px
+	}
+
+	.filter-fixed .list .left-side .filter .main-filter dd .filter-context .dropbox {
+		margin: 0;
+		padding: 0;
+		width: 100%;
+		height: auto;
+		overflow: hidden;
+		margin-bottom: 10px
+	}
+
+	.filter-fixed .list .left-side .filter .main-filter dd .filter-context .dropbox span {
+		display: none
+	}
+
+	.filter-fixed .list .left-side .filter .main-filter dd .filter-context .dropbox .dropdown-menu {
+		position: static;
+		display: block;
+		background-color: transparent;
+		border: none;
+		margin: 0;
+		padding: 0;
+		box-shadow: none;
+		overflow: hidden;
+		min-width: 100%;
+		height: auto;
+		clear: both
+	}
+
+	.filter-fixed .list .left-side .filter .main-filter dd .filter-context .dropbox .dropdown-menu li {
+		float: left;
+		height: 24px;
+		width: 29.333%;
+		line-height: 24px;
+		font-size: 12px;
+		text-align: center;
+		border: 1px solid #c6c6c6;
+		margin: 2%;
+		text-align: center
+	}
+
+	.filter-fixed .filter-fixed .list .left-side .filter .main-filter dd .filter-context .dropbox .dropdown-menu li a {
+		width: 100%;
+		height: 100%
+	}
+
+	.filter-fixed .list .left-side .filter .main-filter dd .filter-context .dropbox .dropdown-menu li.active {
+		border: 1px solid #ffca08;
+		background-color: #e4f5ff
+	}
+
+	.filter-fixed .list .left-side .filter .main-filter dd .filter-context .dropbox .dropdown-menu li.active a {
+		color: #ffca08;
+		background-color: transparent
+	}
+
+	.filter-fixed .list .left-side .filter .main-filter dd .filter-context .dropbox .dropdown-menu:after,.filter-fixed .list .left-side .filter .main-filter dd .filter-context .dropbox .dropdown-menu:before {
+		display: none
+	}
+
+	.filter-fixed .list .left-side .filter .mobile-filter {
+		display: block;
+		position: fixed;
+		left: 0px;
+		bottom: 0px;
+		width: 100%;
+		height: 53px;
+		background-color: #efefef
+	}
+
+	.filter-fixed .list .left-side .filter .mobile-filter .btn-box {
+		height: 50px;
+		margin: 2px 2% 0px;
+		border-top: 1px solid #dddddd;
+		text-align: center;
+		overflow: hidden
+	}
+
+	.filter-fixed .list .left-side .filter .mobile-filter .btn-box button {
+		width: 122px;
+		height: 36px;
+		line-height: 36px;
+		border-radius: 3px;
+		background-color: #ffca08;
+		font-size: 14px;
+		color: #fff;
+		border: none;
+		letter-spacing: 3px;
+		margin-top: 7px
+	}
+
+	.list .left-side .engineer-list {
+		padding-top: 10px;
+		width: auto;
+		margin: 0
+	}
+
+	.list .left-side .engineer-list .like-full-time {
+		margin-bottom: 10px;
+		border-radius: 0
+	}
+
+	.list .left-side .engineer-list .engineer {
+		padding: 10px 10px 30px 10px;
+		border-radius: 3px;
+		font-size: 12px;
+		height: auto
+	}
+
+	.list .left-side .engineer-list .engineer .engineer-info {
+		width: 100%
+	}
+
+	.list .left-side .engineer-list .engineer .engineer-info a dl {
+		height: 60px;
+		position: relative;
+		padding-bottom: 10px;
+		border-bottom: 1px solid #f4f4f4
+	}
+
+	.list .left-side .engineer-list .engineer .engineer-info a dl dd {
+		line-height: 22px;
+		height: 22px;
+		position: absolute
+	}
+
+	.list .left-side .engineer-list .engineer .engineer-info a dl .user-header {
+		top: 8px;
+		left: 0px;
+		width: 32px;
+		height: 32px
+	}
+
+	.list .left-side .engineer-list .engineer .engineer-info a dl .user-header img {
+		width: 32px;
+		height: 32px
+	}
+
+	.list .left-side .engineer-list .engineer .engineer-info a dl .company {
+		width: -moz-calc(100% - 44px);
+		width: -webkit-calc(100% - 44px);
+		width: calc(100% - 44px);
+		height: 22px;
+		top: 0px;
+		left: 44px
+	}
+
+	.list .left-side .engineer-list .engineer .engineer-info a dl .job {
+		top: 28px;
+		left: 44px;
+		width: -moz-calc(100% - 104px);
+		width: -webkit-calc(100% - 104px);
+		width: calc(100% - 104px)
+	}
+
+	.list .left-side .engineer-list .engineer .engineer-info a dl dd b {
+		font-size: 13px;
+		margin-left: -6px
+	}
+
+	.list .left-side .engineer-list .engineer .engineer-info a dl .date {
+		top: 28px;
+		right: 14px;
+		width: auto
+	}
+
+	.list .left-side .engineer-list .engineer .engineer-info a h5 {
+		margin-bottom: 10px
+	}
+
+	.list .left-side .engineer-list .engineer .engineer-info a .limit-line-5 {
+		font-size: 13px;
+		line-height: 22px;
+		height: auto;
+		-webkit-line-clamp: 7
+	}
+
+	.list .left-side .engineer-list .engineer .about {
+		padding: 0;
+		margin: 0;
+		padding-top: 8px;
+		border: none;
+		width: 100%;
+		height: 34px
+	}
+
+	.list .left-side .engineer-list .engineer .about h4 {
+		display: inline-block;
+		font-size: 16px;
+		width: 130px;
+		margin: 0;
+		display: inline-block
+	}
+
+	.list .left-side .engineer-list .engineer .about h4 span {
+		font-size: 16px
+	}
+
+	.list .left-side .engineer-list .engineer .about p {
+		display: none
+	}
+
+	.list .left-side .engineer-list .engineer .about .just {
+		height: 34px;
+		border-width: 1px;
+		line-height: 32px;
+		display: inline-block;
+		width: 92px;
+		float: right;
+		margin: 0;
+		position: static
+	}
+
+	.list .left-side .filter .main-filter dd .filter-context .first-select .text-active li.active a {
+		color: #08c
+	}
+
+	.list .left-side .filter .main-filter dd .filter-context .first-select .text-active li label {
+		margin-bottom: 0
+	}
+
+	.list .left-side .filter .main-filter dd .filter-context .first-select .text-active li.active label {
+		color: #ffca08
+	}
+
+	.list .left-side .filter .main-filter dd .filter-context .first-select .text-active li.active label:hover {
+		color: #ffca08
+	}
+
+	.list .left-side .filter .main-filter dd .filter-context .second-select .choice li label {
+		margin-bottom: 0
+	}
+
+	.list .left-side .filter .main-filter dd .filter-context .second-select .choice li.active label {
+		color: #ffca08
+	}
+
+	.list .left-side .filter .main-filter dd .filter-context .second-select .choice li.active label:hover {
+		color: #ffca08
+	}
+}
+
+.list .right-side {
+	padding-right: 0px
+}
+
+.list .right-side .extension {
+	padding: 15px;
+	background-color: #fff
+}
+
+.list .right-side .extension .badge-label {
+	position: absolute;
+	color: white;
+	background-color: #ffca08;
+	right: 0px;
+	top: 6px;
+	padding: 2px 4px 2px 4px;
+	font-size: 12px;
+	line-height: 20px;
+	border-radius: 2px;
+	opacity: 0.9
+}
+
+.list .right-side .extension .img {
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	position: relative
+}
+
+.list .right-side .extension .img img {
+	width: 100%
+}
+
+.list .right-side .extension .apply,.list .right-side .extension .publish {
+	width: 100%;
+	height: 180px;
+	overflow: hidden;
+	text-align: center
+}
+
+.list .right-side .extension .apply p,.list .right-side .extension .publish p {
+	font-size: 16px;
+	color: #666;
+	padding: 0px 10px;
+	line-height: 26px;
+	margin-top: 30px
+}
+
+.list .right-side .extension .apply {
+	border-bottom: 1px solid #f4f4f4
+}
+
+.list .right-side .extension .apply a,.list .right-side .extension .publish a {
+	width: 150px;
+	height: 45px;
+	line-height: 45px;
+	border-radius: 3px;
+	font-size: 14px;
+	text-align: center;
+	display: inline-block;
+	color: #fff;
+	margin-top: 24px
+}
+
+.list .right-side .extension .publish a.publish-o,.list .right-side .extension .publish a.publish-o:hover {
+	background-color: white;
+	border: 1px solid #ffca08;
+	color: #ffca08
+}
+
+.list .right-side .extension .apply a.apply-o,.list .right-side .extension .apply a.apply-o:hover {
+	background-color: white;
+	border: 1px solid #ffd437;
+	color: #ffd437
+}
+
+.list .right-side .extension .apply a:hover,.list .right-side .extension .publish a:hover {
+	text-decoration: none
+}
+
+.list .right-side .extension .apply a {
+	background-color: #ffd437
+}
+
+.list .right-side .extension .apply a:hover {
+	background-color: #ffc800
+}
+
+.list .right-side .extension .publish a {
+	background-color: #ffca08
+}
+
+.list .right-side .extension .publish a:hover {
+	background-color: #ffc800
+}
+
+@media screen and (max-width: 900px) {
+	.list .right-side {
+		display: none
+	}
+}
+
+.paging {
+	text-align: center
+}
+
+.paging>.pagination>li>a,.paging>.pagination>li>span {
+	color: #ffca08;
+	padding: 8px 16px;
+	transition: all 0.2s ease-in;
+	-webkit-transition: all 0.2s ease-in;
+	-moz-transition: all 0.2s ease-in;
+	-o-transition: all 0.2s ease-in;
+	-ms-transition: all 0.2s ease-in
+}
+
+.paging>.pagination>li.active>a {
+	border: 1px solid #ffca08;
+	background-color: #ffca08;
+	color: #fff
+}
+
+.paging>.pagination>li>a:hover {
+	border: 1px solid #ffca08;
+	background-color: #ffca08;
+	color: #fff
+}

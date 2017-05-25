@@ -1,0 +1,85 @@
+{include file='header'}
+<div id="mws-container" class="clearfix">
+	<div class="container">
+		<div class="mws-panel grid_8">
+
+                	<div class="mws-panel-header">
+                    	<span><i class="icon-table"></i>用户信息</span>
+                    </div>
+                    <div class="mws-panel-body no-padding">
+                        <form class="mws-form" action="form_layouts.html">
+                            {if condition="$Think.session.tishis eq 1"}
+                                <div class="mws-form-message success">
+                                    操作成功 点击消失
+                                </div>
+
+                            {elseif condition="$Think.session.tishis eq 2"/}
+                                <div class="mws-form-message error">
+                                    操作失败 点击消失
+                                </div>
+                            {/if}
+                        </form>
+                    </div>
+                    <div class="mws-panel-body no-padding">
+                        <div id="DataTables_Table_0_wrapper" class="dataTables_wrapper" role="grid">
+                        	<table class="mws-datatable mws-table dataTable" id="DataTables_Table_0" aria-describedby="DataTables_Table_0_info">
+                            <thead>
+                                <tr role="row">
+                                    <th>I D号：</th>
+	                                <th>用户名：</th>
+	                                <th>昵称：</th>
+                                    <th>真实姓名:</th>
+	                                <th>性别：</th>
+	                                <th>头像：</th>
+                                    <th>实名认证：</th>
+                                    <th>邮寄地址：</th>
+                                    <th>就职状态：</th>
+	                                <th>操作</th>
+                                </tr>
+                            </thead>
+                            
+                        <tbody role="alert" aria-live="polite" aria-relevant="all" align="center">
+                            {volist name="info" id="v"}
+                        		<tr class="odd">
+                                    <td class="  sorting_1">{$v.id}</td>
+                                    <td class=" ">{$v.phone}</td>
+                                    <td>{$v.nickname}</td>
+                                    <td>{$v.realname}</td>
+                                    {if condition="$v.sex eq 1"}
+                                        <td>男</td>
+                                    {elseif condition="$v.sex eq 0"}
+                                        <td>女</td>
+                                    {elseif condition="$v.sex eq 2"}
+                                        <td>保密</td>
+                                    {/if}
+                                    <td><img src="{$v.icon}" width="50px"></td>
+                                    {if condition="$v.Verify eq 0"}
+                                        <td>未认证</td>
+                                    {elseif condition="$v.Verify eq 1"}
+                                        <td>已认证</td>
+                                    {/if}
+                                    <td>{$v.address}</td>
+                                    {if condition="$v.status eq 1"}
+                                        <td>在职</td>
+                                    {elseif condition="$v.status eq 3"}
+                                        <td>待业</td>
+                                    {elseif condition="$v.status eq 2"}
+                                        <td>自由职业</td>
+                                    {elseif condition="$v.status eq 0"}
+                                        <td>在校</td>
+                                    {/if}
+                                   	<td >
+                                        <span class="btn-group">
+                                            <a class="btn btn-small btns1" href="/admin/userinfo/edit?id={$v.id}"><i class="icon-pencil"></i></a>
+                                   		</span>
+                                    </td>
+                                 </tr>
+                            {/volist}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+	</div>
+</div>
+{include file='footer'}
